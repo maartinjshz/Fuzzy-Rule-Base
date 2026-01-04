@@ -1,0 +1,23 @@
+# Python Packaging Artifacts
+*.egg-info/
+.eggs/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# pytest cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment-specific files (if you use a virtual environment)
+venv/
+.env/
+env/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
