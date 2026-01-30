@@ -3,7 +3,7 @@ from scipy.interpolate import interp1d
 
 def alpha_cut_all_intervals(xx, membership_vls, alpha):
     # Find where membership crosses alpha
-    above = membership_vls >= alpha - 5/500
+    above = membership_vls >= alpha - 1/500
 
     if not np.any(above):
         return []
@@ -29,7 +29,7 @@ def alpha_cut_all_intervals(xx, membership_vls, alpha):
  
 def all_alpha_cuts(membership_vls, xx, alphas):
     cuts = {}
-    for alpha in alphas[0:-1]:
+    for alpha in alphas[0:]:
         cut = alpha_cut_all_intervals(xx, membership_vls, alpha)
         cuts[alpha] = cut
     return cuts

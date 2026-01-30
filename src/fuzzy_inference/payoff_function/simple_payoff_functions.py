@@ -27,6 +27,7 @@ def mu_times_payoff(membership_value, N, Number_of_grid_points = 500, N_range = 
     payoff_values = N(payoff_grid)
     # Find all the alpha cuts for the payoff values
     payoff_cuts = all_alpha_cuts(payoff_values, payoff_grid,  np.unique(membership_value))
+    payoff_cuts[1.0] = [[100, 100]]
  
     mu_x_payoff_cuts = {}
     keys = list(payoff_cuts.keys())
@@ -41,7 +42,7 @@ def mu_times_payoff(membership_value, N, Number_of_grid_points = 500, N_range = 
                                                   (payoff_cuts[alpha][0][1] * (1-mu_cuts[alpha][0][0])).item()]
             except:
                 print('Skipping alpha:', alpha)
-            
+      
     cog_taking_no_action, mu_curve_taking_no_action, x_grid_taking_no_action = reconstruct_curve(mu_x_payoff_cuts)
     peak_indices, _ = find_peaks(mu_curve_taking_no_action )
 
@@ -83,29 +84,30 @@ def taking_action_N_MuC(membership_value,  N, c, Number_of_grid_points = 500, N_
     payoff_grid = np.linspace(N_range[0], N_range[1], Number_of_grid_points)
     payoff_values = N(payoff_grid)
     # Find all the alpha cuts for the payoff values
-    payoff_cuts = all_alpha_cuts(payoff_values, payoff_grid,  np.unique(membership_value))
-
+    payoff_cuts = all_alpha_cuts(payoff_values, payoff_grid,  np.unique(membership_value))  
+    payoff_cuts[1.0] = [[100, 100]]
+ 
     cleaning_cost_grid = np.linspace(c_range[0], c_range[1], Number_of_grid_points)
     cleaning_cost_value = c(cleaning_cost_grid)
     # Find all the alpha cuts for the cleaning cost values
     cleaning_cost_cuts = all_alpha_cuts(cleaning_cost_value, cleaning_cost_grid,  np.unique(membership_value))
-
+    cleaning_cost_cuts[1.0] = [[45, 45]]
     payoff_minus_mu_x_c_cuts = {}
     keys = list(payoff_cuts.keys())
     mu_cuts = all_alpha_cuts(membership_value, membership_grid, np.unique(membership_value))   
     
     # Goes trough all the alpha cuts and computes mu * payoff w.r.t. alpha cut
-    for alpha in keys[:-1]:                             
+    for alpha in keys:                             
         try:       
             payoff_minus_mu_x_c_cuts[alpha] = [(payoff_cuts[alpha][0][0] - cleaning_cost_cuts[alpha][0][1] * (mu_cuts[alpha][0][1])).item(), 
                                                (payoff_cuts[alpha][0][1] - cleaning_cost_cuts[alpha][0][0] * (mu_cuts[alpha][0][0])).item()]
         except:
             print('Skipping alpha:', alpha)
-            print(N_range, c_range)
+            # print(N_range, c_range)
   
             # print(cleaning_cost_cuts.keys())
-            print(c(cleaning_cost_grid))
-            print(cleaning_cost_cuts , "cleaning_cost_cut")
+            # print(c(cleaning_cost_grid))
+            # print(cleaning_cost_cuts , "cleaning_cost_cut")
             
     cog_taking_action, mu_curve_taking_action, x_grid_taking_action = reconstruct_curve(payoff_minus_mu_x_c_cuts)
     peak_indices, _ = find_peaks(mu_curve_taking_action)

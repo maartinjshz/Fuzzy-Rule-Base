@@ -9,7 +9,7 @@ In this work, the [**Implicative model**](#deductive-interpretation) has been ad
 
 To get started, you should start by cloning the repositoy:
 ```
-git clone https://github.com/your-username/Fuzzy-Rule-Base.git
+git clone https://github.com/maartinjshz/Fuzzy-Rule-Base
 cd Fuzzy-Rule-Base
 ```
 
