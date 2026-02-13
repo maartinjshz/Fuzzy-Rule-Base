@@ -120,11 +120,13 @@ def taking_action_N_MuC(membership_value,  N, c, Number_of_grid_points = 500, N_
         else:
             x_of_MoM_taking_no_action = x_grid_taking_action[-1]
     else:
-        x_of_MoM_taking_no_action = x_grid_taking_action[peak_indices]
+        try:
+            x_of_MoM_taking_no_action = x_grid_taking_action[peak_indices[1]]
+        except IndexError:
+            print(peak_indices, "peak_indices")
+            x_of_MoM_taking_no_action = x_grid_taking_action[peak_indices[0]]
 
     return cog_taking_action, mu_curve_taking_action, x_grid_taking_action, x_of_MoM_taking_no_action
-
-
 
 def simple_payoff_function(membership_value,  N, c, Number_of_grid_points = 500, N_range = [80, 120], c_range = [30, 60]):
     """ Simple function, that combines the two payoff function calculations:
