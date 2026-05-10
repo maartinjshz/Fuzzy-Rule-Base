@@ -1,12 +1,25 @@
 import numpy as np
 from scipy.interpolate import interp1d
 
-def alpha_cut_all_intervals(xx, membership_vls, alpha):
+def alpha_cut_all_intervals(xx, membership_vls, alpha, step_size):
     # Find where membership crosses alpha
-    above = membership_vls >= alpha - 1/500
+    if alpha == 0:
+        above = membership_vls > 0
+    else:
+        above = membership_vls >= alpha - 2 * step_size
 
     if not np.any(above):
         return []
+    
+    # this is required, as otherwise if alpha = 1 
+    # Is just single point, it will be interpolated
+    # to an interval, whichi will make problems later
+    # calculating fuzzy functions. 
+    if alpha == 1:
+        exact_matches = np.where(membership_vls == 1.0)[0]
+        if len(exact_matches) == 1:
+            return [(xx[exact_matches[0]], xx[exact_matches[0]])]
+    
     indices = np.where(above)[0]
     left = indices[0]
     right = indices[-1]
@@ -27,10 +40,10 @@ def alpha_cut_all_intervals(xx, membership_vls, alpha):
         right_x = xx[right]
     return [(left_x, right_x)]
  
-def all_alpha_cuts(membership_vls, xx, alphas):
+def all_alpha_cuts(membership_vls, xx, alphas, step_size = 1/ 500):
     cuts = {}
-    for alpha in alphas[0:]:
-        cut = alpha_cut_all_intervals(xx, membership_vls, alpha)
+    for alpha in alphas:
+        cut = alpha_cut_all_intervals(xx, membership_vls, alpha, step_size)
         cuts[alpha] = cut
     return cuts
 
@@ -90,11 +103,9 @@ def create_1d_gaussian_function(grid_points, i, sigma_factor=0.5):
         average_interval = np.mean(np.diff(grid_points))
         
         # Sigma is set relative to the interval to ensure good overlap.
-        # A common heuristic for good overlap is sigma ≈ interval_size / 2 to 3.
         sigma = average_interval / sigma_factor
     else:
         # If only one point, define a reasonable sigma based on the scale of the domain
-        # (A safe fallback, though non-standard for MF design)
         sigma = (grid_points[-1] - grid_points[0]) / 10 if grid_points.size > 0 else 1.0
 
 
@@ -137,7 +148,8 @@ def reconstruct_curve_from_alpha_cuts(alpha_cuts, x_grid):
     mu_reconstructed = np.interp(
         x_grid,
         x_grid[nonzero_idx],
-        mu_reconstructed[nonzero_idx]
+        mu_reconstructed[nonzero_idx],
+        left=0, right=0
     )
     return mu_reconstructed
 
@@ -147,13 +159,13 @@ def centroid_from_curve(x_grid, mu):
     return numerator / denominator if denominator != 0 else 0
 
 
-def reconstruct_curve(payoff_fun_value):
+def reconstruct_curve(payoff_fun_value, number_of_grid_points = 500):
     
     payoff_fun_value_intervals= {alpha: [(vals[0], vals[1])] for alpha, vals in payoff_fun_value.items()}
     x_grid = np.linspace(
         min([interval[0] for intervals in payoff_fun_value_intervals.values() for interval in intervals]),
         max([interval[1] for intervals in payoff_fun_value_intervals.values() for interval in intervals]),
-        500
+        number_of_grid_points
     )
     # print(payoff_fun_value_intervals)
     mu_curve = reconstruct_curve_from_alpha_cuts(payoff_fun_value_intervals, x_grid)

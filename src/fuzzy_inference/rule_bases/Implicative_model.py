@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from ..fuzzy_utils.fuzzy_utils import modifier, R_implication  
+from ..fuzzy_utils.fuzzy_utils import modifier, R_implication, vectorized_t_norm
 from ..fuzzy_utils.alpha_cuts import all_alpha_cuts, create_1d_hat_function_scipy, create_1d_gaussian_function
  
 from ..utils.utils import update_permutation
@@ -13,7 +13,8 @@ class ImplicativeInferenceSystem():
                  number_of_grid_points = 500,
                  type_of_output_funs = 'Gaussian',
                  type_of_modifier = None, 
-                 type_of_tnorm = 'luk'):
+                 type_of_tnorm = 'luk',
+                 aggregate_with_same_tnorm = False):
         
         self.rule_grid = rule_grid
         self.output_membership_degree = output_membership_degree
@@ -23,6 +24,7 @@ class ImplicativeInferenceSystem():
         self.type_of_tnorm = type_of_tnorm
         self.number_of_grid_points = number_of_grid_points
         self.number_of_rules = output_membership_degree.shape[0]
+        self.aggregate_with_same_tnorm = aggregate_with_same_tnorm
         
         self.output_membership_grid = np.linspace(0, 1, self.number_of_grid_points )
         self.input_rules  = []
@@ -91,7 +93,10 @@ class ImplicativeInferenceSystem():
             
         # Perform maximum over all grid points, giving the final fuzzy membership number.
         resulting_rule = np.array(quality)
-        final_quality_membership = np.min(resulting_rule, axis=0)
+        if self.aggregate_with_same_tnorm:
+            final_quality_membership = vectorized_t_norm(resulting_rule, type_of_tnorm=self.type_of_tnorm)
+        else:
+            final_quality_membership = np.min(resulting_rule, axis=0)
         return final_quality_membership
 
 

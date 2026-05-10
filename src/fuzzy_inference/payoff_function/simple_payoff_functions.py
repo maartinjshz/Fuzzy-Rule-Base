@@ -4,7 +4,7 @@ from scipy.signal import find_peaks
 from ..fuzzy_utils.alpha_cuts import all_alpha_cuts
 from ..fuzzy_utils.alpha_cuts import reconstruct_curve, centroid_from_curve
 
-def mu_times_payoff(membership_value, N, Number_of_grid_points = 500, N_range = [80, 120]):
+def mu_times_payoff(membership_value, N, Number_of_grid_points = 500, N_range = [80, 120], Core = [100, 100]):
     """ This function calculates the payoff value of not tkaing action - mu * payoff.
     
         The calculations are performed using alpha cuts. 
@@ -21,46 +21,58 @@ def mu_times_payoff(membership_value, N, Number_of_grid_points = 500, N_range = 
         x_grid_taking_no_action (np.ndarray) - the x grid for mu * payoff curve, 
         x_of_MoM_taking_no_action (np.ndarray) - the x values of mean of maxima point for mu * payoff curve ]
     """    
-    membership_grid = np.linspace(0, 1, membership_value.shape[0])
+    membership_grid = np.linspace(0, 1, Number_of_grid_points)
     
     payoff_grid = np.linspace(N_range[0], N_range[1], Number_of_grid_points)
+    payoff_grid = np.sort(np.concatenate([payoff_grid, Core]))
     payoff_values = N(payoff_grid)
     # Find all the alpha cuts for the payoff values
     payoff_cuts = all_alpha_cuts(payoff_values, payoff_grid,  np.unique(membership_value))
-    payoff_cuts[1.0] = [[100, 100]]
+    payoff_cuts[1.0] = [Core]
  
     mu_x_payoff_cuts = {}
     keys = list(payoff_cuts.keys())
     # Find all the alpha cuts for the membership function
     mu_cuts = all_alpha_cuts(membership_value, membership_grid, np.unique(membership_value))   
-
+    x_of_MoM_taking_no_action = None # If the alpha = 1 fails, then find_peaks is used. 
+    # This None is used to check if it exists. 
+    
     # Goes trough all the alpha cuts and computes mu * payoff w.r.t. alpha cut
     for alpha in keys:
             try:
                 # Has to do 1 - mu, becuase we want the better quality to be closer to 1, not 0 here
                 mu_x_payoff_cuts[alpha] = [(payoff_cuts[alpha][0][0] * (1-mu_cuts[alpha][0][1])).item(), 
                                                   (payoff_cuts[alpha][0][1] * (1-mu_cuts[alpha][0][0])).item()]
+                            ### For now, assumes that the Mom can simply be taken as mean of interval values. 
+                # The find.peaks function returned values that are different when keeping core the same 
+                # but changing the support. So this approach gives the same values, if the core is kept the same. 
+                if alpha == 1.0:
+                    x_of_MoM_taking_no_action = np.array([(mu_x_payoff_cuts[alpha][0] + mu_x_payoff_cuts[alpha][1]) / 2])
+    
             except:
-                print('Skipping alpha:', alpha)
-      
-    cog_taking_no_action, mu_curve_taking_no_action, x_grid_taking_no_action = reconstruct_curve(mu_x_payoff_cuts)
-    peak_indices, _ = find_peaks(mu_curve_taking_no_action )
-
+                print('Skipping alpha when not taking action:', alpha)
+     
+    cog_taking_no_action, mu_curve_taking_no_action, x_grid_taking_no_action = reconstruct_curve(mu_x_payoff_cuts, Number_of_grid_points)
+    
     # There is an issue, whne no peaks ar found, that happens in cases
     # when the peak is at 0 or 1. Manually assign the mean of maxima then.
-    if peak_indices.size == 0:
-        if mu_curve_taking_no_action[0] > mu_curve_taking_no_action[-1]:
-            x_of_MoM_taking_no_action = x_grid_taking_no_action[0]
+    if x_of_MoM_taking_no_action is None:
+        peak_indices, _ = find_peaks(np.pad(mu_curve_taking_no_action, (1,1) , mode='constant', constant_values=0), distance=Number_of_grid_points )
+        if peak_indices.size == 0:
+            if mu_curve_taking_no_action[0] > mu_curve_taking_no_action[-1]:
+                x_of_MoM_taking_no_action = x_grid_taking_no_action[0]
+            else:
+                x_of_MoM_taking_no_action = x_grid_taking_no_action[-1]
         else:
-            x_of_MoM_taking_no_action = x_grid_taking_no_action[-1]
-    else:
-        x_of_MoM_taking_no_action = x_grid_taking_no_action[peak_indices]
+            x_of_MoM_taking_no_action = x_grid_taking_no_action[peak_indices-1]
+ 
 
     return cog_taking_no_action, mu_curve_taking_no_action, x_grid_taking_no_action, x_of_MoM_taking_no_action
 
 
 
-def taking_action_N_MuC(membership_value,  N, c, Number_of_grid_points = 500, N_range = [80, 120], c_range = [30, 60]):
+def taking_action_N_MuC(membership_value,  N, c, Number_of_grid_points = 500,
+                        N_range = [80, 120], c_range = [30, 60], Cores = [[100, 100],[45, 45]]):
     """ This function calculates the payoff value of not tkaing action - payoff - mu * cleaning cost.
     
         The calculations are performed using alpha cuts. 
@@ -82,53 +94,65 @@ def taking_action_N_MuC(membership_value,  N, c, Number_of_grid_points = 500, N_
     
     membership_grid = np.linspace(0, 1, Number_of_grid_points)
     payoff_grid = np.linspace(N_range[0], N_range[1], Number_of_grid_points)
+    payoff_grid = np.sort(np.concatenate([payoff_grid, Cores[0]]))
     payoff_values = N(payoff_grid)
     # Find all the alpha cuts for the payoff values
-    payoff_cuts = all_alpha_cuts(payoff_values, payoff_grid,  np.unique(membership_value))  
-    payoff_cuts[1.0] = [[100, 100]]
+    payoff_cuts = all_alpha_cuts(payoff_values, payoff_grid,  np.unique(membership_value), step_size=1 / Number_of_grid_points)  
+    payoff_cuts[1.0] = [Cores[0]]
  
     cleaning_cost_grid = np.linspace(c_range[0], c_range[1], Number_of_grid_points)
+    cleaning_cost_grid = np.sort(np.concatenate([cleaning_cost_grid, Cores[1]]))
     cleaning_cost_value = c(cleaning_cost_grid)
     # Find all the alpha cuts for the cleaning cost values
-    cleaning_cost_cuts = all_alpha_cuts(cleaning_cost_value, cleaning_cost_grid,  np.unique(membership_value))
-    cleaning_cost_cuts[1.0] = [[45, 45]]
+    # print(type(cleaning_cost_value), "cleaning_cost_value")
+    cleaning_cost_cuts = all_alpha_cuts(cleaning_cost_value, cleaning_cost_grid,  np.unique(membership_value), step_size=1 / Number_of_grid_points)
+    cleaning_cost_cuts[1.0] = [Cores[1]]
+
     payoff_minus_mu_x_c_cuts = {}
     keys = list(payoff_cuts.keys())
-    mu_cuts = all_alpha_cuts(membership_value, membership_grid, np.unique(membership_value))   
+    mu_cuts = all_alpha_cuts(membership_value, membership_grid, np.unique(membership_value), step_size=1 / Number_of_grid_points)   
+    x_of_MoM_taking_action = None
     
     # Goes trough all the alpha cuts and computes mu * payoff w.r.t. alpha cut
     for alpha in keys:                             
         try:       
             payoff_minus_mu_x_c_cuts[alpha] = [(payoff_cuts[alpha][0][0] - cleaning_cost_cuts[alpha][0][1] * (mu_cuts[alpha][0][1])).item(), 
                                                (payoff_cuts[alpha][0][1] - cleaning_cost_cuts[alpha][0][0] * (mu_cuts[alpha][0][0])).item()]
+            
+            
+            ### For now, assumes that the Mom can simply be taken as mean of interval values. 
+            # The find.peaks function returned values that are different when keeping core the same 
+            # but changing the support. So this approach gives the same values, if the core is kept the same. 
+            if alpha == 1.0:
+                x_of_MoM_taking_action = np.array([(payoff_minus_mu_x_c_cuts[alpha][0] + payoff_minus_mu_x_c_cuts[alpha][1]) / 2])
         except:
-            print('Skipping alpha:', alpha)
-            # print(N_range, c_range)
-  
-            # print(cleaning_cost_cuts.keys())
-            # print(c(cleaning_cost_grid))
-            # print(cleaning_cost_cuts , "cleaning_cost_cut")
+            print('Skipping alpha when taking action:', alpha)
             
     cog_taking_action, mu_curve_taking_action, x_grid_taking_action = reconstruct_curve(payoff_minus_mu_x_c_cuts)
-    peak_indices, _ = find_peaks(mu_curve_taking_action)
- 
+     
+
     # In case there is an issue of no peak. It happens when the 
     # maxima is reached at only 1 point at the edge of the grid
-    if peak_indices.size == 0:
-        if mu_curve_taking_action[0] > mu_curve_taking_action[-1]:
-            x_of_MoM_taking_no_action = x_grid_taking_action[0]
+    # This return [MoM] and not as float
+    if x_of_MoM_taking_action is None:
+        peak_indices, _ = find_peaks(np.pad(mu_curve_taking_action, (1,1) , mode='constant', constant_values=0),  distance=Number_of_grid_points )
+        if peak_indices.size == 0:
+            if mu_curve_taking_action[0] > mu_curve_taking_action[-1]:
+                x_of_MoM_taking_action = x_grid_taking_action[0]
+            else:
+                x_of_MoM_taking_action = x_grid_taking_action[-1]
         else:
-            x_of_MoM_taking_no_action = x_grid_taking_action[-1]
-    else:
-        try:
-            x_of_MoM_taking_no_action = x_grid_taking_action[peak_indices[1]]
-        except IndexError:
-            print(peak_indices, "peak_indices")
-            x_of_MoM_taking_no_action = x_grid_taking_action[peak_indices[0]]
+            try:
+                x_of_MoM_taking_action = x_grid_taking_action[peak_indices-1]
+            except IndexError:
+                x_of_MoM_taking_action = x_grid_taking_action[peak_indices[0]]
 
-    return cog_taking_action, mu_curve_taking_action, x_grid_taking_action, x_of_MoM_taking_no_action
 
-def simple_payoff_function(membership_value,  N, c, Number_of_grid_points = 500, N_range = [80, 120], c_range = [30, 60]):
+
+    return cog_taking_action, mu_curve_taking_action, x_grid_taking_action, x_of_MoM_taking_action
+
+def simple_payoff_function(membership_value,  N, c, Number_of_grid_points = 500, Cores = [[100, 100],[45, 45]],
+                           N_range = [80, 120], c_range = [30, 60]):
     """ Simple function, that combines the two payoff function calculations:
     
             1) mu * payoff (not taking action)
@@ -149,6 +173,7 @@ def simple_payoff_function(membership_value,  N, c, Number_of_grid_points = 500,
                'Taking_action': Taking_action (List) - contains the results for taking action }
 
     """ 
-    Taking_no_action = mu_times_payoff(membership_value, N, Number_of_grid_points, N_range)
-    Taking_action = taking_action_N_MuC(membership_value,  N, c, Number_of_grid_points, N_range , c_range )
+    
+    Taking_no_action = mu_times_payoff(membership_value, N, Number_of_grid_points, N_range, Cores[0])
+    Taking_action = taking_action_N_MuC(membership_value,  N, c, Number_of_grid_points, N_range , c_range, Cores )
     return {'Taking_no_action': Taking_no_action, 'Taking_action': Taking_action}

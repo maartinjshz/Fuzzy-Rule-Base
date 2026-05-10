@@ -5,17 +5,17 @@ import matplotlib.pyplot as plt
 from scipy.interpolate import interp1d
 from scipy.ndimage import label
 
-from fuzzy_utils.fuzzy_utils import modifier, T_norm
-from fuzzy_utils.alpha_cuts import all_alpha_cuts, create_1d_hat_function_scipy
+from ..fuzzy_utils.fuzzy_utils import modifier, T_norm
+from ..fuzzy_utils.alpha_cuts import all_alpha_cuts, create_1d_hat_function_scipy
  
-from utils.utils import update_permutation
+from ..utils.utils import update_permutation
         
 class MamdaniInferenceSystem():
     def __init__(self, rule_grid,
                  output_membership_degree = np.array([0, 0.25, 0.5, 0.75, 1]),
                  number_of_grid_points = 500,
                  type_of_modifier = None, 
-                 type_of_tnorm = 'luk'):
+                 type_of_tnorm = 'prod'):
         
         self.rule_grid = rule_grid
         self.output_membership_degree = output_membership_degree
@@ -32,7 +32,6 @@ class MamdaniInferenceSystem():
   
     def inference(self, sample):
         
-        ### TODO izveidot iespēju padot cita veida modifierus?
         if self.modifier_type == 'atl' or self.modifier_type == 'atm' or self.modifier_type == None:
             final_quality_membership = self.perform_inference(sample, self.modifier_type)
         
@@ -41,11 +40,6 @@ class MamdaniInferenceSystem():
             membership_deg_atm = final_quality_membership = self.perform_inference(sample, 'atm')
             final_quality_membership = np.minimum(membership_deg_atl, membership_deg_atm)
                  
-        # TODO izviedot parametru, kad padod deffuzifikācijas funckiju
-        mmu_alpha_cuts = all_alpha_cuts(final_quality_membership, self.output_membership_grid, np.unique(final_quality_membership))
-        expected_mu_value = 0
-        for alpha, cut in mmu_alpha_cuts.items():
-            expected_mu_value += (cut[0][1] + cut[0][0])/2 * 1 / len(mmu_alpha_cuts)
 
         # Calculate the center of gravity of the resulting number
         numerator = np.trapezoid(self.output_membership_grid * final_quality_membership,
@@ -55,10 +49,10 @@ class MamdaniInferenceSystem():
                                    self.output_membership_grid)
         center_of_gravity = numerator / denominator  
         
-        return center_of_gravity, final_quality_membership, expected_mu_value
+        return center_of_gravity, final_quality_membership
             
     
-    def perform_inference(self, sample, modifier_type = 'atl'):
+    def perform_inference(self, sample, modifier_type = None):
         quality = []
         rule_permutation = [0] * 5
         # Goes trough all permutations of hat functions:    
@@ -76,10 +70,11 @@ class MamdaniInferenceSystem():
             for rule_id_i, function_id in enumerate(rule_permutation):
 
                 sample_to_take = max(self.rule_grid[rule_id_i][0], min(sample[rule_id_i], self.rule_grid[rule_id_i][-1]))
-                min_val =  min(min_val,  modifier(sample_to_take,
+                min_val =  T_norm(min_val,  modifier(sample_to_take,
                                             self.input_rules[rule_id_i][function_id], 
                                             set_range=np.linspace(self.rule_grid[rule_id_i][0], self.rule_grid[rule_id_i][-1], self.number_of_grid_points),
-                                            type_of_tnorm=self.type_of_tnorm, modifier_type=modifier_type))
+                                            type_of_tnorm=self.type_of_tnorm, modifier_type=modifier_type),
+                                  type_of_tnorm = self.type_of_tnorm)
                 
                 # if one of rules is 0, the output will also be 0 so no reason to calculate other rule values
                 if min_val == 0:
