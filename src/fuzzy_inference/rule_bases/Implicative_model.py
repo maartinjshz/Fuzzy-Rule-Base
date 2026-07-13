@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 
 from ..fuzzy_utils.fuzzy_utils import modifier, R_implication, vectorized_t_norm
 from ..fuzzy_utils.alpha_cuts import all_alpha_cuts, create_1d_hat_function_scipy, create_1d_gaussian_function
- 
+from ..fuzzy_utils.fuzzy_sets   import FuzzyNumber
 from ..utils.utils import update_permutation
+
+from joblib import Parallel, delayed
+
         
 class ImplicativeInferenceSystem():
     def __init__(self, rule_grid,
@@ -26,7 +29,12 @@ class ImplicativeInferenceSystem():
         self.number_of_rules = output_membership_degree.shape[0]
         self.aggregate_with_same_tnorm = aggregate_with_same_tnorm
         
-        self.output_membership_grid = np.linspace(0, 1, self.number_of_grid_points )
+        self.rule_ranges = [np.linspace(row[0], row[-1], self.number_of_grid_points) 
+                        for row in self.rule_grid]
+        
+        self.output_membership_grid = np.linspace(output_membership_degree[0],
+                                                  output_membership_degree[-1],
+                                                  self.number_of_grid_points )
         self.input_rules  = []
         self.output_rules = []
         self.define_membership_functions()
@@ -41,63 +49,64 @@ class ImplicativeInferenceSystem():
             membership_deg_atm = final_quality_membership = self.perform_inference(sample, 'atm')
             final_quality_membership = np.minimum(membership_deg_atl, membership_deg_atm)
                  
-        # Calculate the center of gravity of the resulting number
-        numerator = np.trapezoid(self.output_membership_grid * final_quality_membership,
-                                 self.output_membership_grid)
-        
-        denominator = np.trapezoid(final_quality_membership,
-                                   self.output_membership_grid)
-        center_of_gravity = numerator / denominator  
-        
-        return center_of_gravity, final_quality_membership 
+        final_membership_fuzzy_numb = FuzzyNumber(membership_values=final_quality_membership,
+                                                 membership_space=np.linspace(0, 1, self.number_of_grid_points ),
+                                                 space_x=self.output_membership_grid)
+        return final_membership_fuzzy_numb
             
     
-    def perform_inference(self, sample, modifier_type = 'atl'):
-        quality = []
+    def perform_inference(self, sample, modifier_type='atl'):
+        """Parallelized inference with joblib."""
+        permutations = []
         rule_permutation = [0] * 5
-        # Goes trough all permutations of hat functions:    
+        
+        # Generate all permutations
         while True:
-            min_val = 1
-            # To perserve the 'One out, all out' evaluation as it was in crisp case,
-            # for each rule permutation, they will fire to 'worst' (in this case with highest index)
-            # index at output function. 
-            rule_to_activate = max(rule_permutation)  # int(round(sum(rule_permutation)/len(rule_permutation)))
-            
-            # Given a permutation of hat functions, calculate the value 
-            # and find minimal value out of them
-            # Becasue  for some data, they could be outside of the interval, 
-            # they are projected back 
-            for rule_id_i, function_id in enumerate(rule_permutation):
-
-                sample_to_take = max(self.rule_grid[rule_id_i][0], min(sample[rule_id_i], self.rule_grid[rule_id_i][-1]))
-                min_val =  min(min_val,  modifier(sample_to_take,
-                                            self.input_rules[rule_id_i][function_id], 
-                                            set_range=np.linspace(self.rule_grid[rule_id_i][0], self.rule_grid[rule_id_i][-1], self.number_of_grid_points),
-                                            type_of_tnorm=self.type_of_tnorm, modifier_type=modifier_type))
-                
-                # if one of rules is 0, the output will also be 0 so no reason to calculate other rule values
-                if min_val == 0:
-                    break
-            value_to_append = R_implication(min_val, modifier(self.output_membership_grid,
-                                                                self.output_rules[rule_to_activate],
-                                                                self.output_membership_grid,
-                                                                type_of_tnorm = self.type_of_tnorm,
-                                                                modifier_type = modifier_type),
-                                                type_of_implication = self.type_of_tnorm)
-            quality.append(value_to_append)
-            # update the permutation (uses similar principle as to how addition for binary numbers work)
+            permutations.append(rule_permutation.copy())
             rule_permutation, to_end = update_permutation(rule_permutation, 0)
-            # if all options are tried, break the loop
             if to_end:
                 break
-            
-        # Perform maximum over all grid points, giving the final fuzzy membership number.
+        
+        # Process all permutations in parallel
+        quality = Parallel(n_jobs=-1)(
+            delayed(self._process_permutation)(perm, sample, modifier_type) 
+            for perm in permutations
+        )
+        
+        # Perform aggregation
         resulting_rule = np.array(quality)
         if self.aggregate_with_same_tnorm:
             final_quality_membership = vectorized_t_norm(resulting_rule, type_of_tnorm=self.type_of_tnorm)
         else:
             final_quality_membership = np.min(resulting_rule, axis=0)
+        
         return final_quality_membership
+        
+    
+    def _process_permutation(self, rule_permutation, sample, modifier_type):
+        """Process a single rule permutation."""
+        min_val = 1
+        rule_to_activate = max(rule_permutation)
+        
+        for rule_id_i, function_id in enumerate(rule_permutation):
+            sample_to_take = max(self.rule_grid[rule_id_i][0], 
+                                min(sample[rule_id_i], self.rule_grid[rule_id_i][-1]))
+            min_val = min(min_val, modifier(sample_to_take,
+                                            self.input_rules[rule_id_i][function_id],
+                                            set_range=self.rule_ranges[rule_id_i],
+                                            type_of_tnorm=self.type_of_tnorm, 
+                                            modifier_type=modifier_type))
+            if min_val == 0:
+                break
+        
+        value_to_append = R_implication(min_val, 
+                                    modifier(self.output_membership_grid,
+                                            self.output_rules[rule_to_activate],
+                                            self.output_membership_grid,
+                                            type_of_tnorm=self.type_of_tnorm,
+                                            modifier_type=modifier_type),
+                                    type_of_implication=self.type_of_tnorm)
+        return value_to_append
 
 
     def define_membership_functions(self):

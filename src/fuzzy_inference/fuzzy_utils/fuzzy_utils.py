@@ -70,3 +70,44 @@ def modifier(x, fuzzy_set, set_range,  modifier_type = 'atl', type_of_tnorm = 'l
     # Find the maximum value in each column (axis=0)
     # This returns a 1D array with the result for each element of x
     return np.max(masked_values, axis=0)
+
+
+
+def Mean_of_Maximum_defuziffication(fuzzy_number):
+    """Function for defuzzification using the Mean of Maximum method.
+
+    Args:
+        fuzzy_number (FuzzyNumber): Fuzzy number to be defuzzified
+    Returns:
+        float: The defuzzified value of the fuzzy number using the Mean of Maximum method
+    """    
+    
+    if not hasattr(fuzzy_number, 'alpha_cuts'):
+        raise TypeError("Input must have an 'alpha_cuts' attribute (should be a FuzzyNumber instance).")
+    
+    highest_alpha_level = max(fuzzy_number.alpha_cuts.keys())
+    return np.mean(fuzzy_number.alpha_cuts[highest_alpha_level])
+
+
+
+def Center_of_Gravity_defuziffication(fuzzy_number):
+    """Function for defuzzification using the Center of Gravity method.
+
+    Args:
+        fuzzy_number (FuzzyNumber): Fuzzy number to be defuzzified
+
+    Returns:
+        float: The defuzzified value of the fuzzy number using the Center of Gravity method
+    """    
+    if not hasattr(fuzzy_number, 'space_x') or not hasattr(fuzzy_number, 'membership_values'):
+        raise TypeError("Input must have 'space_x' and 'membership_values' attributes (should be a FuzzyNumber instance).")
+    
+    # Calculate the center of gravity of the resulting number
+    numerator = np.trapezoid(fuzzy_number.space_x * fuzzy_number.membership_values,
+                                fuzzy_number.space_x)
+    
+    denominator = np.trapezoid(fuzzy_number.membership_values,
+                                fuzzy_number.space_x)
+    center_of_gravity = numerator / denominator  
+    
+    return center_of_gravity

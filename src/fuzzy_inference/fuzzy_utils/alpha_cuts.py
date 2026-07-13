@@ -9,7 +9,8 @@ def alpha_cut_all_intervals(xx, membership_vls, alpha, step_size):
         above = membership_vls >= alpha - 2 * step_size
 
     if not np.any(above):
-        return []
+        
+        return alpha_cut_all_intervals(xx, membership_vls, alpha, 2*step_size)
     
     # this is required, as otherwise if alpha = 1 
     # Is just single point, it will be interpolated
@@ -18,7 +19,7 @@ def alpha_cut_all_intervals(xx, membership_vls, alpha, step_size):
     if alpha == 1:
         exact_matches = np.where(membership_vls == 1.0)[0]
         if len(exact_matches) == 1:
-            return [(xx[exact_matches[0]], xx[exact_matches[0]])]
+            return [xx[exact_matches[0]], xx[exact_matches[0]]]
     
     indices = np.where(above)[0]
     left = indices[0]
@@ -38,7 +39,7 @@ def alpha_cut_all_intervals(xx, membership_vls, alpha, step_size):
         right_x = interp_edge(right, right+1)
     else:
         right_x = xx[right]
-    return [(left_x, right_x)]
+    return [left_x, right_x]
  
 def all_alpha_cuts(membership_vls, xx, alphas, step_size = 1/ 500):
     cuts = {}
