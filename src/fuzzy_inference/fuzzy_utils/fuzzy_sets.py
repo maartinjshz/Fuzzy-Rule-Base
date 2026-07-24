@@ -6,9 +6,9 @@ from ..fuzzy_utils.fuzzy_utils import Mean_of_Maximum_defuziffication, Center_of
 from ..fuzzy_utils.alpha_cuts import reconstruct_curve_from_alpha_cuts
 
 class FuzzyNumber:
-    def __init__(self, membership_values,
-                 membership_space,
-                 space_x, alpha_cuts=None):
+    def __init__(self, membership_values = None,
+                 membership_space = np.linspace(0, 1, 101),
+                 space_x = np.linspace(0, 1, 101), alpha_cuts=None):
 
         self.membership_values = membership_values
         self.membership_space = membership_space

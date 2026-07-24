@@ -1,4 +1,5 @@
 import numpy as np
+from concurrent.futures import ThreadPoolExecutor
 from scipy.interpolate import interp1d
 
 def alpha_cut_all_intervals(xx, membership_vls, alpha, step_size):
@@ -41,12 +42,36 @@ def alpha_cut_all_intervals(xx, membership_vls, alpha, step_size):
         right_x = xx[right]
     return [left_x, right_x]
  
-def all_alpha_cuts(membership_vls, xx, alphas, step_size = 1/ 500):
-    cuts = {}
-    for alpha in alphas:
-        cut = alpha_cut_all_intervals(xx, membership_vls, alpha, step_size)
-        cuts[alpha] = cut
-    return cuts
+def all_alpha_cuts(membership_vls, xx, alphas, step_size=1 / 500, n_jobs=1):
+    """Compute alpha-cuts for all requested alpha levels.
+
+    Parameters
+    ----------
+    membership_vls : np.ndarray
+        Membership values of the fuzzy set.
+    xx : np.ndarray
+        X-axis values corresponding to ``membership_vls``.
+    alphas : iterable
+        Alpha levels for which to compute the cuts.
+    step_size : float, optional
+        Step used by ``alpha_cut_all_intervals`` when expanding the search.
+    n_jobs : int, optional
+        Number of worker threads to use. ``1`` keeps the original serial behavior.
+    """
+    alpha_list = list(alphas)
+    if n_jobs is None or n_jobs <= 1:
+        return {
+            alpha: alpha_cut_all_intervals(xx, membership_vls, alpha, step_size)
+            for alpha in alpha_list
+        }
+
+    def _compute_cut(alpha):
+        return alpha, alpha_cut_all_intervals(xx, membership_vls, alpha, step_size)
+
+    with ThreadPoolExecutor(max_workers=min(n_jobs, len(alpha_list))) as executor:
+        results = executor.map(_compute_cut, alpha_list)
+
+    return {alpha: cut for alpha, cut in results}
 
 
 def create_1d_hat_function_scipy(grid_points, i, step_size = 1):
@@ -129,30 +154,54 @@ def create_1d_gaussian_function(grid_points, i, sigma_factor=0.5):
 
     return gaussian_mf
 
+def reconstruct_curve_from_given_alpha_cut_intervals(alpha_cuts, x_grid):
+    pass
 
 def reconstruct_curve_from_alpha_cuts(alpha_cuts, x_grid):
-    # Sort alphas descending so higher alpha overwrites lower
-    sorted_alphas = sorted(alpha_cuts.keys(), reverse=True)
- 
-    mu_reconstructed = np.zeros_like(x_grid, dtype=float)
-    for alpha in sorted_alphas:
-        left, right =  np.min(alpha_cuts[alpha]), np.max(alpha_cuts[alpha])
-        mask = (x_grid >= left) & (x_grid <= right)
-        if np.any(mask):
-            leftmost = np.where(mask)[0][0]
-            rightmost = np.where(mask)[0][-1]
+    """Reconstruct a fuzzy membership curve from alpha-cut intervals.
 
-            mu_reconstructed[leftmost], mu_reconstructed[rightmost] = \
-                np.maximum(mu_reconstructed[leftmost], alpha), np.maximum(mu_reconstructed[rightmost], alpha) 
-         
-    nonzero_idx = np.where(mu_reconstructed != 0)[0]
-    mu_reconstructed = np.interp(
-        x_grid,
-        x_grid[nonzero_idx],
-        mu_reconstructed[nonzero_idx],
-        left=0, right=0
-    )
-    return mu_reconstructed
+    This version avoids repeated per-alpha boolean-mask scans by computing
+    the relevant index ranges directly from the interval endpoints and then
+    filling the curve in a single pass.
+    """
+    if not alpha_cuts:
+        return np.zeros_like(x_grid, dtype=float)
+
+    sorted_alphas = sorted(alpha_cuts.keys(), reverse=True)
+    values = np.array([list(v) for v in alpha_cuts.values()], dtype=float)
+    mu_reconstructed = np.zeros_like(x_grid, dtype=float)
+    
+    current_x_grid = np.array([*values[:,1], *values[:,0]])
+    mu_reconstructed = np.array(
+    [*sorted(alpha_cuts.keys()),
+     *sorted_alphas]
+)
+     
+    # for alpha in sorted_alphas:
+    #     interval = alpha_cuts[alpha]
+    #     if not isinstance(interval, (list, tuple)) or len(interval) != 2:
+    #         continue
+
+    #     left, right = float(np.min(interval)), float(np.max(interval))
+    #     if not np.isfinite(left) or not np.isfinite(right):
+    #         continue
+
+    #     mask = (x_grid >= left) & (x_grid <= right)
+    #     if not np.any(mask):
+    #         continue
+
+    #     indices = np.flatnonzero(mask)
+    #     leftmost = indices[0]
+    #     rightmost = indices[-1]
+
+    #     mu_reconstructed[leftmost] = max(mu_reconstructed[leftmost], alpha)
+    #     mu_reconstructed[rightmost] = max(mu_reconstructed[rightmost], alpha)
+
+    nonzero_idx = np.flatnonzero(mu_reconstructed != 0)
+    if nonzero_idx.size == 0:
+        return np.zeros_like(x_grid, dtype=float)
+
+    return np.interp(x_grid, current_x_grid[nonzero_idx], mu_reconstructed[nonzero_idx], left=0, right=0)
 
 def centroid_from_curve(x_grid, mu):
     numerator = np.trapezoid(x_grid * mu, x_grid)

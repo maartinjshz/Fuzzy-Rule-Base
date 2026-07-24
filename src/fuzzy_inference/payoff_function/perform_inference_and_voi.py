@@ -9,10 +9,10 @@ from fuzzy_inference.payoff_function.perform_price_analysis import full_voi_anal
 
 
 def perform_infernece_and_evaluation_with_data(data_sample, antecendant_qualityGrid, step_size = 20, Number_of_grid_points = 100,
-                                               type_of_tnorm = 'luk', sample_name = 'dummy_sample', use_the_same_tnorm = False, 
-                                               cost_value_config = None, payoff_function= None):
+                                               type_of_tnorm = 'luk', sample_name = 'dummy_sample', u_space=np.linspace(0, 1, 100), use_the_same_tnorm = False, 
+                                               cost_value_config = None, payoff_function= None, membership_value = None):
     
-    """ This function pperforms: 
+    """ This function pperforms: ,
             1. inference on the passed data and plots membership degree
             2. Performs Voi analysis of given data/function. Otherwise uses a basic
             payoff function. 
@@ -32,15 +32,19 @@ def perform_infernece_and_evaluation_with_data(data_sample, antecendant_qualityG
     Returns:
         tuple: A tuple containing the results matrix, parameter ranges, and membership value.
     """    
-    # First perform inference
-    type_1_system = ImplicativeInferenceSystem(antecendant_qualityGrid, type_of_modifier='altm',
-                                               number_of_grid_points=Number_of_grid_points,
-                                               type_of_tnorm=type_of_tnorm, aggregate_with_same_tnorm=use_the_same_tnorm)
-    membership_value  = type_1_system.inference(data_sample)
- 
+    if membership_value is None:
+        # First perform inference
+        type_1_system = ImplicativeInferenceSystem(antecendant_qualityGrid, type_of_modifier='altm',
+                                                number_of_grid_points=Number_of_grid_points,
+                                                type_of_tnorm=type_of_tnorm, aggregate_with_same_tnorm=use_the_same_tnorm)
+        membership_value  = type_1_system.inference(data_sample)
+    
 
-    print(f"The membership function of sample {sample_name}: ")
-    membership_value.plot(label = f'{sample_name}')
+        print(f"The membership function of sample {sample_name}: ")
+        # membership_value.plot(label = f'{sample_name}')
+    else:
+        print(f"Membership value provided for sample {sample_name}: ")
+        # membership_value.plot(label = f'{sample_name}')
 
     print(" ----------------- Full price analists -----------------")
     
@@ -71,7 +75,7 @@ def perform_infernece_and_evaluation_with_data(data_sample, antecendant_qualityG
         step_size=step_size,
         param_config=cost_value_config,
         payoff_formula=payoff_function,
-        u_space=np.linspace(0, 1, 100)
+        u_space=u_space
     )
     return results_matrix, ranges, membership_value
      

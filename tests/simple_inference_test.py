@@ -1,6 +1,5 @@
 import pytest
 import numpy as np
-import pandas as pd
 import os
 
 from fuzzy_inference.fuzzy_utils.alpha_cuts import create_1d_hat_function_scipy 
@@ -76,7 +75,40 @@ def test_simple_payoff_function():
     # Check values of center of gravity
     assert cog_taking_action_NxMu == pytest.approx(53.33, rel=1e-3)
     assert cog_taking_action_N_MuC == pytest.approx(74.97, rel=1e-3)
-    
- 
-    
+
+
+def test_perfect_additional_voi_analysis_handles_scalar_values():
+    membership_values = np.array([0.2, 0.8, 1.0], dtype=float)
+    membership_space = np.array([0.0, 0.5, 1.0], dtype=float)
+    space_x = np.array([0.0, 0.5, 1.0], dtype=float)
+    membership_value = FuzzyNumber(
+        membership_values=membership_values,
+        membership_space=membership_space,
+        space_x=space_x,
+    )
+    additional_info = FuzzyNumber(
+        membership_values=np.array([0.5, 0.5, 0.5], dtype=float),
+        membership_space=membership_space,
+        space_x=space_x,
+    )
+
+    def payoff_formula(u, mu, N, C):
+        return N + C * mu * u
+
+    results, ranges = perfect_additional_VoI_analysis(
+        membership_value,
+        additional_info,
+        step_size=1,
+        param_config={
+            'N': {'bounds': (1, 2)},
+            'C': {'bounds': (1, 2)},
+        },
+        payoff_formula=payoff_formula,
+        u_space=np.linspace(0, 1, 5),
+    )
+
+    assert results.shape == (2, 2)
+    assert np.isfinite(results).all()
+    assert ranges['N'].shape == (2,)
+    assert ranges['C'].shape == (2,)
  
