@@ -52,7 +52,7 @@ def full_voi_analysis(
 
     # u_space = np.asarray(u_space)
 
-        # 1. Standardize into a sequence (1D becomes a 1-element tuple, N-D stays a tuple/list)
+    # 1. Standardize into a sequence (1D becomes a 1-element tuple, N-D stays a tuple/list)
     if isinstance(u_space, np.ndarray) and u_space.dtype == object:
         # Fixes the case where ogrid got wrapped in np.array()
         u_seq = tuple(u_space)
@@ -106,12 +106,6 @@ def full_voi_analysis(
         results_MOM[indices] = V_i 
         
     return results_MOM, param_ranges
-
-# def check_u_space_size(u):
-#     if np.isscalar(u):
-#         return u
-#     else:
-#         return *u
 
 def perfect_additional_VoI_analysis(
     membership_value, 
