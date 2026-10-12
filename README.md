@@ -68,13 +68,16 @@ The `ImplicativeInferenceSystem` class accepts the following arguments for custo
   * *Example:* `np.array([0, 0.25, 0.5, 0.75, 1])`
 * **`number_of_grid_points`**: The number of grid points used for the discretization of each rule.
 * **`type_of_output_funs`**: The membership function shape for the Consequent.
+*  **`type_of_input_funs`**: The membership function shape for the Antecentant.
   * *Options:* `'Gaussian'`, `'Hat'`
 * **`type_of_modifier`**: The type of modifiers applied to the fuzzy sets.
   * *Options:* `'atl'`, `'atm'`, `'altm'`
 * **`type_of_tnorm`**: Defines the T-norm used for the implication logic.
   * *Options:* `'min'` (Gödel), `'luk'` (Łukasiewicz), `'prod'` (Product)
+ * **`aggregate_with_same_tnorm`**: True/False if final individual rule aggregation should be performd with  the same T norm as `type_of_tnorm` (``True``) or with Minimumu (``False``).
+ * **`mapping_to_consequent`**: a mapping for indices on how to map antecentent to consequent. 
 
-For now, it only has one mapping option from input membership function to the consequent, by taking a ```maximum```. Because this system assumes, that input membership functions have a partial order. For example, quality ```Good```, ```Medium``` and  ```Bad```. Thus it is possible to map it to the ```maximum``` or the worst/best quiality measure. It will be added later as an additional argument.
+For now, this system assumes, that input membership functions have a partial order. For example, quality ```Good```, ```Medium``` and  ```Bad```. Thus it is possible to map it to the ```maximum``` or the worst/best quiality measure. It will be added later as an additional argument.
 
 
 Because the arguemnts ```rule_grid``` specifies the intervals for each parameter, it could happen, that during an inference, a values that is outside that range is passed. In that case, the system simply maps back the value closes endpoint of the interval.
