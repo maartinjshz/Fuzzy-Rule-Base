@@ -59,19 +59,36 @@ def all_alpha_cuts(membership_vls, xx, alphas, step_size=1 / 500, n_jobs=1):
         Number of worker threads to use. ``1`` keeps the original serial behavior.
     """
     alpha_list = list(alphas)
+    
+    unique_values = np.unique(membership_vls)
+
+    if unique_values.size == 1:
+        constant_value = unique_values[0]
+
+        if constant_value > 0 and np.any(alpha_list > constant_value):
+            raise ValueError(
+                "Requested alpha is greater than the fuzzy number's height."
+            )
+
+        lower = np.full(np.asarray(alpha_list).shape, xx[0], dtype=float)
+        upper = np.full(np.asarray(alpha_list).shape, xx[-1], dtype=float)
+
+        return [lower, upper]
+    
     if n_jobs is None or n_jobs <= 1:
-        return {
-            alpha: alpha_cut_all_intervals(xx, membership_vls, alpha, step_size)
+        result = np.array([
+            alpha_cut_all_intervals(xx, membership_vls, alpha, step_size)
             for alpha in alpha_list
-        }
+        ])
+        return [result[:,0], result[:,1]]
 
     def _compute_cut(alpha):
         return alpha, alpha_cut_all_intervals(xx, membership_vls, alpha, step_size)
 
     with ThreadPoolExecutor(max_workers=min(n_jobs, len(alpha_list))) as executor:
         results = executor.map(_compute_cut, alpha_list)
-
-    return {alpha: cut for alpha, cut in results}
+    
+    return [results[:,0], results[:,1]]
 
 
 def create_1d_hat_function_scipy(grid_points, i, step_size = 1):
@@ -92,6 +109,35 @@ def create_1d_hat_function_scipy(grid_points, i, step_size = 1):
     # Create y-values for the hat function: 1 at index i, 0 elsewhere
     y_values = np.zeros(n)
     y_values[i] = 1.0
+    
+    # Create the linear interpolation function
+    # kind='linear' is crucial for triangle hat functions
+    # fill_value=(0.0, 0.0) ensures it's 0 outside the defined range
+    # bounds_error=False prevents error if x is outside range, instead uses fill_value
+    hat_function = interp1d(grid_points, y_values, kind='linear',
+                              fill_value=0.0, bounds_error=False)
+    return hat_function
+
+def create_1d_trapezoidal_function(grid_points, i ):
+    """
+    Creates a 1D trapezoid function where index i defines the plateau [b, c] where y = 1.
+    The sides start at y = 0 from adjacent peak plateaus.
+
+    Args:
+        plateaus (np.ndarray or list): Array of shape (N, 2) containing [b, c] pairs.
+        i (int): Index of the current trapezoid.
+
+    Returns:
+        interp1d: Linear interpolation function for the trapezoid.
+    """
+    n = len(grid_points)
+    if not (0 <= i < n):
+        raise IndexError(f"Index i ({i}) is out of bounds for grid_points of length {n}")
+    
+    # Create y-values for the hat function: 1 at index i, 0 elsewhere
+    y_values = np.zeros(n)
+    y_values[i] = 1.0
+    y_values[i+1] = 1.0
     
     # Create the linear interpolation function
     # kind='linear' is crucial for triangle hat functions

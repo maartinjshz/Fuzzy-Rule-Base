@@ -3,6 +3,7 @@ import numpy as np
 import os
 
 from fuzzy_inference.fuzzy_utils.alpha_cuts import create_1d_hat_function_scipy 
+from fuzzy_inference.payoff_function.perform_price_analysis import call_payoff
 from fuzzy_inference.payoff_function.simple_payoff_functions import simple_payoff_function
 from fuzzy_inference.rule_bases.Implicative_model import ImplicativeInferenceSystem
 
@@ -75,6 +76,17 @@ def test_simple_payoff_function():
     # Check values of center of gravity
     assert cog_taking_action_NxMu == pytest.approx(53.33, rel=1e-3)
     assert cog_taking_action_N_MuC == pytest.approx(74.97, rel=1e-3)
+
+
+def test_call_payoff_does_not_print(capsys):
+    def payoff_formula(u, mu, N, C):
+        return N + C * mu * u
+
+    result = call_payoff(payoff_formula, 0.4, 0.5, N=1, C=2)
+
+    captured = capsys.readouterr()
+    assert result == 3.0
+    assert captured.out == ""
 
 
 def test_perfect_additional_voi_analysis_handles_scalar_values():

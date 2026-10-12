@@ -1,0 +1,28 @@
+Sample_name,MeanOfMaxima,Width_of_Maxima,in_which_qualityIndex_is_Mom,Crisp_Value
+January,0.0,0.0,5,5.0
+February,0.0,0.0,5,5.0
+March,0.0,0.0,5,5.0
+April,0.7805770911350304,0.09370840426634353,2,2.0
+May,0.161362819398488,0.161362819398488,4,4.0
+June,0.15656565656565652,0.15656565656565652,4,5.0
+July,0.0,0.0,5,5.0
+August,0.0,0.0,5,5.0
+September,0.6129969254192175,0.2089565213788135,3,2.0
+October,0.0,0.0,5,5.0
+November,0.34848484848484845,0.16666666666666669,4,4.0
+December,0.0,0.0,5,5.0
+Average before inference,0.38888888888888884,0.20707070707070707,3,3.0
+Average after inference,0.17166561175027006,0.06560500568966404,4,5.0
+Intersection after inference,0.40342361562761053,0.5,3,5.0
+Average before inference  every 2 months,0.5404040404040403,0.13636363636363635,3,3.0
+Average after inference (over season) - every 2 months,0.18714076555042564,0.08949766790732804,4,5.0
+Intersection after inference (Season) - every 2 months,0.37735269508484737,0.0,3,5.0
+Average before inference  every 3 months,0.16069857975838636,0.16069857975838636,4,4.0
+Average after inference (over season) - every 3 months,0.1951442727837576,0.02342710106658588,4,5.0
+Intersection after inference (Season) - every 3 months,0.4099023427341884,0.5,3,5.0
+Average before inference  every 4 months,0.4370362623076107,0.16430898958033802,3,3.0
+Average after inference (over season) - every 4 months,0.25811991493923514,0.1234397802591005,4,5.0
+Intersection after inference (Season) - every 4 months,0.39060160443525227,0.0001318605020107222,3,5.0
+Average before inference  every 6 months,0.1606985797581692,0.1606985797581692,4,4.0
+Average after inference (over season) - every 6 months,0.0,0.0,5,5.0
+Intersection after inference (Season) - every 6 months,0.0,0.0,5,5.0

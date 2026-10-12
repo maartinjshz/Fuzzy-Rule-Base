@@ -82,12 +82,17 @@ def Mean_of_Maximum_defuziffication(fuzzy_number):
         float: The defuzzified value of the fuzzy number using the Mean of Maximum method
     """    
     
-    if not hasattr(fuzzy_number, 'alpha_cuts'):
-        raise TypeError("Input must have an 'alpha_cuts' attribute (should be a FuzzyNumber instance).")
+    if not hasattr(fuzzy_number, 'lower') or not hasattr(fuzzy_number, 'upper'):
+        raise TypeError("Input must have 'lower' and 'upper' attributes (should be a FuzzyNumber instance).")
     
-    highest_alpha_level = max(fuzzy_number.alpha_cuts.keys())
-    return np.mean(fuzzy_number.alpha_cuts[highest_alpha_level])
-
+    # highest_alpha_level = max(fuzzy_number.alpha_cuts.keys())
+    # return  (fuzzy_number.upper[-1] + fuzzy_number.lower[-1]) / 2
+    height = np.max(fuzzy_number.membership_values)
+    maximum_points = np.isclose(
+        fuzzy_number.membership_values,
+        height
+    )
+    return np.mean(fuzzy_number.space_x[maximum_points])
 
 
 def Center_of_Gravity_defuziffication(fuzzy_number):

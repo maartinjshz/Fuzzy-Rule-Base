@@ -3,9 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 from ..fuzzy_utils.fuzzy_utils import modifier, R_implication, vectorized_t_norm
-from ..fuzzy_utils.alpha_cuts import all_alpha_cuts, create_1d_hat_function_scipy, create_1d_gaussian_function
+from ..fuzzy_utils.alpha_cuts import all_alpha_cuts, create_1d_hat_function_scipy, create_1d_gaussian_function,create_1d_trapezoidal_function
 from ..fuzzy_utils.fuzzy_sets   import FuzzyNumber
 from ..utils.utils import update_permutation
+from fuzzy_inference.fuzzy_utils.alpha_cuts import all_alpha_cuts
 
 from joblib import Parallel, delayed
 
@@ -15,19 +16,23 @@ class ImplicativeInferenceSystem():
                  output_membership_degree = np.array([0, 0.25, 0.5, 0.75, 1]),
                  number_of_grid_points = 500,
                  type_of_output_funs = 'Gaussian',
+                 type_of_input_funs = 'Hat',
                  type_of_modifier = None, 
                  type_of_tnorm = 'luk',
-                 aggregate_with_same_tnorm = False):
+                 aggregate_with_same_tnorm = False,
+                 mapping_to_consequent = lambda x: max(x)):
         
         self.rule_grid = rule_grid
         self.output_membership_degree = output_membership_degree
         self.number_of_grid_points = number_of_grid_points
         self.type_of_output_funs = type_of_output_funs
+        self.type_of_input_funs = type_of_input_funs
         self.modifier_type = type_of_modifier
         self.type_of_tnorm = type_of_tnorm
         self.number_of_grid_points = number_of_grid_points
         self.number_of_rules = output_membership_degree.shape[0]
         self.aggregate_with_same_tnorm = aggregate_with_same_tnorm
+        self.mapping_to_consequent = mapping_to_consequent
         
         self.rule_ranges = [np.linspace(row[0], row[-1], self.number_of_grid_points) 
                         for row in self.rule_grid]
@@ -40,7 +45,6 @@ class ImplicativeInferenceSystem():
         self.define_membership_functions()
   
     def inference(self, sample):
-
         if self.modifier_type == 'atl' or self.modifier_type == 'atm' or self.modifier_type == None:
             final_quality_membership = self.perform_inference(sample, self.modifier_type)
         
@@ -48,17 +52,21 @@ class ImplicativeInferenceSystem():
             membership_deg_atl = final_quality_membership = self.perform_inference(sample, 'atl')
             membership_deg_atm = final_quality_membership = self.perform_inference(sample, 'atm')
             final_quality_membership = np.minimum(membership_deg_atl, membership_deg_atm)
-                 
-        final_membership_fuzzy_numb = FuzzyNumber(membership_values=final_quality_membership,
-                                                 membership_space=np.linspace(0, 1, self.number_of_grid_points ),
-                                                 space_x=self.output_membership_grid)
+        
+        membership_space_grid = np.linspace(0, 1, self.number_of_grid_points)
+        lower, upper = all_alpha_cuts(final_quality_membership, self.output_membership_grid, membership_space_grid)
+        new_output_space_grid =  np.sort(np.concatenate([lower, upper ]))
+        
+        final_membership_fuzzy_numb = FuzzyNumber(membership_values=np.concatenate([membership_space_grid, membership_space_grid[::-1]]),
+                                                 membership_space=membership_space_grid,
+                                                 space_x=new_output_space_grid, lower=lower, upper = upper)
         return final_membership_fuzzy_numb
             
     
     def perform_inference(self, sample, modifier_type='atl'):
         """Parallelized inference with joblib."""
         permutations = []
-        rule_permutation = [0] * 5
+        rule_permutation = [0] * len(sample)
         
         # Generate all permutations
         while True:
@@ -86,7 +94,7 @@ class ImplicativeInferenceSystem():
     def _process_permutation(self, rule_permutation, sample, modifier_type):
         """Process a single rule permutation."""
         min_val = 1
-        rule_to_activate = max(rule_permutation)
+        rule_to_activate = self.mapping_to_consequent(rule_permutation)
         
         for rule_id_i, function_id in enumerate(rule_permutation):
             sample_to_take = max(self.rule_grid[rule_id_i][0], 
@@ -109,10 +117,11 @@ class ImplicativeInferenceSystem():
         return value_to_append
 
 
+
     def define_membership_functions(self):
         # Define output (y) membership functions
         self.output_rules = []
-        for i in range(self.rule_grid.shape[0]):
+        for i in range(self.output_membership_degree.shape[0]):
             if self.type_of_output_funs == 'Gaussian':
                 self.output_rules.append( create_1d_gaussian_function(self.output_membership_degree, i) )
             elif self.type_of_output_funs == 'Hat':
@@ -122,8 +131,15 @@ class ImplicativeInferenceSystem():
         for row in self.rule_grid:
             hat_funs = []
             for i in range(row.shape[0]):
-                hat_funs.append(create_1d_hat_function_scipy(row, i))
-            self.input_rules.append(hat_funs)
+                if self.type_of_input_funs == 'Trapezoidal':
+                    if i % 2 == 0:
+                        hat_funs.append(create_1d_trapezoidal_function(row, i))
+                elif self.type_of_input_funs == 'Gaussian':
+                    hat_funs.append(create_1d_gaussian_function(row, i))
+                elif self.type_of_input_funs == 'Hat':
+                    hat_funs.append(create_1d_hat_function_scipy(row, i))
+            if len(hat_funs) > 0:
+                self.input_rules.append(hat_funs)
             
 if __name__ == "__main__":
     row = np.arange(1, 6)

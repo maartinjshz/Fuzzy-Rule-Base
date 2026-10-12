@@ -1,0 +1,1552 @@
+NUMERO PROGRESSIVO;R= RECENTE S= SINONIMO;Name;CODE;PS s;PS v;Rott TI s;Rott TI v
+1;R;Amphora aequalis Krammer;AAEQ;2;3;0;0
+2;R;Amphora affinis Kützing var. affinis;AAFI;4;2;3.5;5
+3;R;Aulacoseira ambigua (Grunow) Simonsen;AAMB;4;1;0;0
+4;R;Karayevia amoena (Hustedt) Bukhtiyarova;KAAM;4;1;0;0
+5;S;Achnanthes amoena Hustedt;AAMO;4;1;0;0
+6;S;Kolbesia amoena (Hustedt) Kingston;KAMO;4;1;0;0
+7;R;Achnanthidium amphicephalum (Hustedt);AAPH;5;1;1.2;1
+8;S;Achnanthes amphicephala Hustedt;AAMP;5;1;1.2;1
+9;R;Amphora alpestris Levkov;AAPS;5;2;0;0
+10;R;Achnanthidium gracillimum (Meister)Lange-Bertalot;ADGL;5;1;0.6;3
+11;S;Achnanthidium alteragracillima (Lange-Bertalot)Round & Bukhtiyarova;AATG;5;1;0.6;3
+12;S;"Achnanthes minutissima var. gracillima (Meister) Lange-
+Bertalot";AMGR;5;1;0.6;3
+13;S;Achnanthidium minutissimum var. gracillima (Meister) Bukhtiyarova;ACMG;5;1;0.6;3
+14;R;"Achnanthidium atomus (Hustedt) Monnier, Lange-Bertalot &
+Ector";ADAT;5;2;0;0
+15;S;Achnanthes atomus Hustedt;AATO;5;2;0;0
+16;R;Achnanthidium pyrenaicum (Hustedt) Kobayasi;ADPY;5;2;1.3;1
+17;S;Achnanthes biasolettiana Grunow in Cleve et Grunow;ABIA;5;2;1.3;1
+18;S;"Achnanthidium biasolettianum (Grunow in Cl. et Grun.)
+Lange-Bertalot var. biasolettianum";ADBI;5;2;1.3;1
+19;R;Achnanthes biasolettiana var. subatomus Lange-Bertalot;ABSU;5;1;0;0
+20;S;Achnanthidium subatomus (Hustedt) Lange-Bertalot var. subatomus;ADSU;5;1;0;0
+21;S;Achnanthes subatomus Hustedt;ASTM;5;1;0;0
+22;R;Achnanthidium thienemannii (Hustedt) Lange-Bertalot in KLB;ADTH;4;1;0;0
+23;S;Achnanthes biasolettiana var.thienemannii (Hustedt) Lange-Bertalot in Lange-Bertalot & Kr;ABTH;4;1;0;0
+24;R;Achnanthidium bioretii (Germain) Edlund;ABRT;5;1;1.8;0
+25;S;Achnanthes bioretii Germain;ABIO;5;1;1.8;0
+26;R;Achnanthes brevipes Agardh var. brevipes;ABRE;3;3;0;0
+27;R;Achnanthidium catenatum (Bily & Marvan) Lange-Bertalot;ADCT;4.5;2;0;0
+28;S;Achnanthes catenata Bily & Marvan;ACTT;4.5;2;0;0
+29;R;Karayevia clevei (Grunow in Cl. & Grun.) Bukhtiyarova var. clevei;KCLE;4;2;2.1;0
+30;S;Achnanthes clevei Grunow in Cleve & Grunow;ACLE;4;2;2.1;0
+31;R;Achnanthes coarctata (Brébisson) Grunow in Cl. et Grun. var. coarctata;ACOA;4.5;3;0.9;2
+32;R;Planothidium delicatulum(Kütz.) Round & Bukhtiyarova;PTDE;3;3;2.9;3
+33;S;Achnanthes delicatula subsp. delicatula (Kützing)Grunow in Cleve et Grunow var. delicatul;ADEL;3;3;2.9;3
+34;R;Achnanthidium eutrophilum (Lange-Bertalot)Lange-Bertalot;ADEU;3;1;0;0
+35;S;Achnanthes eutrophila Lange-Bertalot;AEUT;3;1;0;0
+36;R;Gogorevia exilis (Kützing) Kulikovskiy & Kociolek comb.nov.;GGEX;3;2;0;0
+37;S;Achnanthidium exiguum (Grunow) Czarnecki var. exiguum;ADEG;3;2;0;0
+38;S;Achnanthes exigua Grunow in Cleve et Grunow var. exigua;AEXG;3;2;0;0
+39;R;Achnanthidium exile (Kützing) Heiberg;ADEX;5;2;1.2;3
+40;S;Achnanthes exilis Kützing;AEXI;5;2;1.2;3
+41;R;Eucocconeis flexella (Kützing) Meister;EUFL;5;3;0.3;3
+42;S;Achnanthes flexella (Kützing) Brun;AFLE;5;3;0.3;3
+43;R;Karayevia ploenensis var. gessneri (Hustedt) Bukhtiyarova;KAPG;3.9;2;0;0
+44;S;Kolbesia gessneri (Hustedt) Aboal;KGES;3.9;2;0;0
+45;S;Achnanthes gessneri Hustedt;AGES;3.9;2;0;0
+46;S;Achnanthes ploenensis var. gessneri (Hustedt) Lange-Bertalot;APGE;3.9;2;0;0
+47;R;Psammothidium helveticum (Hustedt) Bukhtiyarova et Round var. helveticum;PHEL;5;2;0.6;3
+48;S;"Achnanthidium helveticum (Hustedt) Monnier Lange-Bertalot
+& Ector";ADHE;5;2;0.6;3
+49;S;Achnanthes helvetica (Hustedt) Lange-Bertalot var. helvetica;AHEL;5;2;0.6;3
+50;R;Lemnicola hungarica (Grunow) Round et Basson var. hungarica;LHUN;2;3;3.4;2
+51;S;Achnanthes hungarica Grunow in Cleve et Grunow var. hungarica;AHUN;2;3;3.4;2
+52;R;Achnanthes inflatagrandis Metzeltin, Lange-Bertalot& Garcia-Rodriguez;AIFG;4;3;0;0
+53;R;ACHNANTHES J.B.M. Bory de St. Vincent;ACHN;4.5;2;0;0
+54;R;Achnanthidium kranzii (Lange-Bertalot) Round & Bukhtiyarova;ADKR;4.5;1;0;0
+55;S;Achnanthes kranzii Lange-Bertalot;AKRZ;4.5;1;0;0
+56;R;Eucocconeis laevis (Østrup) Lange-Bertalot;EULA;5;2;1.2;2
+57;S;Achnanthes laevis Østrup var. laevis;ALVS;5;2;1.2;2
+58;R;Planothidium lanceolatum (Brébisson ex Kützing) Lange-Bertalot var. lanceolatum;PTLA;4.6;1;3.3;3
+59;S;Achnanthes lanceolata (Brébisson ex Kützing) Grunow in Cleve & Grunow;ALAN;4.6;1;3.3;3
+60;R;Planothidium dubium (Grunow) Round & Bukhtiyarova;PTDU;4;1;0;0
+61;S;Achnanthes lanceolata ssp. dubia (Grunow) Lange-Bertalot;ALDU;4;1;0;0
+62;R;Planothidium frequentissimum f. anormale;PLFT;1;3;0;0
+63;S;Achnanthes lanceolata ssp. frequentissima f. anormale;ALFT;1;3;0;0
+64;R;"Planothidium frequentissimum (Lange-Bertalot)Lange-
+Bertalot var. frequentissimum";PLFR;3.4;1;2.8;3
+65;S;Achnanthes lanceolata ssp. frequentissima Lange-Bertalot;ALFR;3.4;1;2.8;3
+66;R;Planothidium rostratoholarcticum Lange-Bertalot et B?k in B?k & Lange-Bertalot;PROH;4.4;1;2.8;3
+67;S;Achnanthes lanceolata ssp. frequentissima var. rostratiformis Lange-Bertalot;ALFF;4.4;1;2.8;3
+68;S;Achnanthes lanceolata ssp. rostrata (Østrup) Lange-Bertalot;ALAR;4.4;1;2.8;3
+69;R;Karayevia laterostrata (Hustedt) Bukhtiyarova;KALA;4.5;1;1.2;2
+70;S;Achnanthes laterostrata Hustedt var. laterostrata;ALAT;4.5;1;1.2;2
+71;R;Platessa lutheri (Hustedt) Potapova;PLUH;5;1;0;0
+72;S;Achnanthes lutheri Hustedt;ALUT;5;1;0;0
+73;R;Achnanthes mansiensis Foged;ACMS;0;0;0;0
+74;R;Psammothidium marginulatum (Grunow in Cleve & Grunow) Bukhtiyarova et Round;PMRG;5;2;0.6;2
+75;S;Achnanthes marginulata Grunow in Cleve et Grun. var. marginulata;AMAR;5;2;0.6;2
+76;R;Achnanthidium minutissimum (Kützing) Czarnecki var. minutissimum;ADMI;5;1;1.2;1
+77;S;Achnanthes minutissima Kützing var. minutissima;AMIN;5;1;1.2;1
+78;R;Achnanthidium affine (Grun) Czarnecki;ACAF;5;1;2.3;2
+79;S;Achnanthidium minutissimum var. affinis (Grunow) Bukhtiyarova;ADMF;5;1;2.3;2
+80;S;Achnanthes minutissima var. affinis Lange-Bertalot;AMAF;5;1;2.3;2
+81;R;Achnanthidium jackii Rabenhorst;ADJK;5;2;1.2;3
+82;S;Achnanthes minutissima var. jackii (Rabenhorst) Lange-Bertalot;AMJA;5;2;1.2;3
+83;R;Achnanthidium macrocephalum (Hustedt) Round & Bukhtiyarova;ADMA;5;2;0;0
+84;S;Achnanthes minutissima var. macrocephala Hustedt;AMMA;5;2;0;0
+85;R;"Achnanthidium saprophilum (Kobayasi et Mayama) Round &
+Bukhtiyarova";ADSA;3;1;2.7;4
+86;S;Achnanthes minutissima var. saprophila Kobayasi et Mayama;AMSA;3;1;2.7;4
+87;R;Platessa oblongella (Østrup) C.E. Wetzel, Lange-Bertalot & Ector;POBL;4.5;1;1;2
+88;S;Karayevia oblongella (Østrup) M. Aboal;KOBG;4.5;1;1;2
+89;S;Achnanthes oblongella Østrup;AOBG;4.5;1;1;2
+90;R;Achnanthidium petersenii (Hustedt) C.E. Wetzel, Ector, D.M. Williams & Jüttner;ADPS;5;2;0.6;1
+91;S;Achnanthes petersenii Hustedt;APET;5;2;0.6;1
+92;R;Karayevia ploenensis (Hustedt) Bukhtiyarova;KAPL;5;2;2.6;3
+93;S;Kolbesia ploenensis (Hust.) Kingston;KPLO;5;2;2.6;3
+94;S;Achnanthes ploenensis Hustedt;APLO;5;2;2.6;3
+95;R;Achnanthidium rosenstockii (Lange-Bertalot) Lange-Bertalot in Krammer et Lange-Bertalot;ADRK;4;1;0;0
+96;S;Achnanthes rosenstockii Lange-Bertalot var. rosenstockii;AROK;4;1;0;0
+97;R;Platessa hustedtii (Krasske) Lange-Bertalot;PLHU;4;1;1.2;3
+98;S;Achnanthes rupestoides Hohn var. rupestoides;ARPT;4;1;1.2;3
+99;R;Achnanthidium subatomoides (Hustedt) Monnier, Lange-Bertalot et Ector;ADSO;5;1;2.1;2
+100;S;Achnanthes subatomoides (Hustedt) Lange-Bertalot & Archibald in Krammer & Lange-Bertal;ASAT;5;1;2.1;2
+101;R;Crenotia thermalis (Rabenhorst) A.Z. Wojtal;CRTH;2;1;0;0
+102;S;Achnanthes thermalis Schoenfeld var. thermalis;ATHE;2;1;0;0
+103;R;Achnanthidium trinode Ralfs in Pritchard;ADTR;5;3;0.6;2
+104;S;Achnanthes trinodis (Ralfs in Pritchard) Grunow in Van Heurck;ATRI;5;3;0.6;2
+105;R;Achnanthidium atomoides Monnier, Lange-Bertalot & Ector;ADAM;5;2;0;0
+106;R;Achnanthidium bioretii (Germain) Edlund;ABRT;5;1;1.8;0
+107;S;Psammothidium bioretii (Germain) Bukhtiyarova et Round;PBIO;5;1;1.8;0
+108;R;Achnanthidium caledonicum(Lange-Bertalot)Lange-Bertalot;ADCA;5;1;1;2
+109;R;Achnanthidium chlidanos (Hohn & Hellerman) Novelo Tavera & Ibarra;ADCH;5;1;0;0
+110;R;Achnanthidium delmontii Peres, Le Cohu et Barthes;ADMO;4;1;0;0
+111;R;Achnanthidium druartii Rimet & Couté in Rimet & al.;ADRU;4;1;0;0
+112;R;Achnanthidium exiguum var. elliptica (Hustedt) M.A. Harper in M.A. Harper & al.;AEEL;3;1;0;0
+113;R;ACHNANTHIDIUM F.T. Kützing;ACHD;4.5;2;0;0
+114;R;Achnanthidium latecephalum Kobayasi;ADLA;2.6;1;0;0
+115;R;Achnanthidium lineare W.Smith;ACLI;5;1;1.8;1
+116;R;Achnanthidium microcephalum Kützing;ADMC;5;2;1.2;1
+117;R;Achnanthidium minutissimum f. anormale;ADMT;1;3;0;0
+118;R;Achnanthidium nanum (F.Meister) Novais & Jüttner;ADNU;5;1;0;0
+119;R;Achnanthidium neomicrocephalum Lange-Bertalot et Staab;ADNM;5;2;1.2;1
+120;R;Achnanthidium pseudolineare Van de Vijver Novais et Ector;ADPL;0;0;0;0
+121;R;Achnanthidium pyrenaicum f. anormale;ADPT;1;3;0;0
+122;R;Achnanthidium rivulare Potapova &Ponader;ADRI;4;1;0;0
+123;R;Achnanthidium rostropyrenaicum Jüttner & Cox;ARPY;5;2;0;0
+124;R;Achnanthidium straubianum (Lange-Bertalot)Lange-Bertalot;ADSB;3;2;0;0
+125;R;Achnanthidium strictum Reichardt;ASTU;0;0;0;0
+126;R;Achnanthidium subhudsonis (Hustedt) H. Kobayasi;ADSH;5;2;0;0
+127;R;Achnanthidium zhakovschikovii M. Potapova;AZHA;0;0;0;0
+128;R;Actinocyclus normanii morphotype normanii (Gregory ex Greville) Hustedt;ANMN;2;2;0;0
+129;R;Adlafia bryophila (Petersen) Lange-Bertalot in Moser & al.;ABRY;5;2;1.3;2
+130;S;Navicula bryophila Boye Petersen var. bryophila;NBRY;5;2;1.3;2
+131;R;Adlafia bryophila f.constricta (Bastow) Reid & Williams;ABCO;5;2;1.3;2
+132;R;Adlafia langebertalotii Monnier et Ector;ALBL;5;1;0;0
+133;R;Adlafia minuscula (Grunow) Lange-Bertalot var. minuscula;ADMS;3;1;1.1;0
+134;S;Navicula minuscula Grunow in Van Heurck var. minuscula;NMIS;3;1;1.1;0
+135;R;Adlafia minuscula f. anormale;AMNT;1;3;0;0
+136;R;ADLAFIA Moser Lange-Bertalot et Metzeltin;ADLF;5;1;0;0
+137;R;Adlafia muralis (Grunow in Van Heurck 1880) Li et Qi comb. nov;ADMU;2;1;2.9;3
+138;R;Adlafia suchlandtii (Hustedt) Monnier & Ector;ADFS;5;1;0.6;2
+139;R;AMPHIPLEURA F.T. Kützing;AMPI;4.5;3;0;0
+140;R;Amphipleura lindheimeri Grunow var. lindheimeri;ALDH;4;3;0;0
+141;R;Amphipleura pellucida Kützing;APEL;4;3;2.1;2
+142;R;AMPHORA C.G. Ehrenberg ex F.T. Kützing;AMPH;2.6;2;0;0
+143;R;Halamphora coffeaeformis (Agardh) Levkov;HACO;2;3;0;0
+144;S;Amphora coffeaeformis (Agardh) Kützing;ACOF;2;3;0;0
+145;S;Amphora commutata Grunow;ACOM;2;3;0;0
+146;S;Amphora copulata (Kützing) Schoeman et Archibald var. copulata;ACOP;4;2;3.5;5
+147;R;Amphora eximia J.R. Carter;AEXM;4;2;0;0
+148;S;Amphora fogediana Krammer in Krammer & Lange-Bertalot;AMFO;4;2;0;0
+149;R;Halamphora holsatica (Hustedt) Levkov;HHOL;2.4;2;0;0
+150;S;Amphora holsatica Hustedt;AHOL;2.4;2;0;0
+151;R;Amphora inariensis Krammer;AINA;5;1;2.1;1
+152;R;Amphora indistincta Levkov;AMID;5;1;0;0
+153;R;"Amphora lange-bertalotii Levkov, et Metzeltin var. lange-
+bertaloti";AMLB;0;0;0;0
+154;R;Amphora lange-bertalotii var. tenuis Levkov, et Metzeltin;ALGT;0;0;0;0
+155;R;Amphora libyca Ehrenberg var. libyca;ALIB;4;2;3.5;5
+156;R;Amphora macedoniensis Nagumo;AMCD;0;0;0;0
+157;R;Amphora micra Levkov;AMMC;0;0;0;0
+158;R;Halamphora montana (Krasske) Levkov;HLMO;2.8;1;2.9;2
+159;S;Amphora montana Krasske;AMMO;2.8;1;2.9;2
+160;R;Amphora neglectiformis Levkov & Edlund;ANGF;5;1;2.1;1
+161;R;Halamphora normanii (Rabenhorst) Levkov, var. normanii;HNOR;4.2;3;0;0
+162;S;Amphora normanii Rabenhorst var. normanii;ANOR;4.2;3;0;0
+163;R;Halamphora oligotraphenta (Lange-Bertalot) Levkov;HOLI;5;1;0;0
+164;S;Amphora oligotraphenta Lange-Bertalot;AOLG;5;1;0;0
+165;R;Amphora ovalis (Kützing) Kützing;AOVA;3;1;3.3;2
+166;R;Amphora pediculus (Kützing) Grunow var. pediculus;APED;4;1;2.8;2
+167;R;Amphora pediculus f. anormale;APAB;1;3;0;0
+168;R;Halamphora submontana (Hustedt) Levkov;HSMO;0;0;2.9;2
+169;S;Amphora submontana Hustedt;ASMO;0;0;2.9;2
+170;R;Halamphora thumensis (A.Mayer) Levkov;HTHU;5;2;1.4;3
+171;S;Amphora thumensis (Mayer)A.Cleve-Euler;ATHU;5;2;1.4;3
+172;R;Halamphora veneta (Kützing) Levkov, var. veneta;HVEN;1;2;3.8;2
+173;S;Amphora veneta Kützing var. veneta;AVEN;1;2;3.8;2
+174;R;Amphora vetula Levkov, var. vetula;AVTU;4;2;3.5;5
+175;R;ANEUMASTUS D.G. MANN & A.J. STICKLE;ANEU;5;3;0;0
+176;R;Aneumastus minor (Hustedt) Lange-Bertalot var. minor;ANMI;5;1;1.4;2
+177;R;Aneumastus stroesei (Østrup) Mann et Stickle in Round Crawford et Mann var. stroesei;ANSS;5;2;1.8;2
+178;S;Navicula pseudotuscula Hustedt;NPTU;5;2;1.8;2
+179;R;Aneumastus tusculus (Ehrenberg) D.G. Mann & Stickle in Round Crawford & Mann;ANTU;4.5;1;1.8;1
+180;S;Navicula tuscula Ehrenberg;NTUS;4.5;1;1.8;1
+181;R;Brachysira vitrea (Grunow) Ross in Hartley;BVIT;5;2;0.7;2
+182;S;Anomoeoneis vitrea (Grunow) Ross;AVIT;5;2;0.7;2
+183;S;"Anomoeoneis brachysira (Brébisson in Rabenhorst) Grunow
+in Cleve var. brachysira";ANBR;5;2;1.1;2
+184;R;Anomoeoneis sphaerophora (Ehrenberg) Pfitzer var. sphaerophora;ASPH;2;3;3.4;3
+185;R;"Anomoeoneis sphaerophora var. sculpta (Ehrenberg) O.
+Müller";ASSC;2;3;0;0
+186;S;Anomoeoneis sphaerophora f. sculpta (Ehr.) Krammer;ASPS;2;3;0;0
+187;R;ASTERIONELLA A.H. Hassall;ASTE;3.4;1;0;0
+188;R;Asterionella formosa Hassall;AFOR;4;1;1.8;2
+189;R;Aulacoseira alpigena(Grunow) Krammer;AUAL;4;2;0;0
+190;R;Aulacoseira crassipunctata Krammer;AUCS;4;1;0;0
+191;R;Aulacoseira distans (Ehr.) Simonsen var. distans;AUDI;4.6;2;1;4
+192;R;AULACOSEIRA G.H.K. Thwaites;AULA;3.8;1;0;0
+193;R;Aulacoseira granulata (Ehrenberg) Simonsen (emend Genkal);AUGR;2.9;1;0;0
+194;R;Aulacoseira granulata var. angustissima (O. Müller) Simonsen;AUGA;2.8;1;0;0
+195;R;Aulacoseira italica (Ehr.) Simonsen var. italica;AUIT;3.7;1;1.4;2
+196;R;Aulacoseira lapilla I.W. Bishop & S.A. Spaulding;ALPI;0;0;0;0
+197;R;Aulacoseira nivalis(Wm.Sm.) English & Potapova;ANIV;4;1;0;0
+198;R;Aulacoseira tenella (Nygaard) Simonsen;AUTL;4.8;1;0;0
+199;R;BACILLARIA J.F. Gmelin;BACI;2;3;0;0
+200;R;Bacillaria paxillifera (O.F. Müller) Hendey var. paxillifera;BPAX;2;3;2.9;3
+201;S;Bacillaria paradoxa Gmelin in Linneaeus;BPAR;2;3;2.9;3
+202;R;Brachysira brebissonii Ross in Hartley;BBRE;5;2;1.1;2
+203;R;Brachysira calcicola subsp. calcicola Lange-Bertalot;BCAL;0;0;0;0
+204;R;BRACHYSIRA F.T. Kützing;BRAC;5;2;0;0
+205;R;Brachysira microcephala (Grunow) Compère;BMIC;5;1;1.2;2
+206;R;Brachysira neglectissima Lange-Bertalot;BNEG;5;1;0;0
+207;R;Brachysira neoexilis f. anormale;BNTG;1;3;0;0
+208;R;Brachysira neoexilis Lange-Bertalot;BNEO;5;1;1.2;2
+209;R;Brachysira procera Lange-Bertalot & Moser;BPRO;5;1;0;0
+210;R;Brachysira styriaca (Grunow) Ross in Hartley;BSTY;5;3;0;0
+211;R;Caloneis alpestris (Grunow) Cleve var. alpestris;CAPS;5;3;1.3;2
+212;R;Caloneis amphisbaena (Bory) Cleve var. amphisbaena;CAMP;2;3;3.9;2
+213;R;Caloneis bacillum (Grunow) Cleve var. bacillum;CBAC;4;2;2.5;1
+214;R;Caloneis branderii (Hustedt) Krammer;CBRD;0;0;0;0
+215;R;Caloneis dubia Krammer;CADU;4;1;0;0
+216;R;Caloneis fontinalis (Grunow in Van Heurck) Cleve-Euler;CFON;4.8;1;0;0
+217;R;Caloneis hyalina Hustedt var. hyalina;CHYA;5;2;0;0
+218;R;Caloneis inflata (Hstedt) Metzeltin & Lange-Bertalot;CIFL;4.5;1;0;0
+219;R;Caloneis lancettula (Schulz) Lange-Bertalot et Witkowski;CLCT;4;2;2.5;1
+220;R;Caloneis molaris (Grunow) Krammer;CMOL;4;3;0;0
+221;R;CALONEIS P.T. Cleve;CALO;3.8;2;0;0
+222;R;Caloneis schumanniana (Grunow in Van Heurck) Cleve var. schumanniana;CSHU;5;3;1.9;0
+223;R;Caloneis silicula (Ehrenberg) Cleve var. silicula;CSIL;4.8;2;2.5;0
+224;R;Caloneis subsalina (Donkin) Hendey;CASN;2;3;0;0
+225;R;Caloneis tenuis (Gregory) Krammer;CATE;5;2;1.1;2
+226;R;Campylodiscus bicostatus W.Smith in Roper;CBIC;3;3;0;0
+227;R;CAMPYLODISCUS C.G. Ehrenberg ex F.T. Kützing;CPLD;3.9;3;0;0
+228;R;Iconella hibernica (Ehrenberg) Ruck & Nakov;IHIB;5;3;0;0
+229;S;Campylodiscus hibernicus Ehrenberg;CHIB;5;3;0;0
+230;R;Cavinula lapidosa (Krasske) Lange-Bertalot;CVLP;5;2;0;0
+231;S;Nupela lapidosa Krasske;NLAP;5;2;0;0
+232;R;Cavinula variostriata (Krasske) Mann in Round & aL;CVVA;5;2;0.5;2
+233;R;Chamaepinnularia soehrensis (Krasske)Lange-Bertalot et Krammer in Lange-Bertalot et Met;CHSO;4;3;0.6;2
+234;R;Chamaepinnularia submuscicola (Krasske) Lange-Bertalot;CSMU;4;3;0;0
+235;R;COCCONEIS C.G. Ehrenberg;COCO;3.5;1;0;0
+236;R;Cocconeis disculus (Schumann) Cleve in Cleve et Jentzsch var. disculus;CDIS;5;2;2.2;3
+237;R;Cocconeis euglypta Ehrenberg;CEUG;3.6;1;2.3;2
+238;S;Cocconeis placentula var. euglypta (Ehrenberg) Grunow;CPLE;3.6;1;2.3;2
+239;R;Cocconeis euglyptoides (Geitler) Lange-Bertalot;CEUO;3.5;1;0;0
+240;R;Cocconeis lineata Ehrenberg;CLNT;4;1;2.3;2
+241;S;Cocconeis placentula var. lineata (Ehrenberg)Van Heurck;CPLI;4;1;2.3;2
+242;R;Cocconeis neodiminuta Krammer;CNDI;5;1;0;0
+243;R;Cocconeis neothumensis Krammer var. neothumensis;CNTH;3;1;2;2
+244;R;Cocconeis pediculus Ehrenberg;CPED;4;2;2.6;2
+245;R;Cocconeis placentula Ehrenberg;CPLA;4;1;2.6;2
+246;R;Cocconeis placentula f. anormale;CPTG;1;3;0;0
+247;R;Cocconeis placentula var. klinoraphis Geitler;CPLK;5;1;2.3;2
+248;R;Cocconeis pseudolineata (Geitler) Lange-Bertalot;COPL;5;1;0;0
+249;S;Cocconeis placentula var. pseudolineata Geitler;CPPL;5;1;0;0
+250;R;Cocconeis pseudothumensis Reichardt;COPS;4;1;0;0
+251;R;Cocconeis scutellum var. parva (Grunow in Van Heurck) Cleve;CSPA;2;2;0;0
+252;R;Conticribra weissflogii (Grunow) Stachura-Suchoples & Williams;CTWE;2;2;0;0
+253;R;COSMIONEIS D.G. Mann & A.J. Stickle;COSM;5;3;0;0
+254;R;Cosmioneis pusilla (W. Smith) Mann et Stickle in Round Crawford et Mann var. pusilla;COPU;5;3;0;0
+255;S;Navicula pusilla W.Smith var. pusilla;NPUS;5;3;0;0
+256;R;CRATICULA A. Grunow;CRAT;2.2;3;0;0
+257;R;Craticula accomoda (Hustedt) D.G. Mann in Round et al.;CRAC;1;3;3.9;5
+258;S;Navicula accomoda Hustedt;NACO;1;3;3.9;5
+259;R;Craticula ambigua (Ehrenberg) Mann;CAMB;3;3;3.8;3
+260;S;Navicula cuspidata var. ambigua (Ehrenberg) Cleve;NCAM;3;3;3.8;3
+261;R;Craticula buderi (Hustedt) Lange-Bertalot;CRBU;2;3;0;0
+262;S;Navicula buderi Hustedt;NBDR;2;3;0;0
+263;R;Craticula cuspidata (Kützing) Mann var. cuspidata;CRCU;2.6;3;3.8;3
+264;S;Navicula cuspidata Kützing var. cuspidata;NCUS;2.6;3;3.8;3
+265;R;Craticula halophila (Grunow ex Van Heurck) Mann;CHAL;2;3;3.4;5
+266;S;Navicula halophila (Grunow) Cleve var. halophila;NHAL;2;3;3.4;5
+267;R;Craticula minusculoides (Hustedt) Lange-Bertalot;CMNO;2;2;2.9;2
+268;R;Craticula molestiformis (Hustedt) Mayama;CMFO;2;1;2.9;2
+269;S;Craticula molestiformis (Hustedt) Lange-Bertalot;CMLF;2;1;2.9;2
+270;S;Navicula molestiformis Hustedt;NMLF;2;1;2.9;2
+271;R;Craticula subminuscula (Manguin) C.E. Wetzel et Ector;CSNU;2;1;3.5;4
+272;S;Eolimna subminuscula (Manguin) Moser Lange-Bertalot & Metzeltin;ESBM;2;1;3.5;4
+273;S;Navicula subminuscula Manguin;NSBM;2;1;3.5;4
+274;S;Navicula frugalis Hustedt;NFRU;2;1;3.5;4
+275;R;Ctenophora pulchella (Ralfs ex Kütz.) Williams et Round var. pulchella;CTPU;3;3;3.5;2
+276;R;Cyclostephanos dubius (Fricke) Round;CDUB;3;2;2.9;3
+277;R;CYCLOSTEPHANOS F.E. Round;CCST;2.9;1;0;0
+278;R;Cyclostephanos invisitatus(Hohn & Hellerman)Theriot Stoermer & Håkansson;CINV;2.6;1;0;0
+279;R;Cyclotella atomus Hustedt var. atomus;CATO;2;1;0;0
+280;R;Cyclotella atomus var. gracilis Genkal & Kiss;CAGR;3;1;0;0
+281;R;Handmannia bodanica (Eulenstein ex Grunow) Kociolek & Khursevich;HBOD;5;3;0;0
+282;S;Cyclotella bodanica Eulenstein in Grunow;CBOD;5;3;0;0
+283;R;Lindavia lemanensis (Chodat) Nakov, Guillory, Julius, Theriot & Alverson;LLEM;5;3;0;0
+284;S;"Cyclotella bodanica var. lemanica (O. Müller ex Schroter)
+Bachman";CBOL;5;3;0;0
+285;R;Pantocsekiella comensis (Grunow in Van Heurck) K.T. Kiss et Ács;PCMS;4;3;0;0
+286;S;Cyclotella comensis Grunow in Van Heurck;CCMS;4;3;0;0
+287;R;Handmannia comta (Ehrenberg) Kociolek & Khursevich emend. Genkal;HDCO;5;1;0;0
+288;S;Cyclotella comta (Ehrenberg) Kützing f. comta;CCOM;5;1;0;0
+289;R;Cyclotella radiosa var.pliocaenica (Krasske) Håkansson;CRPL;0;0;0;0
+290;S;Cyclotella comta var. pliocaenica Krasske;CCPL;0;0;0;0
+291;R;Pantocsekiella costei (Druart et F. Straub) K.T. Kiss et Ács;PCOS;5;1;0;0
+292;S;Cyclotella distinguenda var.unipunctata (Hustedt) Håkansson & Carter;CDUN;5;1;0;0
+293;S;Cyclotella cyclopuncta Håkansson & Carter;CCCP;5;1;0;0
+294;R;Cyclotella distinguenda Hustedt;CDTG;3.4;2;0;0
+295;R;CYCLOTELLA F.T. Kützing ex A de Brébisson;CYCL;3.7;1;0;0
+296;R;Lindavia tenuistriata (Hustedt) Nakov, Guillory, Julius, Theriot & Alverson;LDTE;5;2;0;0
+297;S;Cyclotella glabriuscula (Grunow) Håkansson;CGLA;5;2;0;0
+298;R;Lindavia glomerata (H. Bachmann) Adesalu & Julius;LGLO;5;1;0;0
+299;S;Cyclotella glomerata Bachmann;CGLO;5;1;0;0
+300;S;Discostella glomerata (Bachmann) Houk et Klee;DGLO;5;1;0;0
+301;R;Pantocsekiella kuetzingiana (Thwaites) K.T. Kiss et Ács;PKTZ;3.5;1;0;0
+302;S;Cyclotella krammeri Håkansson;CKRM;3.5;1;0;0
+303;S;Cyclotella kuetzingiana Thwaites var. kuetzingiana;CKUT;3.5;1;0;0
+304;R;Cyclotella meneghiniana Kützing;CMEN;2;1;2.8;5
+305;R;Pantocsekiella ocellata (Pantocsek) K.T. Kiss et Ács;POCL;3;1;1.5;1
+306;S;Cyclotella ocellata Pantocsek;COCE;3;1;1.5;1
+307;R;Pantocsekiella chantaica (Kuzmina et Genkal) K.T.Kiss Genkal et Ács emend Genkal;PKCH;4;1;0;0
+308;S;Cyclotella oligactis (Ehr.)Ralfs in Pritchard;COLI;4;1;0;0
+309;R;Lindavia praetermissa (Lund) Nakov, Guillory, Julius, Theriot & Alverson;LPRA;3.7;1;0;0
+310;S;Cyclotella praetermissa Lund;CPRA;3.7;1;0;0
+311;R;Cyclotella pseudostelligera f. diminuta Manguin;CPDI;0;0;0;0
+312;R;"Discostella pseudostelligera (Hustedt) Houk & Klee emend.
+Genkal";DPSG;4;1;0;0
+313;S;Cyclotella pseudostelligera Hustedt;CPST;4;1;0;0
+314;R;Lindavia radiosa (Grunow) De Toni et Forti var. radiosa;LRAD;4.8;1;0;0
+315;S;Cyclotella radiosa (Grunow) Lemmermann;CRAD;4.8;1;0;0
+316;R;Lindavia socialis (Schütt) De Toni et Forti;LSOC;5;2;0;0
+317;S;Cyclotella socialis Schütt;CSOC;5;2;0;0
+318;R;Discostella stelligera (Cleve et Grun.) Houk et Klee var. stelligera;DSTE;4.2;1;0;0
+319;S;Cyclotella stelligera (Cleve et Grunow in Cleve) Van Heurck var. stelligera;CSTE;4.2;1;0;0
+320;R;Cyclotella striata (Kützing) Grunow in Cleve et Grunow var. striata;CSTR;2;3;0;0
+321;R;Surirella microlibile Van de vijver, Pottiez & Juttner;SMLI;4;2;0;0
+322;S;Cymatopleura apiculata W. Smith;CYAP;4;2;0;0
+323;S;Cymatopleura solea var. apiculata (W. Smith) Ralfs in Pritchard;CSAP;4;2;0;0
+324;R;Surirella undulata (Ehrenberg) Ehrenberg;SUUN;5;2;2.9;3
+325;S;Cymatopleura elliptica (Brebisson ex Kützing) W.Smith;CELL;5;2;2.9;3
+326;R;Surirella librile (Ehrenberg Ehrenberg;SULI;4;2;3.1;3
+327;S;"Cymatopleura solea (Brébisson in Breb. et Godey) W. Smith
+var. solea";CSOL;4;2;3.1;3
+328;R;CYMATOPLEURA W. Smith;CYMA;4.1;2;0;0
+329;R;Cymbella affinis f. anormale;CATG;1;3;0;0
+330;R;Cymbella affinis Kützing var. affinis;CAFF;4;2;0.7;4
+331;R;Cymbella affinis var. subcapitata (Krammer) W. Silva;CAFS;0;0;0;0
+332;S;Cymbella excisa var.subcapitata Krammer;CESC;0;0;0;0
+333;R;Cymbella excisa Kützing;CAEX;4;2;0;0
+334;S;Cymbella affinis fo. excisa (Kutzing) Grunow;CAFX;4;2;0;0
+335;R;Cymbella affinis Kützing var. angusta (Krammer) W. Silva;CAFG;0;0;0;0
+336;S;Cymbella excisa var.angusta Krammer;CEAN;0;0;0;0
+337;R;Cymbella affinis var. neoprocera Da Silva;CNPC;4;1;0;0
+338;S;Cymbella excisa var.procera Krammer;CEPR;4;1;0;0
+339;R;Cymbella excisiformis Krammer;CEXF;5;1;0;0
+340;R;Cymbella alpestris Krammer;CYAL;4;3;0;0
+341;R;Cymbopleura amphicephala (Nägeli) Krammer;CBAM;4;1;1.1;3
+342;S;Cymbella amphicephala Naegeli ex Kützing var. amphicephala;CAPH;4;1;1.1;3
+343;R;Cymbella arctica (Lagerstedt) Schmidt;CYAR;5;2;0;0
+344;R;Cymbella aspera (Ehrenberg) Cleve var. aspera;CASP;4;3;1.7;1
+345;R;Cymbopleura austriaca (Grunow) Krammer;CBAU;5;3;0.6;1
+346;S;Cymbella austriaca Grunow in A. Schmidt et al. var. austriaca;CAUT;5;3;0.6;1
+347;R;CYMBELLA C.Agardh;CYMB;4.7;2;0;0
+348;R;Encyonema caespitosum Kützing var. caespitosum;ECAE;4;2;2.1;0
+349;S;Cymbella caespitosa (Kützing) Brun var. caespitosa;CCAE;4;2;2.1;0
+350;R;Encyonopsis cesatii (Rabenhorst) Krammer var. cesatii;ECES;5;2;0.6;4
+351;S;Cymbella cesatii (Rabenhorst) Grunow in Schmidt et al. var. cesatii;CCES;5;2;0.6;4
+352;R;Encyonopsis cesatii var. geitleri Krammer;ECGE;5;2;0;0
+353;S;Cymbella cesatii var. paradoxa Geitler;CCPX;5;2;0;0
+354;R;Cymbella cistula (Hemprich in Hemprich et Ehrenberg) Kirchner var. cistula;CCIS;4;3;2.3;1
+355;R;Cymbella compacta Østrup;CCMP;5;3;2.6;3
+356;S;Cymbella helvetica var. compacta (Østrup) Hustedt;CHCO;5;3;2.6;3
+357;R;Cymbella cymbiformis Agardh var. cymbiformis;CCYM;4;3;1.8;3
+358;R;Delicatophycus delicatulus (Kützing) M.J.Wynne comb. nov.;DPDE;5;2;0.3;4
+359;S;Cymbella delicatula Kützing var. delicatula;CDEL;5;2;0.3;4
+360;R;Celebesia distinguenda (Hustedt) D. Kapustin, Kulikovskiy & Kociolek;CEDG;0;0;0;0
+361;S;Cymbella distinguenda Hustedt;CYDI;0;0;0;0
+362;R;Cymbella dorsenotata Østrup;CDNO;4;3;2.3;1
+363;R;Encyonopsis falaisensis (Grunow) Krammer;ECFA;;;;
+364;S;Cymbella falaisensis (Grunow) Krammer et Lange-Bertalot var. falaisensis;CFAL;5;2;0.4;3
+365;R;Encyonema neogracile Krammer var. neogracile;ENNG;5;2;0.6;4
+366;S;Cymbella gracilis (Ehrenberg) Kützing var. gracilis;CGRA;5;2;0.6;4
+367;S;Encyonema gracile Rabenhorst;ENGR;5;2;0.6;4
+368;R;Cymbella hantzschiana Krammer var. hantzschiana;CHAN;5;3;0;0
+369;R;Cymbella helvetica Kützing var. helvetica;CHEL;5;3;1.4;2
+370;R;Cymbopleura hustedtii Novelo Tavera & Ibarra;CBHD;5;2;1.2;2
+371;S;Cymbella hustedtii Krasske;CHUS;5;2;1.2;2
+372;R;Cymbella kappii (Cholnoky) Cholnoky;CKPP;0;0;0;0
+373;R;Cymbella kolbei Hustedt;CKOL;5;2;1.2;2
+374;R;Encyonema lacustre (Agardh) F.W. Mills;ELAC;5;3;2.3;0
+375;S;Cymbella lacustris (Agardh) Cleve var. lacustris;CLAC;5;3;2.3;0
+376;R;Cymbella laevis Naegeli ex Kützing;CLAE;5;3;0.9;2
+377;R;Cymbella neolanceolata W. Silva;CNLC;4;2;0;0
+378;S;Cymbella lanceolata (C. Agardh) C. Agardh ss Krammer;CLAN;4;2;0;0
+379;R;Cymbella lancettula (Krammer) Krammer;CLTL;4;2;0.3;2
+380;R;Cymbella lange-bertalotii Krammer;CLBE;5;3;0;0
+381;R;Cymbella leptoceros (Ehrenberg) Kützing var. leptoceros;CLEP;5;3;1.3;0
+382;R;Encyonema mesianum (Cholnoky) D.G. Mann in Round Crawford & Mann;ENME;5;3;1.8;0
+383;S;Cymbella mesiana Cholnoky;CMES;5;3;1.8;0
+384;R;Encyonopsis microcephala (Grunow) Krammer var. microcephala;ENCM;4;2;1.2;1
+385;S;Cymbella microcephala Grunow in Van Heurck var. microcephala;CMIC;4;2;1.2;1
+386;R;Encyonema minutum (Hilse in Rabh.) D.G. Mann in Round Crawford et Mann var. minutum;ENMI;4.6;2;2;1
+387;S;Cymbella minuta Hilse ex Rabenhorst var. minuta;CMIN;4.6;2;2;1
+388;R;Cymbopleura naviculiformis (Auerswald) Krammer;CBNA;3.8;3;1.8;1
+389;S;Cymbella naviculiformis Auerswald ex Heiberg var. naviculiformis;CNAV;3.8;3;1.8;1
+390;R;Cymbella neocistula Krammer var. neocistula;CNCI;4;3;2.3;1
+391;R;Cymbopleura cuspidata (Kützing) Krammer;CBCU;5;2;2;0
+392;S;Cymbella obtusiuscula Kützing;COBT;4;2;2;0
+393;R;Cymbella parva (W. Sm.) Kirchner in Cohn var. parva;CPAR;5;3;0;0
+394;R;Cymbella percymbiformis Krammer;CPCF;0;0;0;0
+395;R;Cymbella perparva Krammer;CPPV;5;3;0;0
+396;R;Encyonema perpusillum (A. Cleve) D.G. Mann var. perpusillum;ENPE;5;2;0.5;2
+397;S;Cymbella perpusilla A. Cleve var. perpusilla;CPER;5;2;0.5;2
+398;R;Cymbella pervarians Krammer;CPVA;0;0;0;0
+399;R;Encyonema leibleinii (C. Agardh) Silva, Jahn Ludwig et Menezes;ELEI;4;3;2.3;1
+400;S;Cymbella prostrata (Berkeley) Cleve var. prostrata;CPRO;4;3;2.3;1
+401;R;Cymbella proxima Reimer in Patrick et Reimer var. proxima;CPRX;3.5;3;1.2;2
+402;R;Seminavis pusilla (Grunow) E.J. Cox & G.Reid;SMPU;5;3;1.2;2
+403;S;Cymbella pusilla Grunow in A.Schmidt & al.;CPUS;5;3;1.2;2
+404;S;Navicymbula pusilla (Grunow) Krammer var. pusilla;NCPU;5;3;1.2;2
+405;R;Encyonema reichardtii (Krammer) D.G. Mann in Round Crawford & Mann;ENRE;4.5;1;2.7;3
+406;S;Cymbella reichardtii Krammer;CREI;4.5;1;2.7;3
+407;R;Cymbopleura reinhardtii (Grunow) Krammer;CRNH;5;3;0;0
+408;S;Cymbella reinhardtii Grunow in A. Schmidt et al. var. reinhardtii;CREH;5;3;0;0
+409;R;Cymbopleura rupicola (Grunow) Krammer var. rupicola;CRPC;5;1;0;0
+410;S;Cymbella rupicola Grunow in A. Schmidt et al. var. rupicola;CRUP;5;1;0;0
+411;R;Encyonema silesiacum (Bleisch in Rabh.) D.G. Mann var. silesiacum;ESLE;5;2;2;0
+412;S;Cymbella silesiaca Bleisch in Rabenhorst (Encyonema);CSLE;5;2;2;0
+413;R;Cymbella simonsenii Krammer;CSMO;5;3;0.6;2
+414;R;Reimeria sinuata (Gregory) Kociolek & Stoermer;RSIN;4.8;1;2.1;1
+415;S;Cymbella sinuata Gregory var. sinuata;CSIN;4.8;1;2.1;1
+416;R;Cymbopleura subaequalis (Grunow) Krammer var. subaequalis;CSAQ;4.6;2;1;2
+417;S;Cymbella subaequalis Grunow in Van Heurck var. subaequalis;CSAE;4.6;2;1;2
+418;R;Cymbella subcistula Krammer;CSCI;4.5;3;2.3;1
+419;R;Cymbella subhelvetica Krammer;CSBH;5;3;0;0
+420;R;Cymbella subleptoceros Krammer;CSLP;5;2;0;0
+421;R;Cymbella subtruncata Krammer var. subtruncata;CSUT;5;3;0;0
+422;R;Cymbella tropica Krammer var. tropica;CTRO;4;2;0;0
+423;R;Cymbella tumida (Brébisson)Van Heurck var. tumida;CTUM;3;3;2.5;2
+424;R;Cymbella tumidula Grunow in A. Schmidt et al. var. tumidula;CTMD;4;2;0.6;2
+425;R;Encyonema elginense (Krammer) D.G. Mann in Round Crawford et Mann var. elginense;EELG;5;3;0.6;2
+426;S;Cymbella turgida Gregory var. turgida;CTUR;5;3;0.6;2
+427;R;Cymbella turgidula Grunow in A. Schmidt et al. var. turgidula;CTGL;5;3;0;0
+428;R;Cymbella turgidula var.bengalensis Krammer;CTBE;4;2;0;0
+429;R;Encyonema ventricosum (Kützing) Grunow in Schmidt et al. var. ventricosum;ENVE;4;1;0;0
+430;S;Cymbella ventricosa Agardh var. ventricosa;CVEN;4;1;0;0
+431;R;Cymbella vulgata Krammer var. vulgata;CVUL;4;2;0;0
+432;R;CYMBOPLEURA (Krammer) Krammer;CBPL;5;2;0;0
+433;R;Cymbopleura amphicephala (Nägeli) Krammer;CBAM;4;1;1.1;3
+434;R;Cymbopleura anglica (Lagerstedt) Krammer;CAGL;3;3;0;0
+435;R;Cymbopleura austriaca (Grunow) Krammer;CBAU;5;3;0.6;1
+436;R;Cymbopleura diminuta (Grunow) Krammer;CBDM;0;0;0;0
+437;R;Celebesia distinguenda (Hustedt) D. Kapustin, Kulikovskiy & Kociolek;CEDG;0;0;0;0
+438;S;Cymbopleura distinguenda (Hustedt) Krammer;CDTI;0;0;0;0
+439;R;Cymbopleura elliptica Krammer;CELP;0;0;0;0
+440;R;Cymbopleura frequens Krammer var. frequens;CBFQ;0;0;0;0
+441;R;Cymbopleura hercynica (A.Schmidt) Krammer;CHCN;5;2;0.9;2
+442;R;Cymbopleura hybrida (Grunow) Krammer var. hybrida;CBHY;5;3;0.6;2
+443;R;Cymbopleura inaequaliformis Krammer;CIQF;0;0;0;0
+444;R;Cymbopleura incertiformis Krammer var. incertiformis;CBIF;0;0;0;0
+445;R;Cymbopleura kuelbsii Krammer;CBKB;5;1;0;0
+446;R;Cymbopleura procera (Hustedt) Krammer;CBPR;0;0;0;0
+447;R;Cymbopleura krammeri var. truncata (Krammer) Reichardt;CBKT;0;0;0;0
+448;S;Cymbopleura subaequalis var. truncata Krammer;CSQT;0;0;0;0
+449;R;Delicatophycus delicatulus (Kützing) M.J.Wynne comb. nov.;DPDE;5;2;0.3;4
+450;S;Delicata delicatula (Kützing) Krammer;DDEL;5;2;0.3;4
+451;R;DELICATA Krammer;DLCP;5;2;0;0
+452;R;Delicatophycus alpestris M.J.Wynne;DPAL;5;2;0;0
+453;R;Delicatophycus angustus (Wynne) Bahls stat. nov.;DAGU;5;1;0;0
+454;R;Delicatophycus minutus M.J.Wynne;DPMI;0;0;0;0
+455;R;Denticula elegans Kützing var. elegans;DELE;4;2;1.8;2
+456;R;Denticula kuetzingii Grunow;DKUE;4;2;1;2
+457;S;Nitzschia denticula Grunow in Cleve et Grunow;NDEN;4;2;1;2
+458;R;Denticula subtilis Grunow;DSUB;2;2;0;0
+459;R;Denticula tenuis Kützing var. tenuis;DTEN;5;1;1.4;3
+460;S;Denticula tenuis var. crassula (Naegeli in Kützing) Hustedt;DTCR;5;1;1.4;3
+461;R;Denticula valida (Pedicino) Grunow in Van Heurck;DVAL;4;2;0;0
+462;R;Diadesmis confervacea Kützing var. confervacea;DCOF;1;3;0;0
+463;S;Navicula confervacea (Kützing) Grunow in Van Heurck var. confervacea;NCOF;1;3;0;0
+464;R;"Humidophila contenta (Grunow) Lowe, Kociolek, Johansen,
+Van de Vijver, Lange-Bertalot e";HUCO;4;1;1.4;0
+465;S;Diadesmis contenta (Grunow ex Van Heurck) Mann var. contenta;DCOT;4;1;1.4;0
+466;S;Navicula contenta Grunow in Van Heurck var. contenta;NCON;4;1;1.4;0
+467;R;DIADESMIS F.T. Kützing;DIAM;3.3;2;0;0
+468;R;Humidophila perpusilla (Grunow) Lowe, Kociolek, Johansen,Van deVijver, Lange-Bertalot &;HPEP;5;1;1.2;1
+469;S;Diadesmis gallica var. perpusilla (Grunow) Lange-Bertalot;DGPE;5;1;1.2;1
+470;S;Diadesmis perpusilla (Grunow) D.G. Mann in Round & al.;DPER;5;1;1.2;1
+471;S;Navicula gallica var. perpusilla (Grunow) Lange-Bertalot;NGPE;5;1;1.2;1
+472;R;Humidophila gallica (W. Sm.) Lowe, Kociolek, You, Wang & Stepanek comb. nov.;HGAL;5;1;0;0
+473;S;Diadesmis gallica Wm. Smith var. gallica;DGAL;5;1;0;0
+474;S;Navicula gallica (W.M. Smith) Lagerstedt var. gallica;NGAL;5;1;0;0
+475;R;"Humidophila paracontenta (Lange-Bertalot et Werum) Lowe,
+Kociolek, Johansen, Van de Vi";HUPC;0;0;0;0
+476;S;Diadesmis paracontenta Lange-Bertalot & Werum subsp. paracontenta;DPCT;0;0;0;0
+477;R;Diatoma anceps (Ehr.) Kirchner var. anceps;DANC;5;3;0.3;2
+478;R;Diatoma ehrenbergii f. anormale;DEHT;1;3;0;0
+479;R;Diatoma ehrenbergii Kützing;DEHR;4;3;1.6;2
+480;R;Odontidium hyemale (Roth) Ku¨tzing;ODHY;5;3;1;4
+481;S;Diatoma hyemalis (Roth) Heiberg var. hyemalis(hiemale);DHIE;5;3;1;4
+482;S;Odontidium hyemale (hiemale)(Lyngbye) Kützing;OHYE;5;3;1;4
+483;R;DIATOMA J.B.M. Bory de St. Vincent;DIAT;4;1;0;0
+484;R;Diatoma mesodon (Ehrenberg) Kützing;DMES;5;3;0.7;4
+485;R;Diatoma moniliformis f. anormale;DMOT;1;3;0;0
+486;R;Diatoma moniliformis Kützing;DMON;4;2;2;3
+487;R;Diatoma moniliformis subsp. ovalis (Fricke) Lange-Bertalot;DMOV;5;1;0;0
+488;R;Diatoma problematica Lange-Bertalot;DPRO;4;2;0;0
+489;R;Diatoma tenuis C. Agardh;DITE;3;1;1.4;0
+490;R;Diatoma vulgaris Bory var. vulgaris;DVUL;4;1;2;0
+491;R;Diatoma vulgaris f. anormale;DVUT;1;3;0;0
+492;R;Didymosphenia geminata (Lyngbye) W.M. Schmidt var. geminata;DGEM;5;3;0.6;1
+493;R;DIDYMOSPHENIA M. Schmidt;DIDY;4.8;3;0;0
+494;R;DIPLONEIS C.G. Ehrenberg ex P.T. Cleve;DIPL;4;2;0;0
+495;R;Diploneis elliptica (Kützing) Cleve var. elliptica;DELL;5;2;1.7;2
+496;R;Diploneis fontanella Lange-Bertalot;DFON;0;0;0;0
+497;R;Diploneis krammeri Lange-Bertalot et Reichardt ssp. krammeri;DKRA;4;2;0;0
+498;R;Diploneis marginestriata Hustedt;DMAR;5;2;0;0
+499;R;Diploneis oculata (Brébisson in Desmazières) Cleve;DOCU;4;2;1;0
+500;S;Diploneis minuta Petersen;DMIN;5;2;0;0
+501;R;Diploneis oblongella (Naegeli) Cleve-Euler var. oblongella;DOBL;4;2;1;2
+502;R;Diploneis ovalis (Hilse) Cleve var. ovalis;DOVA;4;2;1;2
+503;R;Diploneis parma Cleve;DPAR;5;3;0;0
+504;R;Diploneis petersenii Hustedt;DPET;5;2;1.3;2
+505;R;Diploneis pseudobombiformis Hustedt;DPBO;2.3;2;0;0
+506;R;Diploneis pseudovalis Hustedt;DPSO;3;2;0;0
+507;R;Diploneis puella (Schumann) Cleve;DPUE;5;3;1.3;0
+508;R;Diploneis separanda Lange-Bertalot in Werum & Lange-Bertalot ssp. separanda;DSEP;5;2;1;2
+509;R;DISCOSTELLA Houk et Klee;DISC;3.6;2;0;0
+510;R;"Discostella stelligera var. elliptica (Frenguelli) J.M.Guerrero et
+R.O Echenique";DSEL;0;0;0;0
+511;R;"Dorofeyukea kotschyi (Grunow) Kulikovskiy,Kociolek,Tusset
+& T. Ludwig comb.nov.";DKOT;3;3;0;0
+512;S;Navicula kotschyi Grunow var. kotschyi;NKOT;3;3;0;0
+513;R;Ellerbeckia arenaria (Moore ex Ralfs) Crawford;EARE;5;1;0.7;0
+514;R;ELLERBECKIA R.M.Crawford;ELLE;5;3;0;0
+515;R;Encyonema auerswaldii Rabenhorst;EAUE;4;3;2.1;0
+516;R;Encyonema caespitosum Kützing var. caespitosum;ECAE;4;2;2.1;0
+517;R;ENCYONEMA F.T. Kützing;ENCY;4.9;2;0;0
+518;R;Encyonema fogedii morphotype 1 Krammer;EFOG;0;0;0;0
+519;R;Encyonema lancettulum Krammer;ELAN;0;0;0;0
+520;R;Encyonema lange-bertalotii Krammer;ENLB;4;1;0;0
+521;R;Encyonema latissimum Krammer;ELTS;4;2;0;0
+522;R;Encyonema minutum morphotype 2 Krammer;EMNT;4.8;2;0;0
+523;R;Encyonema neomesianum Krammer;ENMS;5;2;1.8;0
+524;R;Encyonema parvum Krammer;ENPV;0;0;0;0
+525;R;Encyonema leibleinii (C. Agardh) Silva, Jahn Ludwig et Menezes;ELEI;4;3;2.3;1
+526;S;Encyonema prostratum (Berkeley) Kützing;EPRO;4;3;2.3;1
+527;R;Encyonema silesiacum f. anormale;ESAB;1;3;0;0
+528;R;Encyonema silesiacum var. lata Krammer;ENSL;5;2;0;0
+529;R;Encyonema vulgare Krammer var. vulgare;EVUL;5;3;0;0
+530;R;Encyonopsis alpina Krammer & Lange-Bertalot;ECAL;5;1;0;0
+531;R;Encyonopsis cesatii (Rabenhorst) Krammer var. cesatii;ECES;5;2;0.6;4
+532;R;Encyonopsis falaisensis (Grunow) Krammer;ECFA;5;2;0.4;3
+533;R;ENCYONOPSIS Krammer;ENCP;5;1;0;0
+534;R;Encyonopsis krammeri Reichardt;ECKR;5;2;0;0
+535;R;Encyonopsis minuta Krammer & Reichardt;ECPM;4;2;0;0
+536;R;Encyonopsis subminuta Krammer & Reichardt;ESUM;5;1;0;0
+537;R;Encyonopsis vandamii Krammer & Lange-Bertalot;ECVD;0;0;0;0
+538;R;ENTOMONEIS C.G. Ehrenberg;ENTO;2;3;0;0
+539;R;Entomoneis costata (Hustedt) Reimer;ECOS;2;3;0;0
+540;R;Entomoneis paludosa var. subsalina (Cleve) Krammer;EPSU;2;3;0;0
+541;R;Lucectorea comperei (Ector,M.Coste & R.Iserentant) Tudesque, Chrea & C.E. Wetzel comb. nov.;LCPR;1.5;1;0;0
+542;S;Eolimna comperei Ector Coste et Iserentant in Coste & Ector;EOCO;1.5;1;0;0
+543;R;EOLIMNA Lange-Bertalot & Schiller;EOLI;2.8;2;0;0
+544;R;Sellaphora nigri (De Not.) C.E. Wetzel et Ector comb. nov. emend.;SNIG;2.2;1;2.9;2
+545;S;Eolimna minima (Grunow) Lange-Bertalot;EOMI;2.2;1;2.9;2
+546;s;Navicula minima Grunow var. minima;NMIN;2.2;1;2.9;2
+547;R;Eolimna minima(Grunow) Lange-Bertalot f. anormale;EOMT;1;3;0;0
+548;R;Eolimna subminuscula (Manguin) Moser Lange-Bertalot et Metzeltin f. anormale;ESBT;1;3;0;0
+549;R;Epithemia adnata (Kützing) Brébisson var. adnata;EADN;4;3;2.2;2
+550;S;Epithemia zebra (Ehrenberg) Kützing var. zebra;EZEB;4;3;2.2;2
+551;R;Epithemia adnata var. porcellus (Kützing) Ross;EAPO;4;3;0;0
+552;R;Epithemia argus (Ehrenberg) Kützing var. argus;EARG;5;3;1.1;2
+553;R;EPITHEMIA F.T. Kützing;EPIT;4.4;2;0;0
+554;R;Epithemia goeppertiana Hilse;EGOE;5;3;0;0
+555;R;Epithemia sorex Kützing var. sorex;ESOR;4;2;2.7;2
+556;R;EUCOCCONEIS P.T. Cleve;EUCO;5;3;0;0
+557;R;Eunotia arcubus Nörpel-Schempp et Lange-Bertalot var. arcubus;EARB;5;3;0.6;2
+558;R;"Eunotia arcus Ehrenberg var. arcus sensu stricto Lange-
+Bertalot et al. var. arcus";EARC;5;3;1.1;2
+559;R;Eunotia arcus Ehrenberg var.attenuatum (Rabenhorst) Rabenhorst;EAAT;0;0;0;0
+560;R;Eunotia bidens Ehrenberg;EUBI;5;2;1.1;2
+561;R;Eunotia bilunaris (Ehrenberg) Schaarschmidt var. bilunaris;EBLU;5;2;0.7;0
+562;S;Eunotia bilunaris (Ehrenberg) Mills var. bilunaris;EBIL;5;2;0.7;0
+563;R;Eunotia botuliformis Wild, Nörpel-Schempp & Lange-Bertalot;EBOT;5;1;0;0
+564;R;EUNOTIA C.G. Ehrenberg;EUNO;4.8;2;0;0
+565;R;Eunotia exigua (Brébisson ex Kützing) Rabenhorst;EEXI;5;2;0.5;3
+566;R;Eunotia fallax A.Cleve;EFAL;4;2;0.6;2
+567;R;Eunotia formica Ehrenberg sensu stricto var. formica;EFOR;5;1;0;0
+568;R;Eunotia valida Hustedt;EVAL;4;2;0;0
+569;S;Eunotia glacialis Meister;EGLA;4;2;0;0
+570;R;Eunotia implicata Nörpel Lange-Bertalot et Alles;EIMP;5;2;0.6;2
+571;R;Eunotia microcephala Krasske ex Hustedt;EMIC;5;1;0.6;2
+572;R;Eunotia minor (Kützing) Grunow in Van Heurck;EMIN;4.6;1;2.6;0
+573;R;"Eunotia neocompacta (Hustedt) Mayama in Mayama et
+Kawashima var. neocompacta";ENEC;5;1;0.6;2
+574;S;Eunotia nymanniana Grunow in Van Heurck var. nymanniana;ENYM;5;1;0.6;2
+575;R;Eunotia minor (Kützing) Grunow in Van Heurck;EMIN;4.6;1;2.6;0
+576;R;Eunotia pectinalis (Kützing) Rabenhorst var. minor (Kützing) Rabenhorst;EPMI;4.6;1;2.6;0
+577;R;Eunotia pectinalis (Kützing) Rabenhorst;EPNL;4.8;2;1.1;0
+578;S;Eunotia pectinalis (Kützing) Rabenhorst var. pectinalis;EPEC;4.8;2;1.1;0
+579;R;Eunotia praerupta Ehrenberg;EPRA;5;1;0;0
+580;R;Eunotia rhynchocephala Hustedt var. rhynchocephala;ERHY;5;1;0;0
+581;R;Eunotia soleirolii (Kützing) Rabenhorst;ESOL;5;3;0;0
+582;R;Eunotia subarcuatoides Alles Nörpel & Lange-Bertalot in Alles et al.;ESUB;5;2;0;0
+583;R;Eunotia tenella (Grunow in Van Heurck) Hustedt in Schmidt et al var. tenella;ETEN;5;1;0;0
+584;R;FALLACIA A.J. Stickle & D.G. Mann;FALL;2.9;2;0;0
+585;R;Fallacia aequora (Hustedt) D.G. Mann;FAQO;2;1;0;0
+586;S;Navicula aequora Hustedt;NAQO;2;1;0;0
+587;R;Fallacia helensis (Schulz.) D.G. Mann;FHEL;5;1;0;0
+588;S;Navicula helensis Schulz;NHEL;5;1;0;0
+589;R;Fallacia insociabilis (Krasske) D.G. Mann;FINS;3;2;0;0
+590;S;Navicula insociabilis Krasske var. insociabilis;NINS;3;2;0;0
+591;R;Fallacia lenzii (Hustedt) Lange-Bertalot in Werum & lange-Bertalot;FLEN;4;1;1.2;2
+592;s;Navicula lenzii Hustedt in Schmidt;NLEN;4;1;1.2;2
+593;R;Fallacia mitis (Hustedt) D.G.Mann;FMIT;4;1;1.2;2
+594;R;Pseudofallacia monoculata (Hustedt) Liu Kociolek & Wang;PMOC;3;2;2.9;2
+595;S;Fallacia monoculata (Hustedt) D.G. Mann;FMOC;3;2;2.9;2
+596;S;Navicula monoculata Hustedt var. monoculata;NMOC;3;2;2.9;2
+597;R;Fallacia pygmaea (Kü tzi ng)  A. J. Sti ckl e  & D. G.  Manni n Round et al.;FPYG;2;3;3.7;5
+598;S;Navicula pygmaea Kützing;NPYG;2;3;3.7;5
+599;R;Fallacia subhamulata (Grunow in Van Heurck) D.G. Mann;FSBH;4;1;2.5;1
+600;S;Navicula subhamulata Grunow in Van Heurck var. subhamulata;NSBH;4;1;2.5;1
+601;R;Fallacia sublucidula (Hustedt) D.G. Mann;FSLU;3;1;2.9;1
+602;R;Fallacia subpygmaea (Lange-Bertalot, Cavacini,Tagliaventi & Alfinito) Reichardt nov. stat.;FSPY;2;3;0;0
+603;R;Fallacia tenera (Hustedt) Mann in Round;FTNR;3;2;0;0
+604;S;Navicula tenera Hustedt;NTNR;3;2;0;0
+605;R;Fallacia vitrea (Østrup) D.G. Mann;FVTR;5;1;0.6;2
+606;R;FISTULIFERA Lange-Bertalot;FITU;2;1;0;0
+607;R;Fistulifera pelliculosa (Brébisson) Lange-Bertalot;FPEL;3;1;2.5;3
+608;S;Navicula pelliculosa (Brébisson ex Kützing) Hilse;NPEL;3;1;2.5;3
+609;R;Fistulifera saprophila (Lange-Bertalot & Bonik) Lange-Bertalot;FSAP;2;1;2.6;1
+610;S;Navicula saprophila Lange-Bertalot & Bonik;NSAP;2;1;2.6;1
+611;R;Staurosira alpestris (Krasske ex Hustedt)Van de Vijver;SRSA;5;3;0.6;2
+612;S;Fragilaria alpestris Krasske in Hustedt;FALP;5;3;0.6;2
+613;R;Hannaea arcus (Ehr.) Patrick var.amphioxys (Ehr.)Patrick;HAAA;5;2;1;3
+614;S;"Fragilaria arcus (Ehrenberg) Cleve var. amphioxys
+(Rabenhorst) Cleve-Euler";FAAM;5;2;1;3
+615;R;Hannaea arcus (Ehr.) Patrick var. arcus;HARC;5;2;1;3
+616;S;Fragilaria arcus (Ehrenberg) Cleve var. arcus;FARC;5;2;1;3
+617;R;Fragilaria arcus f. anormale;FART;1;3;0;0
+618;R;Ulnaria biceps (Kützing) Compère;UBIC;3;1;3.5;0
+619;S;Fragilaria biceps (Kützing) Lange-Bertalot;FBCP;3;1;3.5;0
+620;R;Fragilaria bidens Heiberg var. bidens;FBID;5;1;0;0
+621;R;Pseudostaurosira brevistriata (Grun.in Van Heurck) Williams et Round var. brevistriata;PSBR;3;1;3;1
+622;S;Staurosira brevistriata (Grunow) Grunow;SBRV;3;1;3;1
+623;S;Fragilaria brevistriata Grunow in Van Heurck var. brevistriata;FBRE;3;1;3;1
+624;R;Fragilaria candidagilae Almeida, C. Delgado, Novais et S. Blanco in Delgado et al.;FCAD;0;0;0;0
+625;R;Fragilaria capucina Desmazières f. anormale;FCAT;1;3;0;0
+626;R            F;ragilaria amphicephaloides Lange-Bertalot in Hofmann & al.;FAPO;4;1;0.9;2
+627;S;Synedra amphicephala Kützing var. amphicephala;SAMP;4;1;0.9;2
+628;S;Fragilaria capucina Desmazières subsp. amphicephala (Kützing) Lange-Bertalot;FCAH;4;1;0.9;2
+629;R;Fragilaria rumpens (Kütz.) G.W.F.Carlson;FRUM;4;1;1;2
+630;S;"Fragilaria capucina Desmazières subsp. rumpens (Kütz.)
+Lange-Bertalot ex Bukhtiyarova";FCRP;4;1;1;2
+631;R;Fragilaria austriaca (Grunow) Lange-Bertalot;FAUT;5;1;0.5;4
+632;S;Fragilaria capucina Desmazières var. austriaca (Grunow) Lange-Bertalot;FCAU;5;1;0.5;4
+633;R;Fragilaria capucina Desmazieres var. capucina;FCAP;4.5;1;1.8;2
+634;R;Fragilaria radians (Kützing) Williams et Round;FRAD;4.8;2;2;2
+635;S;Fragilaria capucina-distans Sippe sensu Krammer & Lange-Bertalot;FCDI;4.8;2;2;2
+636;R;Fragilaria gracilis Østrup;FGRA;4.8;1;1.1;2
+637;S;Fragilaria capucina Desmazières var. gracilis (Østrup) Hustedt;FCGR;4.8;1;1.1;2
+638;R;Fragilaria mesolepta Rabenhorst;FMES;4.5;1;2.5;1
+639;S;Fragilaria capucina Desmazières var. mesolepta (Rabenhorst) Rabenhorst;FCME;4.5;1;2.5;1
+640;R;Fragilaria rumpens (Kütz.) G.W.F.Carlson;FRUM;4;1;1;2
+641;S;Fragilaria capucina Desmazières var. rumpens (Kützing) Lange-Bertalot ex Bukhtiyarova;FCRU;4;1;1;2
+642;R;Fragilaria capucina Desmazières var. vaucheriae(Kütz.)Lange-Bertalot f. anormale;FCVT;1;3;0;0
+643;R;Fragilaria recapitellata Lange-Bertalot & Metzeltin;FRCP;4;1;1.8;1
+644;S;Fragilaria capucina Desmazieres var.capitellata (Grunow) Lange-Bertalot;FCCP;4;1;1.8;1
+645;R;Fragilaria vaucheriae (Kützing) Petersen;FVAU;3.4;1;1.8;1
+646;S;"Fragilaria capucina Desmazieres var.vaucheriae (Kützing)
+Lange-Bertalot";FCVA;3.4;1;1.8;1
+647;R;Staurosira binodis (Ehrenberg) Lange-Bertalot in Hofmann Werum et Lange-Bertalot;SBND;4;1;2.3;2
+648;S;"Staurosira construens Ehrenberg var. binodis (Ehrenberg)
+Hamilton";SCBI;4;1;2.3;2
+649;S;Fragilaria construens (Ehrenberg) Grunow f. binodis (Ehr.) Hustedt;FCBI;4;1;2.3;2
+650;R;Staurosira construens Ehrenberg var. construens;SCON;4;1;2.3;2
+651;S;Fragilaria construens (Ehrenberg) Grunow f. construens var. construens;FCON;4;1;2.3;2
+652;R;Staurosira venter (Ehrenberg) Cleve et Moeller var. venter;SSVE;4;1;2.3;2
+653;S;Fragilaria construens (Ehrenberg) Grunow f. venter (Ehr.) Hustedt;FCVE;4;1;2.3;2
+654;R;Pseudostaurosira subsalina (Hustedt) Morales;PSSB;3;1;0;0
+655;S;Staurosira construens f. subsalina (Hustedt) Bukhtiyarova;SCSS;3;1;0;0
+656;S;Fragilaria construens (Ehrenberg) Grunow var. subsalina Hustedt;FCSS;3;1;0;0
+657;R;Fragilaria crotonensis Kitton var. crotonensis;FCRO;4;1;0;0
+658;R;Fragilaria perdelicatissima (W.Smith) Lange-Bertalot et Van de Vijver in Lange-Bertalot & U;FPDE;4;1;0;0
+659;R;"Fragilaria delicatissima (W. Smith) Lange-Bertalot var.
+delicatissima";FDEL;4;1;1.4;2
+660;R;Ulnaria capitata (Ehrenberg) Compère var. capitata;UCAP;4;3;2.7;0
+661;S;Fragilaria dilatata (Brébisson) Lange-Bertalot in Krammer & Lange-Bertalot;FDIL;4;3;2.7;0
+662;R;Fragilaria drouotiana Heudre, C.E.Wetzel, L.Moreau & Ector;FDRO;0;0;0;0
+663;R;Pseudostaurosira elliptica (Schumann) Edlund, Morales & Spaulding;PSSE;3;1;0;0
+664;S;Fragilaria elliptica Schumann (Staurosira) var. elliptica;FELL;3;1;0;0
+665;R;Fragilaria famelica (Kützing) Lange-Bertalot var. famelica;FFAM;4;1;0.7;4
+666;R;Tabularia fasciculata (Agardh) Williams et Round;TFAS;2;3;3.5;3
+667;S;Fragilaria fasciculata (C.A. Agardh) Lange-Bertalot sensu lato;FFAS;2;3;3.5;3
+668;R;Synedra gaillonii (Bory) Ehrenberg;SGAI;2;3;0;0
+669;S;Fragilaria gaillonii (Ehrenberg) Lange-Bertalot;FGAI;2;3;0;0
+670;R;FRAGILARIA H.C. Lyngbye;FRAG;3.6;1;0;0
+671;R;Fragilaria henryi Lange-Bertalot;FHEN;3.6;1;0;0
+672;R;Distrionella incognita (Reichardt) Williams;DICG;4.5;2;2.2;1
+673;S;Fragilaria incognita Reichardt;FICG;4.5;2;2.2;1
+674;R;Staurosirella leptostauron (Ehr.) Williams et Round var. leptostauron;SLEP;4;1;2;1
+675;S;Fragilaria leptostauron (Ehrenberg) Hustedt var. leptostauron;FLEP;4;1;2;1
+676;R;Staurosira pinnata Ehrenberg var. pinnata;SRPI;4;1;2.2;1
+677;R;Staurosirella neopinnata E.A. Morales, C.E. Wetzel, E.Y. Haworth & L. Ector;SNPI;4;1;2.2;1
+678;S;Staurosirella pinnata (Ehrenberg) Williams et Round var. pinnata;SPIN;4;1;2.2;1
+679;R;Staurosira dubia Grunow in Cleve & Moeller;SRDU;4;1;0;0
+680;S;Fragilaria leptostauron var. dubia (Grunow) Hustedt;FLDU;4;1;0;0
+681;R;Fragilaria microvaucheriae C.E. Wetzel et Ector;FMIV;0;0;0;0
+682;R;Fragilaria tenera var. nanana (Lange-Bertalot) Lange-Bertalot et Ulrich;FTNA;5;2;1.2;2
+683;S;Fragilaria nanana Lange-Bertalot;FNAN;5;2;1.2;2
+684;R;Fragilaria neointermedia Tuji et D.M. Williams;FNIN;3.4;1;1.8;1
+685;R;Fragilaria pararumpens Lange-Bertalot,G.Hofmann et Werum in Hofmann et al.;FPRU;4;1;1.8;1
+686;R;Pseudostaurosira parasitica (W.Smith) Morales var. parasitica;PPRS;4;1;2.3;3
+687;S;Fragilaria parasitica (W. Sm.) Grunow in Van Heurck var. parasitica;FPAR;4;1;2.3;3
+688;R;Fragilaria parva (Gerunow) Tuiji et D.M. Williams;FPAV;0;0;0;0
+689;R;Fragilaria pectinalis(O.F.Müller) Lyngbye;FPEC;0;0;1.8;2
+690;R;Fragilaria perminuta (Grunow) Lange-Bertalot;FPEM;4;1;2.1;4
+691;R;Staurosirella mutabilis (W. Smith) E. Morales & Van de Vijver;SLMU;4;1;2.2;1
+692;S;Staurosira mutabilis (Wm Smith) Grunow var. mutabilis Grunow in Van Heurck;SSMU;4;1;2.2;1
+693;S;Fragilaria pinnata Ehrenberg var.pinnata;FPIN;4;1;2.2;1
+694;R;Fragilaria rinoi Almeida et C. Delgado in Delgado & al.;FRIO;0;0;0;0
+695;R            F;ragilaria septentrionalis (Østrup) Van de Vijver, C.E.Wetzel & Ector comb.nov. et stat. nov.;FGSE;4;1;0;0
+696;R;Fragilaria sp.;FRAS;4;1;0;0
+697;R;Fragilaria tenera (W. Smith) Lange-Bertalot var. tenera;FTEN;4;2;1;2
+698;R;Fragilaria uliginosa Kulikovskiy, Lange-Bertalot, Witkowski et Dorofeyuk;FULI;0;0;0;0
+699;R;Ulnaria ulna (Nitzsch) Compère var. ulna;UULN;3;1;3.5;4
+700;S;Fragilaria ulna (Nitzsch.) Lange-Bertalot var. ulna;FULN;3;1;3.5;4
+701;R;Ulnaria delicatissima (W.Smith) M. Aboal et P.C. Silva var. angustissima (Grunow) M. Aboal;UDEA;4;1;1.8;2
+702;S;Fragilaria ulna sippen angustissima (Grunow)Lange-Bertalot;FUAN;4;1;1.8;2
+703;R;Ulnaria acus (Kützing) Aboal in Aboal et al.;UACU;4;1;1.8;2
+704;S;Fragilaria ulna var. acus (Kützing) Lange-Bertalot;FUAC;4;1;1.8;2
+705;R;Ulnaria oxyrhynchus (Kütz.) Aboal;UOXY;3;1;2.9;2
+706;S;Fragilaria ulna var. oxyrhynchus (Kützing) Lange-Bertalot;FUOX;3;1;2.9;2
+707;R;Ulnaria ulna (Nitzsch) Compère var.spathulifera (Grunow) Aboal;UUSP;3;1;0;0
+708;S;Fragilaria ulna var. spathulifera (Grunow in Van Heurck) Main;FUSP;3;1;0;0
+709;R;Fragilariforma virescens (Ralfs) Williams et Round var. virescens;FFVI;5;2;1.4;1
+710;S;Fragilaria virescens Ralfs var. virescens;FVIR;5;2;1.4;1
+711;R;Fragilariforma bicapitata (A.Mayer) Williams & Round;FFBI;5;2;1.1;1
+712;R;Fragilariforma constricta (Ehrenberg) Williams et Round var. constricta;FFCO;5;2;0.6;3
+713;R;Fragilariforma nitzschioides (Grunow) Lange-Bertalot in Hofmann, Werum & Lange-Bertalot;FFNI;5;2;0;0
+714;R;Fragilariopsis oceanica (P.T.Cleve) Hasle;FPOC;0;0;0;0
+715;S;Nitzschia grunowii Hasle;NGRU;0;0;0;0
+716;R;Frustulia amosseana Lange-Bertalot;FAMO;4.5;3;0;0
+717;R;Frustulia crassinervia (Brebisson) Lange-Bertalot et Krammer;FCRS;5;2;0.4;2
+718;R;Frustulia creuzburgensis (Krasske) Hustedt;FCRE;2.9;2;0;0
+719;R;Frustulia erifuga Lange-Bertalot & Krammer;FERI;5;2;0;0
+720;R;Frustulia lanceolata C. Agardh;FRUL;5;1;0;0
+721;R;Frustulia rhomboides (Ehrenberg) De Toni var. rhomboides;FRHO;5;2;0.5;3
+722;R;Frustulia saxonica Rabenhorst var. saxonica;FSAX;5;3;0.4;2
+723;R;Frustulia spicula Amosse ssp.spicula;FSPI;4.5;3;0;0
+724;R;Frustulia vulgaris (Thwaites) De Toni var. vulgaris;FVUL;4;3;2;2
+725;R;Frustulia weinholdii Hustedt;FWEI;4;3;0;0
+726;R;Geissleria acceptata (Hust.) Lange-Bertalot & Metzeltin;GACC;4.5;1;1.8;2
+727;S;Navicula ignota var. acceptata (Hustedt) Lange-Bertalot;NIAC;4.5;1;1.8;2
+728;R;Geissleria cummerowi (L.Kalbe) Lange-Bertalot;GCUW;5;2;1.9;1
+729;R;Navigeia decussis (Østrup) Bukhtiyarova;NGDU;4.8;2;1.2;1
+730;S;Navicula decussis Østrup var. decussis;NDEC;4.8;2;1.2;1
+731;S;Geissleria decussis (Østrup) Lange-Bertalot et Metzeltin;GDEC;4.8;2;1.2;1
+732;R;Navigeia ignota (Krasske) Bukhtiyarova;NGIO;3;2;0;0
+733;S;Geissleria ignota (Krasske)Lange-Bertalot & Metzeltin;GINO;3;2;0;0
+734;S;Navicula ignota Krasske emend Lund var. ignota;NINO;3;2;0;0
+735;R;GEISSLERIA Lange-Bertalot & Metzeltin;GEIS;5;2;0;0
+736;R;Placogeia similis (Krasske) Bukhtiyarova;PGSM;4;1;0;0
+737;S;Geissleria similis (Krasske) Lange-Bertalot & Metzeltin;GSML;4;1;0;0
+738;S;Navicula similis Krasske var. similis;NSIM;4;1;0;0
+739;R;Gomphonella calcifuga (Lange-Bertalot & Reichardt) Tuji comb.nov.;GCFG;5;2;1.2;2
+740;S;Gomphoneis calcifuga (Lange-Bertalot & Reichardt)Tuji;GCFU;5;2;1.2;2
+741;S;Gomphonema calcifugum Lange-Bertalot & Reichardt;GCLF;5;2;1.2;2
+742;S;Gomphonema olivaceum var.minutissimum Hustedt;GOMI;5;2;1.2;2
+743;R;Gomphoneis elegans (Grunow in Van Heurck) Cleve;GELE;0;0;0;0
+744;R;"Gomphonella olivaceolacua (Lange-Bertalot & E.Reichardt)
+R.Jahn & N.Abarca, comb.nov.";GLOL;3.5;1;1.9;3
+745;R;Gomphonema acidoclinatum Lange-Bertalot & Reichardt;GADC;4.2;1;0;0
+746;R;Gomphonema acuminatum Ehrenberg var. acuminatum;GACU;4;2;2.5;2
+747;R;Gomphonema affine Kützing var. affine;GAFF;4;3;1.8;3
+748;R;Gomphonema angustatum (Kützing) Rabenhorst var. angustatum;GANG;3;1;0;0
+749;R;Gomphonema productum (Grunow) Lange-Bertalot & Reichardt;GPRO;3.8;2;1.3;2
+750;S;Gomphonema angustatum var. producta Grunow in Van Heurck;GAPR;3.8;2;1.3;2
+751;R;Gomphonema angustivalva E. Reichardt;GAGV;5;1;0;0
+752;R;Gomphonema angustum Agardh;GANT;5;1;1;3
+753;R;Gomphonema augur Ehrenberg var. augur;GAUG;3;3;3.1;1
+754;R;Gomphonema duplipunctatum Lange-Bertalot & Reichardt;GDUP;4;2;0;0
+755;S;Gomphonema bipunctatum Krasske;GBIP;4;2;0;0
+756;R;Gomphonema bohemicum Reichelt et Fricke;GBOH;5;1;0.6;1
+757;R;GOMPHONEMA C.G. Ehrenberg;GOMP;3.6;2;0;0
+758;R;Gomphonema capitatum Ehrenberg var. capitatum;GCAP;4;1;0;0
+759;R;Gomphonema angusticephalum Reichardt & Lange-Bertalot;GAGC;0;0;0;0
+760;S;Gomphonema clavatulum Reichardt;GCVT;0;0;0;0
+761;R;Gomphonema clavatum Ehrenberg;GCLA;5;1;0;0
+762;R;Gomphonema clevei Fricke var. clevei;GCLE;5;3;1.2;2
+763;R;Gomphonema coronatum Ehrenberg;GCOR;4;2;0;0
+764;R;Gomphonema cuneolus E. Reichardt;GCUN;5;1;0;0
+765;R;Gomphonema cymbelliclinum Reichardt & Lange-Bertalot;GCBC;3.8;2;0;0
+766;R;Gomphonema dichotomum Kützing var. dichotomum;GDIC;5;2;1.3;2
+767;R;Gomphonemopsis exigua (Kützing) Medlin var. exigua;GOEX;2;2;0;0
+768;S;Gomphonema exiguum Kützing var. exiguum;GEXG;2;2;0;0
+769;R;Gomphonemopsis obscurum(Krasske) Lange-Bertalot;GOOB;2;2;0;0
+770;S;"Gomphonema exiguum var. minutissimum Grunow in Van
+Heurck";GEMI;2;2;0;0
+771;R;Gomphonema extentum Reichardt & Lange-Bertalot;GEXT;4;2;0;0
+772;R;Gomphonema gracile Ehrenberg var. gracile;GGRA;4.2;1;0;0
+773;R;Gomphosphenia grovei (M. Schmidt) Lange-Bertalot var. grovei;GPGR;2;2;0;0
+774;S;Gomphonema grovei M. Schmidt var. grovei;GGRO;2;2;0;0
+775;R;Gomphosphenia grovei var. lingulata (Hustedt) Lange-Bertalot;GPGL;2;3;0;0
+776;S;"Gomphonema grovei var. lingulatum (Hustedt) Lange-
+Bertalot";GGLI;2;3;0;0
+777;R;Gomphonema hebridense Gregory;GHEB;4;2;0.9;2
+778;R;Gomphonema innocens Reichardt;GINN;0;0;0;0
+779;R;Gomphonema affine var. insigne (Gregory) Andrews;GAFI;4.1;3;0;0
+780;S;Gomphonema insigne Gregory;GINS;4.1;3;0;0
+781;R;Gomphonema insigniforme Reichardt & Lange-Bertalot;GISF;0;0;0;0
+782;R;Gomphonema capitatum Ehrenberg var. capitatum;GCAP;4;1;0;0
+783;S;Gomphonema italicum Kützing;GITA;4;1;0;0
+784;R;Gomphonema lagenula Kützing;GLGN;2;3;0;0
+785;R;Gomphonema lateripunctatum Reichardt & Lange-Bertalot;GLAT;5;3;0.7;2
+786;R;"Gomphosphenia lingulatiformis (Lange-Bertalot & Reichardt)
+Lange-Bertalot";GPLI;2;3;0;0
+787;S;Gomphonema lingulatiforme Lange-Bertalot et Reichardt;GLIG;2;3;0;0
+788;R;Gomphonema lippertii Reichardt & Lange-Bertalot;GLIP;5;2;0;0
+789;R;Gomphonema micropumilum Reichardt;GMPU;5;1;0;0
+790;R;Gomphonema minusculum Krasske;GMIS;5;1;0;0
+791;R;Gomphonema minutum (Agardh) Agardh f. minutum;GMIN;4;1;2.2;1
+792;R;Gomphonema occultum Reichardt & Lange-Bertalot;GOCU;5;1;0.6;2
+793;R;Gomphonella olivaceoides (Hustedt) Tuji, comb. nov.;GOEO;5;1;1.5;2
+794;S;Gomphonema olivaceoides Hustedt var. olivaceoides;GOLD;5;1;1.5;2
+795;S;Gomphonema olivaceum var.olivaceoides (Hustedt) Lange-Bertalot;GOOL;5;1;1.5;2
+796;R;Gomphonema olivaceoides var. lanceolatum Manguin ex Kociolek et Reviers;GOLA;0;0;0;0
+797;R;Gomphonella olivacea (Hornemann) Rabenhorst;GLOV;4.6;1;2.9;1
+798;S;Gomphonema olivaceum (Hornemann) Brébisson var. olivaceum;GOLI;4.6;1;2.9;1
+799;R;Gomphonema olivaceum f. anormale;GOTG;1;3;0;0
+800;R;Gomphonella calcarea (Cleve) R.Jahn & N.Abarca, comb.nov.;GNLC;4.6;2;1.8;3
+801;S;Gomphonema olivaceum var.calcarea (Cleve) Cleve in Van Heurck;GOLC;4.6;2;1.8;3
+802;R;Gomphonema truncatum Ehrenberg var. truncatum;GTRU;4;1;1.9;1
+803;S;Gomphonema pala Reichardt;GOPA;4;1;1.9;1
+804;R;"Gomphonema parvulum (Kützing) Kützing var. parvulum f.
+parvulum (Kützing) Kützing";GPAR;2;1;3.6;2
+805;R;Gomphonema parvulum f. anormale;GPAT;1;3;0;0
+806;R;Gomphonema saprophilum (Lange-Bertalot et Reichardt)Abarca, R. Jahn, J. Zimmermann e;GSPP;2;1;0;0
+807;S;Gomphonema parvulum var. parvulum f. saprophilum Lange-Bertalot et Reichardt;GPAS;2;1;0;0
+808;R;Gomphonema exilissimum(Grun.) Lange-Bertalot & Reichardt;GEXL;5;1;0.7;2
+809;S;Gomphonema parvulum var.exilissimum Grunow in Van Heurck;GPXS;5;1;0.7;2
+810;R;Gomphonema micropus Kützing var. micropus;GMIC;3;1;2;0
+811;S;Gomphonema parvulum var.micropus (Kützing) Cleve;GPMI;3;1;2;0
+812;R;Gomphonema pseudoaugur Lange-Bertalot;GPSA;3;1;3.7;3
+813;R;Gomphonema pseudoclavatum Lange-Bertalot & Reichardt;GPDC;0;0;0;0
+814;R;Gomphonema pseudotenellum Lange-Bertalot;GPTE;5;1;0;0
+815;R;Gomphonema pumilum (Grunow) Reichardt et Lange-Bertalot var. pumilum;GPUM;4.5;1;1.1;1
+816;R;Gomphonema elegantissimum Reichardt & Lange-Bertalot in Hofmann & al.;GELG;5;2;0;0
+817;S;Gomphonema pumilum var. elegans Reichardt & Lange-Bertalot;GPEL;5;2;0;0
+818;R;Gomphonema pumilum var. rigidum Reichardt & Lange-Bertalot;GPRI;3.5;1;0;0
+819;R;Gomphonema pygmaeum Kociolek et Stoermer;GPYG;5;1;0;0
+820;R;Gomphonema rhombicum M. Schmidt;GRHB;5;3;0.6;1
+821;S;Gomphonema rhombicum Fricke var. rhombicum;GRHO;5;3;0.6;1
+822;R;Gomphonema rosenstockianum Lange-Bertalot & Reichardt;GROS;5;1;0;0
+823;R;Gomphonema sarcophagus Gregory;GSAR;4.2;2;1.3;2
+824;R;"Gomphonella stauroneiformis (Grunow) R.Jahn & N.Abarca,
+comb.nov.";GLSF;5;2;0.3;3
+825;S;Gomphonema stauroneiforme Grunow;GSTA;5;2;0.3;3
+826;R;Gomphonema subclavatum Grunow var. subclavatum;GSCL;5;1;0;0
+827;R;Gomphonema supertergestinum E. Reichardt;GSUT;0;0;0;0
+828;R;Gomphonema tenoccultum Reichardt;GTNO;0;0;0;0
+829;R;Gomphonema tergestinum (Grunow in Van Heurck) Schmidt in Schmidt et al. var. tergestin;GTER;4;3;1.4;1
+830;R;Gomphonema tumidum (Skvortzow) Lange-Bertalot et Reichardt;GTUM;0;0;0;0
+831;R;Gomphonema utae Lange-Bertalot & Reichardt;GUTA;4.5;2;0;0
+832;R;Gomphonema ventricosum Gregory var. ventricosum;GVEN;4;2;0.5;5
+833;R;Gomphonema vibrio Ehrenberg var. vibrio;GVIB;4.3;3;0;0
+834;R;Gomphonema vidalii Beltrami & Ector;GVID;3.8;2;0;0
+835;R;GOMPHOSPHENIA Lange-Bertalot;GOPP;2.2;2;0;0
+836;R;GRUNOWIA Rabenhorst;GRNO;3;1;0;0
+837;R;Grunowia solgensis (Cleve-Euler) Aboal;GRSO;3;3;2.3;2
+838;S;Nitzschia solgensis Cleve-Euler;NSOL;3;3;2.3;2
+839;R;GYROSIGMA A. Hassall;GYRO;3.9;2;0;0
+840;R;Gyrosigma acuminatum (Kützing)Rabenhorst;GYAC;4;3;3.7;3
+841;R;Gyrosigma attenuatum (Kützing) Rabenhorst var. attenuatum;GYAT;4;3;2.6;3
+842;R;Gyrosigma eximium (Thwaites)Boyer;GYEX;2;3;0;0
+843;R;Gyrosigma limosum Sterrenburg et Underwood;GLIM;4;3;0;0
+844;S;Gyrosigma kuetzingii (Grunow) Cleve;GYKU;4;3;0;0
+845;S;Gyrosigma spencerii (W. Smith) Griffith et Henfrey var. spencerii;GSPE;4;3;0;0
+846;R;Gyrosigma sciotoense (Sullivan et Wormley) Cleve;GSCI;4;3;2.7;2
+847;S;Gyrosigma nodiferum (Grunow) Reimer;GNOD;4;3;2.7;2
+848;S;Gyrosigma spencerii var. nodifera (Grunow) Cleve;GSNO;4;3;2.7;2
+849;R;Gyrosigma peisonis (Grunow) Hustedt var. peisonis;GPEI;3;3;0;0
+850;R;Gyrosigma obtusatum (Sullivan & Wormley) Boyer;GYOB;2.8;3;2.3;1
+851;S;Gyrosigma scalproides (Rabenhorst)Cleve var. scalproides;GSCA;2.8;3;2.3;1
+852;R;HALAMPHORA (Cleve) Levkov;HALA;2.6;2;0;0
+853;R;Halamphora acutiuscula (Kützing) Levkov;HLAC;2;3;0;0
+854;R;"Handmannia bodanica (Eulenstein ex Grunow) Kociolek &
+Khursevich";HBOD;5;3;0;0
+855;S;Lindavia bodanica (Eulenstein ex Grunow) Nakov, Guillory, Julius, Theriot & Alverson;LBOD;5;3;0;0
+856;R;HANNAEA R. Patrick;HANN;5;2;0;0
+857;R;HANTZSCHIA A. Grunow;HANT;1.1;2;0;0
+858;R;Hantzschia amphioxys (Ehrenberg) Grunow emend Maltsev et Kulikovskiy;HAMD;1.5;3;3.6;3
+859;S;Hantzschia amphioxys (Ehrenberg) Grunow in Cleve & Grunow;HAMP;1.5;3;3.6;3
+860;R;Hantzschia spectabilis (Ehr.) Hustedt;HSPE;2;3;0;0
+861;R;HASLEA R. Simonsen;HASL;2;2;0;0
+862;R;Haslea spicula (Hickie) Bukhtiyarova;HSPC;2.8;3;0;0
+863;S;Navicula spicula (Hickie) Cleve;NSPI;2.8;3;0;0
+864;R;"Hippodonta capitata (Ehr.)Lange-BertalotMetzeltin &
+Witkowski";HCAP;4;1;3.4;3
+865;S;Navicula capitata Ehrenberg (=Hippodonta) var. capitata;NCAP;4;1;3.4;3
+866;R;Hippodonta costulata (Grunow)Lange-Bertalot Metzeltin & Witkowski;HCOS;4;2;2.9;2
+867;S;Navicula costulata Cleve et Grunow var. costulata;NCOS;4;2;2.9;2
+868;R;Hippodonta hungarica Grunow) Lange-Bertalot Metzeltin et Witkowski var. hungarica;HHUN;4;1;2.7;2
+869;S;Navicula capitata var. hungarica (Grunow) Ross;NCHU;4;1;2.7;2
+870;R;HIPPODONTA Lange-Bertalot. Metzeltin & Witkowski;HIPO;4;2;0;0
+871;R;Hippodonta neglecta Lange-Bertalot Metzeltin & Witkowski;HNEG;4;1;0;0
+872;R;Hippodonta pseudacceptata (Kobayasi) Lange-Bertalot Metzeltin & Witkowski;HPDA;0;0;0;0
+873;R;HUMIDOPHILA Lowe, Kociolek, Johansen, Van de Vijver, Lange-Bertalot et Kopalová;HUMI;3.3;2;0;0
+874;R;HYGROPETRA Krammer & Lange-Bertalot;HYGR;4;2;0;0
+875;R;Iconella amphioxys (W.Smith) D.Kapustin et O.Kryvosheia;IAMP;5;1;2.9;2
+876;R;Iconella bifrons (Ehrenberg) Ruck & Nakov;IBIF;4;2;2.3;2
+877;R;Iconella biseriata (Brébisson in Brébisson & Godey) Ruck & Nakov comb. nov.;IBIS;4.5;3;2.1;2
+878;S;Surirella biseriata Brébisson in Brébisson et Godey var. biseriata;SBIS;4.5;3;2.1;2
+879;R;Iconella helvetica (Brun) Ruck & Nakov;IHEL;5;3;0.6;2
+880;S;Surirella helvetica Brun var. helvetica;SHEL;5;3;0.6;2
+881;R;Iconella linearis (W.Smith) Ruck & Nakov;ILIN;5;2;1;2
+882;S;Surirella linearis W.M. Smith var. linearis;SLIN;5;2;1;2
+883;R;Iconella robusta (Ehrenberg) Ruck & Nakov;IROB;5;2;1.4;0
+884;R;Iconella tenera (W. Gregory) Ruck & Nakov;ITEN;4;1;2;0
+885;S;Surirella tenera Gregory var. tenera;SUTE;4;1;2;0
+886;R;KARAYEVIA Round & Bukhtiyarova;KARA;4;1;0;0
+887;R;KOLBESIA Round & Bukhtiyarova;KOLB;4;1;0;0
+888;R;LEMNICOLA Round & Basson;LEMN;2.8;2;0;0
+889;R;Lindavia balatonis (Pantocsek) Nakov, Guillory, Julius, Theriot & Alverson;LBAL;0;0;0;0
+890;R;Luticola acidoclinata Lange-Bertalot in Lange-Bertalot & Metzeltin;LACD;5;1;0;0
+891;R;Luticola cohnii (Hilse) D.G. Mann in Round Crawford & Mann;LCOH;2;2;3.5;2
+892;R;LUTICOLA D.G. Mann;LUTI;2.9;2;0;0
+893;R;Luticola goeppertiana (Bleisch) D.G.Mann ex J.Rarick, S.Wu, S.S.Lee & Edlund;LGOP;2;2;3.6;5
+894;S;Luticola goeppertiana (Bleisch in Rabenhorst) D.G.Mann in Round Crawford & Mann;LGOE;2;2;3.6;5
+895;S;Navicula goeppertiana (Bleisch) H.L. Smith var. goeppertiana;NGOE;2;2;3.6;5
+896;R;Luticola goeppertiana f. anormale;LGOT;1;3;3.6;5
+897;R;Luticola mutica (Kützing) D.G. Mann in Round Crawford et Mann var. mutica;LMUT;2;2;2.9;1
+898;S;Navicula mutica Kützing;NMUT;2;2;2.9;1
+899;R;Luticola muticoides (Hustedt) Mann;LMTD;2.9;2;0;0
+900;S;Navicula muticoides Hustedt;NMTD;2.9;2;0;0
+901;R;Luticola nivalis (Ehrenberg) D.G. Mann in Round Crawford et Mann var. nivalis;LNIV;4.5;3;2.9;1
+902;S;Navicula nivalis Ehrenberg;NNIV;4.5;3;2.9;1
+903;R;Luticola paramutica (Bock) D.G. Mann in Round Crawford et Mann var. paramutica;LPAR;5;2;0;0
+904;S;Navicula paramutica Bock var. paramutica;NPRM;5;2;0;0
+905;R;Luticola saprophila Levkov, Metzeltin et Pavlov;LSAP;1.8;2;0;0
+906;R;Luticola undulata (Hilse) N.A. Andersen, Stoermer et Kreis;LUUN;2;2;0;0
+907;S;Navicula mutica Kützing f. undulata (Hilse) Grunow in Cl. et Grunow;NMUU;2;2;0;0
+908;R;Luticola ventriconfusa Lange-Bertalot;LVCF;2;3;0;0
+909;R;uticola ventricosa (Kützing) D.G. Mann in Round Crawford & Mann;LVEN;2;3;3.1;2
+910;R;Mastogloia elliptica (C.A. Agardh) Cleve var. elliptica;MELL;3.2;2;0;0
+911;R;MASTOGLOIA G.H.K. Thwaites ex W. Smith;MAST;3;2;0;0
+912;R;Mastogloia smithii Thwaites ex W.Smith ex W.Smith ex W.Smith var. smithii;MSMI;2.6;3;0;0
+913;R;Mayamaea agrestis(Hustedt) Lange-Bertalot;MAGR;3;1;0;0
+914;S;Navicula agrestis Hustedt;NAGR;3;1;0;0
+915;R;Mayamaea alcimonica (E. Reichardt) C.E. Wetzel, Barragán & Ector in Barragán et al.;MALC;3.5;1;0;0
+916;R;Mayamaea atomus (Kützing) Lange-Bertalot var. atomus;MAAT;2.2;1;2.8;3
+917;S;Navicula atomus (Kützing) Grunow var. atomus;NATO;2.2;1;2.8;3
+918;R;Mayamaea atomus f. anormale;MAPT;1;3;0;0
+919;R;Mayamaea atomus var. permitis (Hustedt) Lange-Bertalot;MAPE;2.3;1;3.1;4
+920;S;Mayamaea permitis (Hustedt) Bruder & Medlin;MPMI;2.3;1;3.1;4
+921;S;Navicula atomus var. permitis (Hustedt) Lange-Bertalot;NAPE;2.3;1;3.1;4
+922;R;Mayamaea cahabaensis E.A. Morales et K.M. Manoylov;MCAH;0;0;0;0
+923;R;Mayamaea excelsa (Krasske) Lange-Bertalot;MAEX;3;1;0;0
+924;R;Mayamaea fossalis (Krasske) Lange-Bertalot var. fossalis;MAFO;3;2;0;0
+925;R;MAYAMAEA Lange-Bertalot;MAYA;2.8;1;0;0
+926;R;MELOSIRA C.A. Agardh;MELO;3.5;1;0;0
+927;R;Melosira lineata (Dillwyn) Agardh var. lineata;MLIN;2;3;0;0
+928;R;Melosira varians Agardh;MVAR;4;1;2.9;4
+929;R;MERIDION C.A. Agardh;MERI;5;1;0;0
+930;R;Meridion circulare (Greville) C.A.Agardh;MCIR;4.6;2;2.5;2
+931;R;Meridion circulare f. anormale;MCTG;1;3;0;0
+932;R;Meridion circulare var. constrictum (Ralfs) Van Heurck;MCCO;4.5;1;1.2;2
+933;S;Meridion constrictum Ralfs;MCON;4.5;1;1.2;2
+934;R;MUELLERIA Frenguelli;MUEL;5;1;0;0
+935;R;Muelleria linearis (O.Müller) Frenguelli;MULI;4.8;1;0;0
+936;R;Nanofrustulum sopotensis (Witkowski & Lange-Bert.) E. Morales, C.E.Wetzel & Ector in Mor;NFSO;3;1;0;0
+937;R;Nanofrustulum trainori (E.Morales) E.Morales, comb. nov.;NFTR;3;1;0;0
+938;R;Navicula agnita Hustedt;NAGI;2.5;2;0;0
+939;R;Navicula amphiceropsis Lange-Bertalot & Rumrich;NAAM;3;3;0;0
+940;R;Navicula angusta Grunow;NAAN;5;3;0.6;2
+941;R;Navicula antonii Lange-Bertalot;NANT;4;1;2.1;2
+942;S;Navicula menisculus var. grunowii Lange-Bertalot;NMEG;4;1;2.1;2
+943;R;Navicula aquaedurae Lange-Bertalot;NAQR;5;1;0;0
+944;R;Sellaphora arvensis (Hustedt) C.E. Wetzel et Ector;SARV;3;1;0;0
+945;S;Navicula arvensis Hustedt var. arvensis;NARV;3;1;0;0
+946;R;Navicula associata Lange-Bertalot;NXAS;3;1;2.3;1
+947;S;Navicula reichardtiana var. crassa Lange-Bertalot & Hofmann;NRCR;3;1;2.3;1
+948;R;Sellaphora bacillum (Ehrenberg) D.G.Mann var. bacillum;SEBA;4;1;2.3;3
+949;S;Navicula bacillum Ehrenberg var. bacillum;NBAC;4;1;2.3;3
+950;R;Navicula bacillum f. delicatula Carter et Denny;NBDE;3.6;1;0;0
+951;R;Navicula brevissima Hustedt var. brevissima;NBRS;3.8;1;0;0
+952;R;Navicula capitatoradiata Germain;NCPR;3;2;3.3;4
+953;R;Navicula cari Ehrenberg var. cari;NCAR;4;3;2.6;1
+954;R;Navicula cataracta-rheni Lange-Bertalot;NCTT;4.5;1;0;0
+955;R;Navicula caterva Hohn & Hellerman;NCTV;3;1;0;0
+956;R;Navicula cincta (Ehr.) Ralfs in Pritchard var. cincta;NCIN;3;1;3.4;2
+957;R;Placoneis clementis (Grun.) Cox var. clementis;PCLT;4.8;2;2.5;2
+958;S;Navicula clementis Grunow var. clementis;NCLE;4.8;2;2.5;2
+959;R;Navicula completa Hustedt;NCPT;0;0;0;0
+960;R;Navicula johncarterii D.M.Williams;NJOC;5;3;0;0
+961;S;Navicula concentrica Carter;NCCT;5;3;0;0
+962;R;Navicula costei Héribaud var. costei;NCSE;0;0;0;0
+963;R;Navicula cryptocephala Kützing var. cryptocephala;NCRY;3.5;2;3.5;4
+964;R;Navicula exilis Kützing;NEXI;4;1;2;1
+965;S;Navicula cryptocephala var. exilis Grunow in Van Heurck;NCEX;4;1;2;1
+966;R;Navicula cryptocephaloides Hustedt;NCCP;0;0;0;0
+967;R;Navicula cryptotenella Lange-Bertalot var. cryptotenella;NCTE;4;1;2.3;1
+968;R;Navicula cryptotenella-Type Type in Kelly (TDI);NCTY;0;0;0;0
+969;R;Navicula cryptotenelloides Lange-Bertalot var. cryptotenelloides;NCTO;3.5;1;0;0
+970;R;Navicula dealpina Lange-Bertalot;NDEA;4;2;0;0
+971;R;Navicula digitoradiata (Gregory) Ralfs var. digitoradiata;NDIG;2;3;0;0
+972;R;Cymbellafalsa diluviana (Krasske) Lange-Bertalot & Metzeltin;CFDI;5;3;0;0
+973;S;Navicula diluviana Krasske;NDIL;5;3;0;0
+974;R;Haslea duerrenbergiana (Hustedt) Sterrenburg;HDUE;2;3;0;0
+975;S;Navicula duerrenbergiana Hustedt in Schmidt et al.;NDUR;2;3;0;0
+976;R;Placoneis elginensis (Gregory) Cox var. elginensis;PELG;4;2;2.1;2
+977;S;Navicula elginensis (Gregory) Ralfs in Pritchard var. elginensis;NELG;4;2;2.1;2
+978;R;Navicula erifuga Lange-Bertalot in Krammer & Lange-Bertalot;NERI;2;3;2.9;2
+979;R;Navicula escambia (Patrick) Metzeltin & Lange-Bertalot;NESC;2.8;2;0;0
+980;S;Navicula schroeteri var. escambia Patrick;NSES;2.8;2;0;0
+981;R;Navicula germainii Wallace;NGER;3;2;0;0
+982;S;Navicula viridula var.germainii (Wallace) Lange-Bertalot;NVGE;3;2;0;0
+983;R;Navicula gottlandica Grunow in Van Heurck;NGOT;5;2;1.5;2
+984;R;Navicula tripunctata (O.F.Müller) Bory var. tripunctata;NTPT;4.4;2;3.1;3
+985;S;Navicula gracilis Ehrenberg var. gracilis;NGRA;4.4;2;3.1;3
+986;R;Navicula gregaria Donkin var. gregaria;NGRE;3.4;1;3.5;4
+987;R;Navicula gregaria f. anormale;NGTG;1;3;0;0
+988;R;Placoneis hambergii (Hustedt) Bruder & Medlin;PLHA;4;1;0;0
+989;S;Navicula hambergii Hustedt;NHAM;4;1;0;0
+990;S;Naviculadicta hambergii Hustedt;NDHA;4;1;0;0
+991;R;NAVICULA J.B.M. Bory de St. Vincent;NAVI;3.4;2;0;0
+992;R;Gandhia jakovljevicii (Hustedt) Kulikovskiy et al;GJAK;4;2;0;0
+993;S;Navicula jakovljevicii Hustedt;NJAK;4;2;0;0
+994;S;Navicula seminulum Grunow var. seminulum;NSEM;1.5;2;3.2;2
+995;S;Naviculadicta seminulum (Grunow) Lange Bertalot;NVDS;1.5;2;3.2;2
+996;R;Sellaphora laevissima (Kützing) D.G. Mann var. laevissima;SELA;5;1;1.1;2
+997;S;Navicula laevissima Kützing;NLAE;5;1;1.1;2
+998;R;Sellaphora perhibita (Hustedt) Lange-Bertalot et Cantonati;SPEH;4.2;2;0;0
+999;S;Navicula laevissima var. perhibita (Hustedt) Lange-Bertalot;NLPE;4.2;2;0;0
+1000;R;Navicula lanceolata (Agardh) Ehrenberg f. anormale;NLNT;1;3;0;0
+1001;R;Navicula lanceolata (Agardh) Ehrenberg var. lanceolata;NLAN;3.8;1;3.5;4
+1002;R;Navicula lapsa Carter et Denny;NLPA;0;0;0;0
+1003;R;Cymbosellaphora laterostrata (Hustedt)  Kulikovskiy et al;CLTE;4;2;1.4;2
+1004;S;Navicula laterostrata Hustedt var. laterostrata;NLAT;4;2;1.4;2
+1005;S;Naviculadicta laterostrata (Hustedt) Lange-Bertalot in Lange-Bertalot & Moser;NVDL;4;2;1.4;2
+1006;R;Navicula leptostriata Jorgensen;NLST;5;2;0;0
+1007;R;Navicula libonensis Schoeman;NLIB;3;2;0;0
+1008;R;Navicula linearis (O.Müller) Frenguelli;NLNR;4.8;1;0;0
+1009;R;Navicula lundii Reichardt;NLUN;4.8;2;0;0
+1010;R;Navicula margalithii Lange-Bertalot;NMGL;2;3;0;0
+1011;R;Navicula menisculus Schumann var. menisculus;NMEN;4;1;2.7;2
+1012;R;Navicula upsaliensis (Grunow) Peragallo;NUSA;4;2;2.9;2
+1013;S;Navicula menisculus var. upsaliensis Grunow in Cleve et Grunow;NMUP;4;2;2.9;2
+1014;R;Navicula metareichardtiana Lange-Bertalot & Kusber nom.nov.;NMTA;3.6;1;2.3;1
+1015;S;Navicula reichardtiana Lange-Bertalot var. reichardtiana in LBK;NRCH;3.6;1;2.3;1
+1016;R;Navicula microcari Lange-Bertalot;NMCA;4;1;0;0
+1017;R;Navicula microdigitoradiata Lange-Bertalot;NMDG;3;1;0;0
+1018;R;Navicula minuscula f. linearis Reimer;NMLN;0;0;0;0
+1019;R;Navicula moenofranconica Lange-Bertalot;NMFC;3.9;2;0;0
+1020;R;Navicula muticopsis var. cymbelloides (M. Peragallo) Frenguelli et Orlando;NMTC;2.8;2;0;0
+1021;R;Navicula notha Wallace;NNOT;5;2;0;0
+1022;R;Navicula novaesiberica Lange-Bertalot;NNOV;2.8;2;0;0
+1023;R;Navicula oblonga (Kützing) Kützing var. oblonga;NOBL;4.5;3;2.7;1
+1024;R;Navicula oligotraphenta Lange-Bertalot & Hofmann;NOLI;4;3;0;0
+1025;R;Navicula oppugnata Hustedt;NOPU;5;3;0;0
+1026;R;Navicula peregrina (Ehr.) Kützing var. peregrina;NPRG;2;2;0;0
+1027;R;Navicula perminuta Grunow in Van Heurck;NPNU;2;2;3.4;3
+1028;R;Navicula phyllepta Kützing;NPHY;2.6;3;2.9;3
+1029;R;Navicula phylleptosoma Lange-Bertalot;NPHP;0;0;0;0
+1030;R;Navicula placentiformis Hustedt;NPLF;0;0;0;0
+1031;R;Paraplaconeis placentula (Ehrenberg) Kulikovskiy & Lange-Bertalot;PPPL;4;2;2.7;3
+1032;S;Navicula placentula (Ehr.) Kützing var. placentula;NPLA;4;2;2.7;3
+1033;R;Navicula praeterita Hustedt;NPRA;5;1;0.9;2
+1034;R;Prestauroneis protracta (Grunow) I.W.Bishop, Minerovic, Q.Liu et Kociolek comb. et stat.nov.;PPTA;2;2;2.9;2
+1035;S;Navicula protracta (Grunow in Cleve et Grunow) Cleve var. protracta;NPRO;2;2;2.9;2
+1036;S;Navicula pseudolanceolata Lange-Bertalot var. pseudolanceolata;NPSL;5;2;2.5;2
+1037;R;Luticola pseudonivalis (Bock) Levkov Metzeltin & Pavlov in Levkov et al.;LPNI;4.5;1;0;0
+1038;S;Navicula pseudonivalis Bock;NPNI;4.5;1;0;0
+1039;R;Sellaphora pupula (Kützing) Mereschkowksy var. pupula;SPUP;2.6;2;3.7;5
+1040;S;Navicula pupula Kützing var. pupula;NPUP;2.6;2;3.7;5
+1041;R;Sellaphora mutatoides Lange-Bertalot & Metzeltin;SMTO;3.4;2;1.2;2
+1042;S;Navicula pupula var. mutata (Krasske) Hustedt;NPUM;3.4;2;1.2;2
+1043;R;Navicula radiosa Kützing var. radiosa;NRAD;5;2;0.6;3
+1044;R;Navicula radiosafallax Lange-Bertalot;NRFA;5;2;0;0
+1045;S;Navicula radiosa var. parva Wallace;NRPA;5;2;0;0
+1046;R;Navicula recens (Lange-Bertalot) Lange-Bertalot;NRCS;2.8;2;2.9;2
+1047;R;Navicula recurva Witkowski Lange-Bertalot & Metzeltin;NRVA;0;0;0;0
+1048;R;Navicula reichardtiana f. anormale;NRCF;1;3;0;0
+1049;R;Navicula reinhardtii (Grunow) Grunow in Cl. & Möller;NREI;4.6;2;2.8;1
+1050;R;Navicula rhynchocephala Kützing var. rhynchocephala;NRHY;4;3;2.3;1
+1051;R;Navicula rhynchocephala var. constricta Hustedt;NRHC;0;0;0;0
+1052;R;Navicula rhynchotella Lange-Bertalot;NRHT;3;2;0;0
+1053;R;Navicula rostellata Kützing var. rostellata;NROS;3;3;3.5;4
+1054;S;Navicula viridula var. rostellata (Kützing) Cleve;NVRO;3;3;3.5;4
+1055;R;Navicula salinarum Grunow in Cleve et Grunow;NSAL;2.6;2;2.3;2
+1056;R;Navicula salinarum var. rostrata (Hustedt) Lange-Bertalot;NSAR;2;2;0;0
+1057;R;Navicula salinicola Hustedt var. salinicola;NSLC;2;2;0;0
+1058;R;Navicula schroeteri Meister var. schroeteri;NSHR;2.8;3;0;0
+1059;R;Navicula simulata Manguin;NSIA;3;2;0;0
+1060;S;Navicula schroeteri var. symmetrica (Patrick) Lange-Bertalot;NSSY;3;2;0;0
+1061;S;Navicula symmetrica Patrick;NSYM;3;2;0;0
+1062;R;Navicula slesvicensis Grunow;NSLE;3;3;3;2
+1063;R;Navicula splendicula Van Landingham;NSPD;5;2;1.5;2
+1064;R;Navicula streckerae Lange-Bertalot & Witkowski;NSCK;0;0;0;0
+1065;R;Navicula striolata (Grun.) Lange-Bertalot in Reichardt;NSTL;5;3;0;0
+1066;R;Sellaphora stroemii (Hustedt) Kobayasi in Mayama Idei Osada & Nagumo;SSTM;5;1;1.2;2
+1067;S;Navicula stroemii Hustedt;NSTR;5;1;1.2;2
+1068;R;Navicula subalpina Reichardt;NSBN;4.5;1;1.4;2
+1069;R;Navicula subdilucida Cholnoky;NASU;0;0;0;0
+1070;R;Navicula subrhynchocephala Hustedt;NSRH;3;2;0;0
+1071;R;Sellaphora subrotundata (Hust.) Wetzel, Ector Van De Vijver, Compère et D.G.Mann;SSRT;2.3;1;1.8;2
+1072;S;Navicula subrotundata Hustedt;NSBR;2.3;1;1.8;2
+1073;R;Navicula supergregaria Lange-Bertalot & Rumrich;NSGG;0;0;0;0
+1074;R;Navicula tenelloides Hustedt var. tenelloides;NTEN;3;2;2.9;2
+1075;R;Sellaphora tridentula (Krasske) C.E. Wetzel;SETR;5;3;0.6;2
+1076;S;Navicula tridentula Krasske var. tridentula;NTRI;5;3;0.6;2
+1077;R;Navicula tripunctata f. anormale;NTTT;1;3;0;0
+1078;R;Navicula trivialis Lange-Bertalot var. trivialis;NTRV;2;3;3.3;1
+1079;R;Navicula trophicatrix Lange-Bertalot;NTCX;3.5;1;0;0
+1080;R;Navicula vandamii Schoeman et Archibald var. vandamii;NVDA;3;1;0;0
+1081;R;Navicula veneta Kützing;NVEN;1.5;2;3.5;5
+1082;R;Sellaphora ventraloides (Hustedt) Falasco & Ector;SVTL;5;1;1.2;2
+1083;S;Navicula ventraloides Hustedt;NVTO;5;1;1.2;2
+1084;R;Navicula vilaplanii (Lange-Bert. et Sabater) Lange-Bertalot et Sabater;NVIP;2.9;1;0;0
+1085;R;Navicula viridula (Kützing) Ehrenberg var. viridula;NVIR;3;3;3.5;4
+1086;R;Navicula viridulacalcis Lange-Bertalot var. viridulacalcis;NVCC;5;1;0;0
+1087;R;Navicula vulpina Kützing var. vulpina;NVUL;5;3;1.8;2
+1088;R;Navicula wiesneri Lange-Bertalot;NWIE;3;1;0;0
+1089;R;Navicula wildii Lange-Bertalot;NWIL;0;0;0.3;2
+1090;R;Navicula witkowskii Lange-Bertalot Iserentant et Metzeltin;NWKO;2;2;0;0
+1091;R;Naviculadicta geisslerae (Jahn) Jahn in Lange-Bertalot & Moser;NDGE;0;0;0;0
+1092;R;NAVICULADICTA Lange-Bertalot;NADI;3.4;2;0;0
+1093;R;NAVICYMBULA Krammer;NVCB;5;2;0;0
+1094;R;"Neidiomorpha binodeformis (Krammer) Cantonati, Lange-
+Bertalot & Angeli";NDBF;4;2;0;0
+1095;S;Neidium binodeforme Krammer;NBNF;4;2;0;0
+1096;R;Neidium affine (Ehrenberg) Pfitzer var. affine;NEAF;4;3;0.6;2
+1097;R;Neidium alpinum Hustedt var. alpinum;NALP;5;2;0.6;2
+1098;R;"Neidium ampliatum (Ehrenberg) Krammer in Krammer &
+Lange-Bertalot";NEAM;5;3;1.5;2
+1099;R;Neidiomorpha binodis (Ehrenberg) Cantonati, Lange-Bertalot et Angeli;NDMB;4;1;1.8;1
+1100;S;Neidium binodis (Ehrenberg) Hustedt;NBID;4;1;1.8;1
+1101;R;Neidium bisulcatum (Lagerstedt) P.T. Cleve var. bisulcatum;NBIS;5;2;0.6;3
+1102;R;Neidium dubium (Ehrenberg)Cleve var. dubium;NEDU;4;2;2.3;2
+1103;R;NEIDIUM E. Pfitzer;NEID;4.4;2;0;0
+1104;R;Neidium iridis (Ehrenberg) Cleve var. iridis;NIRI;5;2;1.3;2
+1105;R;Neidium productum (W.M.Smith)Cleve var. productum;NEPR;4;2;1.4;2
+1106;R;Neidium rectum Hustedt;NERE;0;0;0;0
+1107;R;NITZSCHIA A.H. Hassall;NITZ;1;2;0;0
+1108;R;Nitzschia abbreviata Hustedt in Schmidt & al.;NZAB;2;1;0;0
+1109;R;Nitzschia acicularis Kützing) W.M.Smith;NACI;2;2;3.6;5
+1110;R;Nitzschia acidoclinata Lange-Bertalot;NACD;5;1;2.3;2
+1111;R;Nitzschia acula Hantzsch ex Cleve & Grunow;NACU;4;3;2.7;2
+1112;R;Nitzschia adamata Hustedt;NZAD;2.8;2;3.4;2
+1113;R;Nitzschia agnita Hustedt;NAGN;3.2;1;0;0
+1114;R;Nitzschia alicae Hlubikova & Ector;NALC;0;0;0;0
+1115;R;Nitzschia alpina Hustedt;NZAL;5;2;0.6;3
+1116;R;Nitzschia alpinobacillum Lange-Bertalot;NAPB;0;0;0;0
+1117;R;Nitzschia amphibia f. amphibia Grunow var. amphibia;NAMP;2;2;3.8;5
+1118;R;"Nitzschia semirobusta morphotype semirobusta Lange-
+Bertalot";NSRB;5;1;0;0
+1119;R;Nitzschia amphibioides Hustedt;NAMH;5;1;0;0
+1120;R;Nitzschia amphicephala Grunow in Cleve et Grunow;NAHH;0;0;0;0
+1121;R;Nitzschia amplectens Hustedt;NAMC;2;3;0;0
+1122;R;Tryblionella angustata W.M. Smith var. angustata;TANG;3.8;3;1.9;1
+1123;S;Nitzschia angustata (W.Smith) Grunow var. angustata;NIAN;3.8;3;1.9;1
+1124;R;Tryblionella angustata var. acuta (Cleve et Grunow ) Bukhtiyarova;TAAN;4;1;0;0
+1125;S;Nitzschia angustata var. acuta Grunow in Cleve et Grunow;NIAA;4;1;0;0
+1126;R;Nitzschia angustata var. curta Skvortzow;NAGC;4;1;0;0
+1127;R;Tryblionella angustatula (Lange-Bertalot) Cantonati & Lange-Bertalot in Kusber et al. comb;TATU;4;1;2.6;2
+1128;S;Nitzschia angustatula Lange-Bertalot;NZAG;4;1;2.6;2
+1129;R;Tryblionella kuetzingii Alvarez-Blanco & S.Blanco;TKUE;2.4;2;3.9;5
+1130;S;Nitzschia apiculata Gregory)Grunow var. apiculata;NAPI;2.4;2;3.9;5
+1131;S;Tryblionella apiculata Gregory;TAPI;2.4;2;3.9;5
+1132;S;Nitzschia constricta (Kützing) Ralfs in Pritchard;NCOT;2.4;2;3.9;5
+1133;R;Nitzschia archibaldii Lange-Bertalot;NIAR;3.8;2;2;2
+1134;R;Nitzschia aurariae Cholnoky;NAUR;1;2;0;0
+1135;R;Nitzschia bacilliformis Hustedt;NIBF;5;2;0;0
+1136;R;Nitzschia bacillum Hustedt;NBCL;3.8;1;1.9;2
+1137;R;Nitzschia brevissima Grunow in Van Heurck;NBRE;2;3;2.9;2
+1138;R;Nitzschia bryophila Hustedt;NIBR;3.8;1;0;0
+1139;R;Nitzschia bulnheimiana (Rabenhorst) H.L.Smith var. bulnheimiana;NIBU;2;1;0;0
+1140;S;Nitzschia frustulum (Kützing) Grunow var. bulnheimiana (Rabenhorst) Grunow;NFBU;2;1;0;0
+1141;R;Tryblionella calida (Grunow in Cl. & Grun.) D.G. Mann in Round Crawford & Mann;TCAL;2.3;2;3;2
+1142;S;Nitzschia calida Grunow in Cleve et Grunow;NICA;2.3;2;3;2
+1143;R;Nitzschia capitata (H.L.Smith) M.Peragallo;NZCA;0;0;0;0
+1144;R;"Nitzschia capitellata Hustedt in A. Schmidt et al. var.
+capitellata";NCPL;1;3;3.8;5
+1145;R;Nitzschia capitellata var. tenuirostris (Grunow in Van Heurck) Bukhtiyarova;NCTN;1;3;3.8;5
+1146;R;Nitzschia clausii Hantzsch;NCLA;2.8;3;3.9;2
+1147;R;Nitzschia communis Rabenhorst;NCOM;1;3;3.9;2
+1148;R;Nitzschia commutata Grunow in Cleve et Grunow var. commutata;NICO;2;3;3.5;2
+1149;R;Tryblionella compressa (Bailey) Poulin in Poulin et al.;TCPS;2;1;0;0
+1150;S;Nitzschia compressa (J.W.Bailey) Boyer var. compressa;NCPS;2;1;0;0
+1151;S;Tryblionella punctata Wm. Smith var. punctata;TRPU;2;1;0;0
+1152;R;Nitzschia compressa var.vexans (Grunow) Lange-Bertalot;NZCV;2;3;0;0
+1153;S;Nitzschia siliqua Archibald;NSLQ;2;3;0;0
+1154;R;Nitzschia costei Tudesque, Rimet & Ector;NYCO;4;2;0;0
+1155;R;Tryblionella debilis Arnott ex O'Meara var. debilis;TDEB;2;2;2.9;2
+1156;S;Nitzschia debilis(Arnott)Grunow in Cl.&Grunow;NDEB;2;2;2.9;2
+1157;R;Nitzschia desertorum Hustedt;NDES;1;2;0;0
+1158;R;Nitzschia dissipata f. anormale;NDTG;1;3;0;0
+1159;R;Nitzschia dissipata subsp.dissipata (Kützing) Grunow;NDIS;4.5;3;2.4;2
+1160;R;Nitzschia media Hantzsch.;NIME;4;3;2.6;1
+1161;S;Nitzschia dissipata var. media (Hantzsch) Grunow in Van Heurck;NDME;4;3;2.6;1
+1162;R;Nitzschia draveillensis Coste & Ricard;NDRA;3;2;0;0
+1163;R;Nitzschia dubia W.M.Smith;NDUB;2;3;2.9;2
+1164;R;Nitzschia elegantula Grunow in Van Heurck var. elegantula;NELE;2;3;0;0
+1165;R;Nitzschia eutinensis Lange-Bertalot & Werum;NEUT;4;2;0;0
+1166;R;"Nitzschia filiformis (W.M.Smith) Van Heurck var. conferta
+(Richter) Lange-Bertalot";NFIC;3.2;2;0;0
+1167;R;Nitzschia filiformis (W.M.Smith) Van Heurck var. filiformis;NFIL;3;3;3.7;2
+1168;R;Nitzschia fonticola f. anormale;NFOT;1;3;0;0
+1169;R;Nitzschia fonticola Grunow in Cleve et Möller var. fonticola;NFON;3.5;1;1.9;0
+1170;R;Nitzschia eutinensis Lange-Bertalot & Werum;NEUT;4;2;0;0
+1171;S;Nitzschia fonticola var. pelagica Hustedt in Schmidt et al.;NFPE;4;2;0;0
+1172;R;Nitzschia frequens Hustedt;NIFQ;1;3;3.8;5
+1173;R;Nitzschia frustulum (Kützing) Grunow var. frustulum;NIFR;2;1;3.3;4
+1174;R;Nitzschia perminuta (Grunow) M.Peragallo;NIPM;4.5;1;2.3;1
+1175;S;Nitzschia frustulum(Kützing)Grunow var.perminuta Grunow in Van Heurck;NFPM;4.5;1;2.3;1
+1176;R;Nitzschia fruticosa Hustedt;NIFT;2;2;2.9;2
+1177;R;Nitzschia gessneri Hustedt;NGES;3;3;0;0
+1178;R;Nitzschia gracilis Hantzsch var. gracilis;NIGR;3;2;2.5;2
+1179;R;Nitzschia hantzschiana Rabenhorst;NHAN;5;2;2;3
+1180;R;Nitzschia hantzschiana var. densestriata Cleve-Euler;NHAD;5;2;0;0
+1181;R;Nitzschia harderi Hustedt;NIHD;0;0;0;0
+1182;R;Nitzschia heufleriana Grunow;NHEU;4;1;3.3;4
+1183;R;Nitzschia homburgiensis Lange-Bertalot;NHOM;4;1;4;3
+1184;R;Tryblionella hungarica (Grunow) D.G. Mann var. hungarica;THUN;2.2;2;3.9;3
+1185;S;Nitzschia hungarica Grunow;NIHU;2.2;2;3.9;3
+1186;R;Nitzschia inconspicua Grunow;NINC;2.8;1;3.1;1
+1187;R;Nitzschia intermedia Hantzsch ex Cleve et Grunow;NINT;1;3;2.9;2
+1188;R;Nitzschia lacuum Lange-Bertalot;NILA;5;2;1.2;1
+1189;R;Nitzschia lanceola Grunow in Cleve et Grunow var. lanceola;NLCL;0;0;0;0
+1190;R;Tryblionella levidensis Wm. Smith;TLEV;2;2;3.7;2
+1191;S;"Nitzschia levidensis (W.Smith) Grunow in Van Heurck var.
+levidensis";NLEV;2;2;3.7;2
+1192;R;Tryblionella salinarum (Grunow) Pantocsek;TSAL;2.3;2;0;0
+1193;S;Nitzschia levidensis sippen-salinarum Lange-Bertalot in Krammer et Lange-Bertalot;NLSA;2.3;2;0;0
+1194;R;Tryblionella victoriae Grunow;TVIC;2;2;0;0
+1195;S;Nitzschia levidensis var. victoriae (Grunow) Cholnoky;NLVI;2;2;0;0
+1196;R;Nitzschia liebethruthii Rabenhorst var. liebethruthii;NLBT;2;1;0;0
+1197;R;Nitzschia linearis (Agardh) W.M.Smith;NLIN;3;2;3.4;4
+1198;R;Nitzschia subtilis (Kützing) Grunow;NISU;3;2;3.9;3
+1199;S;Nitzschia linearis var. subtilis (Grunow) Hustedt;NLSU;3;2;3.9;3
+1200;R;Nitzschia tenuis W.Smith var. tenuis;NITE;3;2;0;0
+1201;S;Nitzschia linearis var. tenuis (W.Smith) Grunow in Cleve et Grunow;NZLT;3;2;0;0
+1202;R;Tryblionella littoralis (Grunow in Cl. et Grun.) D.G. Mann var. littoralis;TLIT;2;2;0;0
+1203;S;Nitzschia littoralis Grunow in Cleve et Grunow var. littoralis;NLIT;2;2;0;0
+1204;R;Nitzschia lorenziana Grunow in Cleve et Möller var. lorenziana;NLOR;2.5;3;0;0
+1205;R;Nitzschia lorenziana var. incerta Grunow in Cleve et Grunow;NLZD;0;0;0;0
+1206;R;Nitzschia palea (Kützing) W.Smith var. palea;NPAL;1;3;3.3;3
+1207;S;Nitzschia minuta Bleisch;NZMI;1;3;3.3;3
+1208;R;Nitzschia microcephala Grunow in Cleve et Moller;NMIC;1;3;3.9;3
+1209;R;Nitzschia modesta Hustedt;NIMD;5;2;0;0
+1210;R;Nitzschia nana Grunow in Van Heurck;NNAN;4;2;0;0
+1211;R;Nitzschia obtusa W.M.Smith;NOBT;2;3;0;0
+1212;R;Nitzschia oligotraphenta (Lange-Bertalot) Lange-Bertalot in Hofmann & al.;NIOG;4;1;0;0
+1213;R;Nitzschia ovalis Arnott ex Grunow in Cl. & Grun.;NOVA;2;3;0;0
+1214;R;Nitzschia palea f. anormale;NPTR;1;3;0;0
+1215;R;"Nitzschia palea var. debilis (Kützing) Grunow in Cleve et
+Grunow";NPAD;2.5;2;2.3;1
+1216;R;Nitzschia saprobionta Van de Vijver & de Zwart;NZBT;1;3;3.8;5
+1217;S;Nitzschia palea var. tenuirostris Grunow in Van Heurck;NPAT;1;3;3.8;5
+1218;R;Nitzschia paleacea (Grunow) Grunow in Van Heurck;NPAE;2.5;1;2.3;2
+1219;R;Nitzschia paleaeformis Hustedt;NIPF;3;2;0;0
+1220;R;Nitzschia palustris Hustedt var. palustris;NPLS;5;2;0;0
+1221;R;Nitzschia parvula W.M.Smith;NPAR;2.8;1;0;0
+1222;R;Nitzschia perspicua Cholnoky;NPRP;2;2;0;0
+1223;R;Nitzschia prolongata var. hoehnkii (Hustedt) Lange-Bertalot;NPHO;3;3;0;0
+1224;R;Nitzschia pura Hustedt;NIPR;4;1;1.9;3
+1225;R;Nitzschia puriformis Hlubikova et Ector;NPUF;0;0;0;0
+1226;R;Nitzschia pusilla (Kützing) Grunow emend Lange-Bertalot;NIPU;2;3;2.7;2
+1227;R;Nitzschia radicula Hustedt;NZRA;2;1;0;0
+1228;R;Nitzschia recta Hantzsch ex Rabenhorst;NREC;3;2;3;3
+1229;R;Nitzschia rectiformis Hustedt;NRFO;3;2;0;0
+1230;R;Nitzschia rectirobusta Lange-Bertalot;NRBU;3;2;0;0
+1231;R;Nitzschia reversa W.Smith;NREV;1.8;2;2.9;2
+1232;R;Nitzschia rosenstockii Lange-Bertalot;NRST;3;1;0;0
+1233;R;Nitzschia scalpelliformis (Grunow) Grunow in Cleve & Grunow;NISC;3;3;0;0
+1234;S;Nitzschia scalpelliformis f. minor (angusta) Grunow in Cleve et Moeller;NOSA;3;3;0;0
+1235;R;Nitzschia sigma (Kützing) W.M. Smith var. sigma;NSIG;2;3;2.9;2
+1236;R;Nitzschia sigmoidea (Nitzsch)W. Smith;NSIO;3;2;3.8;4
+1237;S;"Nitzschia sinuata var. delognei (Grunow in Van Heurck)
+Lange-Bertalot";NSDE;3;3;2.3;2
+1238;R;Nitzschia sinuata (Thwaites in W.Sm.) Grunow in Cleve & Grunow;NSIN;4;2;1.8;0
+1239;R;Nitzschia tabellaria (Grunow) Grunow in Cl. et Grun.;NTAB;5;2;1.2;1
+1240;S;Nitzschia sinuata var. tabellaria (Grunow) Grunow in Van Heurck;NSIT;5;2;1.2;1
+1241;R;Tryblionella hantzschiana Grunow;THAZ;2;3;3.8;4
+1242;S;Nitzschia tryblionella Hantzsch in Rabenhorst var. tryblionella;NTRY;2;3;3.8;4
+1243;R;Nitzschia sociabilis Hustedt;NSOC;3;3;2.8;1
+1244;R;Nitzschia solita Hustedt;NISO;2;2;3.4;2
+1245;R;Nitzschia soratensis Morales & Vis;NSTS;3;1;3.1;1
+1246;R;Nitzschia subacicularis Hustedt in A.Schmidt et al.;NSUA;3;3;2.9;0
+1247;R;Nitzschia sublinearis Hustedt var. sublinearis;NSBL;5;2;2.7;4
+1248;R;Nitzschia supralitorea Lange-Bertalot;NZSU;1.5;2;2.9;4
+1249;R;Nitzschia thermaloides Hustedt;NTHE;2;3;0;0
+1250;R;Nitzschia tropica Hustedt;NTRO;3.4;1;0;0
+1251;R;Nitzschia tubicola Grunow;NTUB;2.8;2;3.4;2
+1252;R;Nitzschia umbonata(Ehrenberg)Lange-Bertalot;NUMB;1;3;3.8;3
+1253;R;Nitzschia valdestriata Aleem & Hustedt;NIVA;2;2;0;0
+1254;R;Nitzschia vermicularis (Kützing) Hantzsch in Rabenhorst var. vermicularis;NVER;4;1;2.2;0
+1255;R;Nitzschia vitrea Norman var. vitrea;NIVI;2;3;0;0
+1256;R;Nitzschia vitrea var. salinarum Grunow;NVSA;2;3;0;0
+1257;R;Nitzschia wuellerstorffii Lange-Bertalot;NWUE;3.2;2;0;0
+1258;R;Odontidium neomaximum Jüttner, D.M. Williams, Levkov, Falasco, Battegazzore, Cantonati;ONMA;5;3;0;0
+1259;R;Pantocsekiella polymorpha (B. Meyer et Håkansson) K.T. Kiss et Ács;PKPO;4;2;0;0
+1260;R;Pantocsekiella wuethrichiana (Druart et F. Straub) K.T. Kiss et Ács;PWUE;5;1;0;0
+1261;R;Paraplaconeis minor Lange-Bertalot;PMNR;5;2;0;0
+1262;R;PARLIBELLUS E.J. Cox;PARL;2;2;0;0
+1263;R;Parlibellus ellipticus(Gallik)Lange-Bertalot & Witkowski;PELL;2;2;0;0
+1264;R;Prestauroneis protractoides (Hustedt) Q. Liu & Kociolek;PPRD;2.6;1;0;0
+1265;S;"Parlibellus protractoides (Hustedt) Witkowski & Lange-
+Bertalot";PAPR;2.6;1;0;0
+1266;R;Pinnularia amabilis Krammer;PAML;0;0;0;0
+1267;R;Pinnularia anglica Krammer;PIAN;5;2;0;0
+1268;S;Pinnularia balfouriana Grunow ex Cleve;PBAL;4;2;0.6;2
+1269;R;Hygropetra balfouriana (Grunow ex Cleve) Krammer & Lange-Bertalot;HYBA;4;2;0.6;2
+1270;R;Pinnularia biceps Gregory var. biceps;PBIC;5;2;0.7;2
+1271;S;Pinnularia interrupta W.M.Smith var. interrupta;PINT;5;2;0.7;2
+1272;R;Pinnularia borealis Ehrenberg var. borealis;PBOR;5;3;1.9;1
+1273;R;Pinnularia borealis Ehrenberg var. scalaris (Ehrenberg) Rabenhorst;PBSC;0;0;0;0
+1274;R;Pinnularia brebissonii (Kütz.) Rabenhorst var. brebissonii;PBRE;3;3;2.1;0
+1275;S;Pinnularia microstauron var. brebissonii (Kützing) Mayer;PMBR;3;3;2.1;0
+1276;R;PINNULARIA C.G. Ehrenberg;PINU;4.7;2;0;0
+1277;R;Pinnularia gibba Ehrenberg var. gibba;PGIB;5;2;1.7;0
+1278;R;Pinnularia gibbiformis Krammer var. gibbiformis;PGIF;5;3;0;0
+1279;R;Pinnularia grunowii Krammer;PGRU;0;0;0;0
+1280;R;Pinnularia isselana Krammer;PISS;0;0;0;0
+1281;R;Pinnularia lunata Krammer & Lange-Bertalot;PLNT;0;0;0;0
+1282;R;Pinnularia lundii Hustedt var. lundii;PLUN;4.5;1;3.5;5
+1283;R;Pinnularia major (Kützing) Rabenhorst var. major;PMAJ;5;3;1.4;3
+1284;R;"Pinnularia marchica Ilka Schönfelder in Krammer var.
+marchica";PMCH;0;0;0;0
+1285;R;Pinnularia mesogongyla Cleve;PMGG;5;1;0;0
+1286;S;Pinnularia erratica Krammer var. erratica;PERA;5;1;0;0
+1287;R;Pinnularia mesolepta (Ehrenberg) W.M.Smith;PMES;5;2;0;0
+1288;R;Pinnularia microstauron (Ehr.) Cleve var. microstauron;PMIC;2.5;3;1;0
+1289;R;Pinnularia neohalophila Kulikovskiy, Genkal, Mikheyeva;PNOH;0;0;0;0
+1290;R;Pinnularia neomajor Krammer var. neomajor;PNEO;5;2;0;0
+1291;R;Pinnularia nobilis (Ehrenberg) Ehrenberg var. nobilis;PNOB;5;2;0.5;2
+1292;R;Pinnularia obscura Krasske;POBS;3;1;2;0
+1293;R;Pinnularia perirrorata Krammer;PPRI;5;2;0;0
+1294;R;"Pinnularia rhombarea Krammer in Metzeltin et Lange-
+Bertalot var. rhombarea";PRHB;3;3;0;0
+1295;R;Pinnularia rupestris Hantzsch in Rabenhorst var. rupestris;PRUP;4.2;3;0.6;2
+1296;R;Pinnularia saprophila Lange-Bertalot Kobayasi & Krammer;PSAP;3;2;0;0
+1297;R;Pinnularia schoenfelderi Krammer;PSHO;4.5;1;2;0
+1298;R;Pinnularia sinistra Krammer var. sinistra;PSIN;3;2;0;0
+1299;R;Pinnularia stidolphii Krammer;PSDO;0;0;0;0
+1300;R;Pinnularia stomatophora (Grunow) Cleve var. stomatophora;PSTO;5;2;0.6;2
+1301;R;Pinnularia subcapitata Gregory var. subcapitata;PSCA;5;2;0.3;2
+1302;R;Pinnularia subcapitata var. elongata Krammer;PSEL;5;2;0;0
+1303;R;Pinnularia subcommutata Krammer var. subcommutata;PSCM;0;0;0;0
+1304;R;Pinnularia subcommutata var. nonfasciata Krammer;PSNF;0;0;0;0
+1305;R;Pinnularia subgibba Krammer var. subgibba;PSGI;5;2;0.3;2
+1306;R;Pinnularia subgibba var. undulata Krammer;PSUN;0;0;0;0
+1307;R;Pinnularia subrupestris Krammer var. subrupestris;PSRU;4.5;2;0;0
+1308;R;Pinnularia viridiformis Krammer;PVIF;5;2;0;0
+1309;R;Pinnularia viridis (Nitzsch) Ehrenberg;PVIR;4;2;1.3;2
+1310;R;Placoneis anglica (Ralfs) E.J. Cox;PAGC;3.5;2;2.1;2
+1311;R;PLACONEIS C. Mereschkowsky;PLAC;4.3;1;0;0
+1312;R;Placoneis clementioides (Hustedt) Cox;PCLD;4.2;2;0;0
+1313;R;Placoneis gastrum (Ehr.) Mereschkowsky sensu stricto;PGAS;5;2;2.9;3
+1314;R;Paraplaconeis placentula (Ehrenberg) Kulikovskiy & Lange-Bertalot;PPPL;4;2;2.7;3
+1315;S;Navicula subplacentula Hustedt var. subplacentula;NSBP;4;3;0;0
+1316;S;Placoneis placentula (Ehr.) Heinzerling var. placentula;PPLC;4;2;2.7;3
+1317;R;Placoneis pseudanglica (Lange-Bertalot) Cox;PPSA;3;2;0;0
+1318;R;Placoneis subplacentula (Hustedt) E.J. Cox;PCSP;4;3;0;0
+1319;R;Placoneis symmetrica (Hustedt) Lange-Bertalot;PSYM;5;2;0.6;3
+1320;R;Planothidium apiculatum (Patrick) Lange-Bertalot;PAPC;4;2;0;0
+1321;R;Planothidium biporomum (Hohn & Hellerman) Lange-Bertalot;PLBI;4.6;1;0;0
+1322;R;Platessa conspicua (A.Mayer) Lange-Bertalot;PTCO;4;1;1.7;0
+1323;S;Achnanthes conspicua A.Mayer var. conspicua;ACON;4;1;1.7;0
+1324;S;Planothidium conspicuum (A.Mayer) M. Aboal;PNCO;4;1;1.7;0
+1325;R;Planothidium daui (Foged) Lange-Bertalot;PDAU;4.8;2;0;0
+1326;R;Planothidium ellipticum (P.T. Cleve) M. B. Edlund;PLNE;2.8;1;0;0
+1327;S;Achnanthes lanceolata var. elliptica Cleve;ALAE;2.8;1;0;0
+1328;S;Planothidium ellipticum (Cleve) Round et Bukhtiyarova;PTEL;2.8;1;0;0
+1329;R;Planothidium fragilarioides(Petersen)Round & Bukhtiyarova;PTFR;0;0;0;0
+1330;R;Planothidium haynaldii (Schaarschmidt) Lange-Bertalot;PHAY;0;0;0;0
+1331;R;Planothidium lanceolatum f. anormale;PTLT;1;3;0;0
+1332;R;Planothidium rostratum (Østrup) Lange-Bertalot;PRST;4.4;1;0;0
+1333;R;PLANOTHIDIUM Round & Bukhtiyarova;PLTD;4;1;0;0
+1334;R;Planothidium werumianum Lange-Bertalot et Bak;PWER;4.5;1;0;0
+1335;R;Platessa holsatica (Hustedt) Lange-Bertalot;PLHO;3.8;1;0;0
+1336;R;Platessa montana (Krasske) Lange-Bertalot var. montana;PTMO;5;2;0.6;2
+1337;R;Playaensis citrus (Krasske) E. Reichardt nov. comb.;PCIT;3;1;2.9;1
+1338;R;Pleurosigma elongatum W.Smith var. elongatum;PELO;2;3;0;0
+1339;R;PLEUROSIGMA W.Smith;PLSG;2.6;3;0;0
+1340;R;Pleurosira laevis (Ehrenberg) Compère var. laevis;PLEV;2;3;0;0
+1341;R;Psammodictyon constrictum (Gregory) D.G. Mann in Round & al.;PCON;0;0;0;0
+1342;R;PSAMMODICTYON D.G. Mann;PSDT;2;3;0;0
+1343;R;Psammothidium acidoclinatum (Lange-Bertalot) Lange-Bertalot;PACD;4;1;0;0
+1344;R;PSAMMOTHIDIUM Bukhtiyarova & Round;PSMT;5;2;0;0
+1345;R;Psammothidium grischunum (Wuthrich) Bukhtiyarova et Round;PGRI;5;2;0;0
+1346;R;Achnanthidium daonense (Lange-Bertalot) Lange-Bertalot Monnier & Ector;ADDA;4.5;1;0;0
+1347;S;Achnanthes daonensis Lange-Bertalot;ADAO;4.5;1;0;0
+1348;S;Psammothidium grischunum (Wuthrich) Bukhtiyarova et Round f. daonensis (Lange-Bertalot;PGDA;4.5;1;0;0
+1349;R;Achnanthidium lauenburgianum (Hustedt) Monnier Lange-Bertalot & Ector;ADLB;4.8;3;1.8;3
+1350;S;Psammothidium lauenburgianum (Hustedt) Bukhtiyarova et Round;PLAU;4.8;3;1.8;3
+1351;R;Psammothidium ventrale (Krasske) Bukhtiyarova et Round;PVEN;5;1;0;0
+1352;R;PSEUDOSTAUROSIRA (Grunow) D.M. Williams & F.E. Round;PSST;2.9;1;0;0
+1353;R;Pseudostaurosira medliniae D.M.Williams & Morales;PSME;3;1;0;0
+1354;S;Pseudostaurosira neoelliptica (Witkowski) Morales;PNEL;2.8;1;0;0
+1355;R;Nanofrustulum neoellipticum (Witkowski) E.Morales, comb. nov.;NFNE;2.8;1;0;0
+1356;R;Pseudostaurosira parasitica f. anormale;PPTT;1;3;0;0
+1357;R;Pseudostaurosira subconstricta (Grunow) Kulikovskiy & Genkal comb. nov.. stat. nov.;PUSB;4;1;2.3;3
+1358;S;Fragilaria parasitica var. subconstricta Grunow in Van Heurck;FPSC;4;1;2.3;3
+1359;S;Pseudostaurosira parasitica var. subconstricta (Grunow) Morales;PPSC;4;1;2.3;3
+1360;R;Punctastriata lancettula (Schumann) Hamilton & Siver;PULA;4.5;2;0;0
+1361;R;REIMERIA J.P. Kociolek & E.F. Stoermer;REIM;5;1;0;0
+1362;R;Reimeria sinuata (Greg.) Kociolek et Stoermer forme teratogene;RSIT;1;3;0;0
+1363;R;Reimeria uniseriata Sala Guerrero & Ferrario;RUNI;4.5;1;0;0
+1364;R;RHOICOSPHENIA A. Grunow;RHOI;3.6;1;0;0
+1365;R;Rhoicosphenia abbreviata (C.Agardh) Lange-Bertalot;RABB;4;1;2.9;2
+1366;R;Rhopalodia brebissonii Krammer;RBRE;2.8;2;0;0
+1367;R;Rhopalodia constricta (W.Smith) Krammer var. constricta;RCON;3;3;0;0
+1368;R;Epithemia gibba (Ehrenberg) Ku¨tzing;EGBA;5;3;2.7;2
+1369;S;Rhopalodia gibba (Ehr.) O.Müller var. gibba;RGIB;5;3;2.7;2
+1370;R;Epithemia parallela (Grunow) Ruck & Nakov;EPHP;5;3;0.6;3
+1371;S;Rhopalodia gibba (Ehr.) O.Müller var. parallela (Grunow) Peragallo et Peragallo;RGPA;5;3;0.6;3
+1372;S;Rhopalodia parallela (Grunow) O.Müller var. parallela;RPAR;5;3;0.6;3
+1373;R;Rhopalodia gibberula (Ehr.) O.Müller var. gibberula;RGBL;5;3;0;0
+1374;R;RHOPALODIA O Müller;RHOP;4.3;3;0;0
+1375;R;Rhopalodia parallela (Grunow) O.Müller var. parallela;RPAR;5;3;0.6;3
+1376;R;Rhopalodia parallela var. distorta Fricke;RHPD;0;0;0;0
+1377;R;Rhopalodia rupestris (W.Smith) Krammer in Lange-Bertalot & Krammer;RRUP;5;2;0;0
+1378;R;Achnanthidium anastasiae (Kaczmarska) Chudaev et Gololobova;ADAS;5;1;1.8;1
+1379;S;Achnanthes linearis (W. Sm.) Grunow in Cleve et Grunow var. linearis;ALIN;5;1;1.8;1
+1380;S;Rossithidium anastasiae (Kaczmarska) Potapova;RANA;5;1;1.8;1
+1381;S;Rossithidium linearis (W.Sm.) Round & Bukhtiyarova;RLIN;5;1;1.8;1
+1382;R;Achnanthidium nodosum Tseplik et Chudaev;ANDO;5;2;0.6;2
+1383;S;Achnanthes nodosa A.Cleve;ANOD;5;2;0.6;2
+1384;S;Rossithidium nodosum (A.Cleve) Aboal;RNOD;5;2;0.6;2
+1385;R;Achnanthidium petersenii (Hustedt) C.E. Wetzel, Ector, D.M. Williams & Jüttner;ADPS;5;2;0.6;1
+1386;S;Rossithidium petersenii (Hustedt) Round & Bukhtiyarova;RPET;5;2;0.6;1
+1387;R;Rossithidium pusillum (Grunow) F.E.Round & Bukhtiyarova;RPUS;5;3;0.6;3
+1388;R;ROSSITHIDIUM Round & Bukhtiyarova;ROSS;3.8;2;0;0
+1389;R;Cymbosellaphora absoluta (Hustedt) Kulikovskiy et al.;CSEA;4;1;1.4;3
+1390;S;Naviculadicta absoluta (Hustedt) Lange-Bertalot in Lange-Bertalot & Moser;NDAB;4;1;1.4;3
+1391;S;Sellaphora absoluta (Hustedt) Wetzel, Ector Van De Vijver,Compère & D.G.Mann;SABS;4;1;1.4;3
+1392;R;Sellaphora americana (Ehrenberg) D.G. Mann;SAME;5;2;0;0
+1393;R;Sellaphora atomoides (Grunow) Wetzel et Van de Vijver;SEAT;2.2;1;2.9;2
+1394;R;SELLAPHORA C. Mereschkowsky;SELL;2.8;1;0;0
+1395;R;Sellaphora crassulexigua (Reichardt) Wetzel, Ector, Van De Vijver. Compère & D.G.Mann;SCRA;2.5;1;0;0
+1396;R;Sellaphora hustedtii (Krasske) Lange-Bertalot & Werum;SHUS;3;1;1.8;2
+1397;R;Sellaphora saugerresii (Desm.) C.E. Wetzel & D.G. Mann in Wetzel et al.;SSGE;1.5;2;2.9;2
+1398;S;Navicula joubaudii Germain;NJOU;3;2;3.6;5
+1399;S;Sellaphora radiosa (Hustedt) Kobayasi in Mayama & al.;SERA;1.5;2;3.6;5
+1400;S;Sellaphora seminulum (Grunow) D.G. Mann;SSEM;1.5;2;3.2;2
+1401;S;Sellaphora joubaudii (Germain) Aboal;SJOU;3;2;3.6;5
+1402;R;Sellaphora medioconvexa (Hustedt) C.E. Wetzel;SMDX;3;1;0;0
+1403;R;Sellaphora pseudopupula (Krasske) Lange-Bertalot;SPPU;2;2;3.3;2
+1404;R;Sellaphora pseudoventralis (Hust.) Wetzel, Ector Van De Vijver, Compère et D.G.Mann;SPSV;4;1;0;0
+1405;R;Sellaphora pupula f. anormale;SPUT;1;3;0;0
+1406;R;Sellaphora rostrata (Hustedt) J.R. Johansen;SRTR;3;2;0;0
+1407;R;Sellaphora subbacillum (Hustedt) Falasco et Ector;SSBB;5;1;1.2;2
+1408;R;Sellaphora utermoehlii (Hustedt) C.E. Wetzel et D.G. Mann;SEUT;2.3;1;1.8;2
+1409;R;Sellaphora vitabunda (Hustedt) D.G. Mann;SVIT;5;1;1.3;2
+1410;S;Sellaphora verecundiae Lange-Bertalot;SVER;5;1;1.3;2
+1411;R;SEMINAVIS D.G. Mann;SMNA;2.4;2;0;0
+1412;R;Seminavis insignis Alvarez-Blanco & S.Blanco;SING;0;0;0;0
+1413;R;Seminavis strigosa (Hustedt) Danieledis & Economou-Amilli;SMST;3.3;2;0;0
+1414;R;Simonsenia delognei Lange-Bertalot;SIDE;3;2;2.9;2
+1415;R;SIMONSENIA H. Lange-Bertalot;SIMO;2.9;2;0;0
+1416;R;Skeletonema potamos (Weber) Hasle;SKPO;3;2;0;0
+1417;R;Stauroforma exiguiformis (Lange-Bertalot) Flower Jones et Round;SEXG;5;2;0.6;2
+1418;R;STAUROFORMA Flower. Jones & Round;STFO;5;1;0;0
+1419;R;Stauroneis acidoclinata Lange-Bertalot & Werum;SADC;0;0;0;0
+1420;R;Stauroneis anceps Ehrenberg var. anceps;STAN;5;3;1.8;0
+1421;R;Stauroneis baikalensis Skvortzow;STBK;4;1;0;0
+1422;R;Stauroneis gracilis Ehrenberg;SGRC;5;2;0;0
+1423;R;Stauroneis kriegeri Patrick;STKR;4.8;2;3.3;2
+1424;R;Stauroneis laterostrata Hustedt;SLAT;0;0;0;0
+1425;R;Stauroneis obtusa Lagerstedt var. obtusa;SOBT;5;2;0.6;2
+1426;R;Stauroneis phoenicenteron (Nitzsch.) Ehrenberg;SPHO;5;3;2.9;1
+1427;R;Stauroneis pseudosuboptusoides Germain;STPO;2.2;3;0;0
+1428;R;Stauroneis schimanskii Krammer;STSC;5;1;0;0
+1429;R;Stauroneis separanda Lange-Bertalot & Werum;STSE;4;1;0;0
+1430;R;Stauroneis smithii Grunow var. smithii;SSMI;5;2;3.3;2
+1431;R;Staurophora tackei (Hust.) Bahls;STKE;3;2;0;0
+1432;S;Stauroneis tackei (Hustedt) Krammer, Lange-Bertalot Kusber et Metzeltin;STAK;3;2;0;0
+1433;R;Stauroneis thermicola (Boye-Petersen) Lund;STHE;5;1;1.8;0
+1434;R;STAUROSIRA (C.G. Ehrenberg) D.M. Williams & F.E. Round;STRS;3.9;1;0;0
+1435;R;Staurosira ambigua Morales, Edlund & Spaulding;SAMB;0;0;0;0
+1436;R;Staurosira construens f. anormale;SCTG;1;3;0;0
+1437;R;Staurosirella lapponica (Grunow in Van Heurck) Williams et Round;STLA;5;2;0;0
+1438;S;Staurosira lapponica (Grunow) Lange-Bertalot;SLPP;5;2;0;0
+1439;R;Pseudostaurosira undulata Van de Vijver & Kusber. nom. nov.;PDUD;4.8;1;1.2;0
+1440;S;Staurosira robusta (Fusey) Lange-Bertalot;SRBU;4.8;1;1.2;0
+1441;R;Staurosirella pinnata f. anormale;SPIT;1;3;0;0
+1442;R;Staurosirella ovata Morales;STOV;4;1;0;0
+1443;R;STENOPTEROBIA A. de Brébisson ex H. Van Heurck;STEN;5;3;0;0
+1444;R;Stenopterobia anceps subsp. anceps Metzeltin et Lange-Bertalot;SANC;0;0;0;0
+1445;R;Iconella delicatissima (Lewis) Ruck & Nakov;IDEL;5;3;0.5;2
+1446;S;Stenopterobia delicatissima (F.W.Lewis) Brébisson ex van Heurck var. delicatissima;STDE;5;3;0.5;2
+1447;R;STEPHANODISCUS C.G. Ehrenberg;STEP;2.9;1;0;0
+1448;R;Stephanodiscus hantzschii Grunow in Cleve et Grunow var. hantzschii;SHAN;1.8;1;0;0
+1449;S;Stephanodiscus hantzschii f.tenuis(Hustedt)Håkansson et Stoermer;SHTE;1.8;1;0;0
+1450;R;Stephanodiscus minutulus (Kützing) Cleve et Moller;STMI;4;1;0;0
+1451;S;Stephanodiscus parvus Stoermer et Håkansson;SPAV;4;1;0;0
+1452;R;Stephanodiscus neoastraea Håkansson et Hickel emend Casper.Scheffler & Augsten;SNAS;2.5;2;0;0
+1453;R;SURIRELLA P. J.F. Turpin;SURI;3.6;2;0;0
+1454;R;Surirella angusta Kützing var. angusta;SANG;4;1;3.7;3
+1455;R;Surirella birostrata Hustedt;SBIR;4;2;0;0
+1456;R;Surirella brebissonii f. anormale;SBRT;1;3;0;0
+1457;R;Iconella brebissonii (Krammer & Lange-Bertalot) Bukhtiyarova, comb. nov.;IBRB;3;2;3.6;5
+1458;S;Surirella brebissonii Krammer & Lange-Bertalot;SBRE;3;2;3.6;5
+1459;R;Surirella brebissonii var.kuetzingii Krammer et Lange-Bertalot;SBKU;3;2;0;0
+1460;R;Iconella brightwellii (W. Smith) Bukhtiyarova comb. nov.;IBRI;2;3;0;0
+1461;S;Surirella brightwellii W.Smith var. brightwellii;SBRI;2;3;0;0
+1462;R;Iconella capronii (Brébisson & Kitton) Ruck & Nakov;ICAP;3;1;2.5;2
+1463;S;Surirella capronii Brébisson et Kitton var. capronii;SUCA;3;1;2.5;2
+1464;R;Iconella elegans (Ehrenberg) Bukhtiyarova;IELG;5;3;2.7;3
+1465;S;Surirella elegans Ehrenberg var. elegans;SELE;5;3;2.7;3
+1466;R;conella constricta (Grunow) Bukhtiyarova, comb. et stat. nov.;ICST;5;2;0;0
+1467;S;Surirella grunowii Kulikovskiy, Lange-Bertalot & Witkowski;SGRU;5;2;0;0
+1468;S;Surirella linearis W.M.Smith var.constricta Grunow;SLCO;5;2;0;0
+1469;R;Iconella helvetica (Brun) Ruck & Nakov;IHEL;5;3;0.6;2
+1470;S;Surirella linearis W.M.Smith var.helvetica (Brun) Meister;SLHE;5;3;0.6;2
+1471;R;Surirella lacrimula English;SLAC;3;1;0;0
+1472;R;Surirella minuta Brébisson ex Kützing var. minuta;SUMI;3;1;3.8;3
+1473;R;Surirella ovalis Brébisson;SOVI;2;2;2.2;0
+1474;R;Surirella roba Leclercq;SRBA;5;3;0.6;2
+1475;R;Iconella spiralis (Kützing) Ruck & Nakov;ISPI;5;3;0.6;2
+1476;S;Surirella spiralis Kützing;SSPI;5;3;0.6;2
+1477;R;Surirella suecica Grunow in Van Heurck;SSUE;2;2;0;0
+1478;R;Surirella terricola Lange-Bertalot et Alles;STER;3;1;0;0
+1479;R;Surirella undulata (Ehrenberg) Ehrenberg;SUUN;5;2;2.9;3
+1480;R;SYNEDRA C.G. Ehrenberg;SYNE;3.1;2;0;0
+1481;R;Ulnaria acus (Kützing) Aboal in Aboal et al.;UACU;4;1;1.8;2
+1482;S;Synedra acus Kützing var. acus;SACU;4;1;1.8;2
+1483;R;Ulnaria delicatissima (W.Smith) M. Aboal et P.C. Silva var. angustissima (Grunow) M. Aboal et P.C. Silva;UDEA;4;1;1.8;2
+1484;S;Synedra acus var. angustissima Grunow in Van Heurck;SAAN;4;1;1.8;2
+1485;R;Fragilaria tabulata var.truncata Lange-Bertalot;FTTU;2;3;0;0
+1486;S;Synedra fasciculata (Kützing) Grunow var. fasciculata;SFAC;2;3;0;0
+1487;R;Ulnaria ulna (Nitzsch) Compère var. ulna;UULN;3;1;3.5;4
+1488;S;Synedra ulna (Nitzsch.) Ehrenberg  var. ulna;SULN;3;1;3.5;4
+1489;R;Tabellaria fenestrata (Lyngbye) Kützing var. fenestrata;TFEN;5;2;1.4;3
+1490;R;Tabellaria flocculosa (Roth) Kützing var. flocculosa;TFLO;5;1;0.8;2
+1491;R;Tabellaria ventricosa Kützing;TVEN;5;2;0.9;2
+1492;R;TABULARIA D.M. Williams et F.E. Round;TABU;2;3;0;0
+1493;R;TETRACYCLUS J. Ralfs;TETR;5;3;0;0
+1494;R;Tetracyclus rupestre (Braun ex Rabenhorst) Grunow in van Heurck;TRUP;5;3;0.5;2
+1495;R;THALASSIOSIRA P.T. Cleve;THAL;2.4;2;0;0
+1496;R;Thalassiosira bramaputrae (Ehr.) Håkansson & Locker;TBRA;3;3;0;0
+1497;R;Thalassiosira pseudonana Hasle et Heimdal;TPSN;2;2;0;0
+1498;R;Thalassiosira visurgis Hustedt;TVIS;2.2;1;0;0
+1499;R;Conticribra weissflogii (Grunow) Stachura-Suchoples & Williams;CTWE;2;2;0;0
+1500;S;Thalassiosira weissflogii (Grunow) Fryxell & Hasle;TWEI;2;2;0;0
+1501;R;TRYBLIONELLA W. Smith;TRYB;1.8;2;0;0
+1502;R;"Tryblionella brunoi (Lange-Bertalot) Cantonati et Lange-
+Bertalot in Kusber & al.";TBNO;3.8;3;0;0
+1503;R;ULNARIA Compère;ULNA;3.7;1;0;0
+1504;R;Ulnaria danica (Kützing) Compère et Bukhtiyarova;UDAN;4;1;0;0
+1505;R;Ulnaria delicatissima (W.Smith) M. Aboal et P.C. Silva;UDEL;4;1;1.4;2
+1506;R;Ulnaria ulna f. anormale;UULT;1;3;0;0
+1507;R;Synedra ulna var. claviceps Hustedt;SUCL;3.7;2;0;0
+1508;S;Ulnaria ulna var. claviceps(Hustedt) Compère;UUCL;3.7;2;0;0

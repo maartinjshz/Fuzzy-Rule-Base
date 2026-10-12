@@ -8,7 +8,7 @@ from fuzzy_inference.fuzzy_utils.fuzzy_sets   import FuzzyNumber
 from fuzzy_inference.payoff_function.perform_price_analysis import full_voi_analysis, plot_payoff_plots
 
 
-def perform_infernece_and_evaluation_with_data(data_sample, antecendant_qualityGrid, step_size = 20, Number_of_grid_points = 100,
+def perform_infernece_and_evaluation_with_data(data_sample, antecendant_qualityGrid , step_size = 20, Number_of_grid_points = 100,
                                                type_of_tnorm = 'luk', sample_name = 'dummy_sample', u_space=np.linspace(0, 1, 100), use_the_same_tnorm = False, 
                                                cost_value_config = None, payoff_function= None, membership_value = None):
     

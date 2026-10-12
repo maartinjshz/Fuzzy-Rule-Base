@@ -6,11 +6,51 @@ import matplotlib.pyplot as plt
 from fuzzy_inference.fuzzy_utils.fuzzy_sets   import FuzzyNumber
 
 
+def _normalize_u_space(u_space):
+    if isinstance(u_space, np.ndarray) and u_space.dtype == object:
+        return tuple(u_space)
+    if isinstance(u_space, np.ndarray) and u_space.ndim > 1:
+        return tuple(u_space)
+    if isinstance(u_space, (list, tuple)):
+        return tuple(u_space)
+    return (u_space,)
+
+
+def evaluate_payoff_batches(payoff_formula, u_space, mu_value, batch_size=8192, **kwargs):
+    u_seq = _normalize_u_space(u_space)
+    if len(u_seq) == 1:
+        u_values = np.asarray(u_seq[0], dtype=float).ravel()
+        values = np.empty(u_values.size, dtype=float)
+        for start in range(0, u_values.size, batch_size):
+            stop = min(start + batch_size, u_values.size)
+            batch = u_values[start:stop]
+            values[start:stop] = np.array(
+                [payoff_formula(float(u), mu_value, **kwargs) for u in batch],
+                dtype=float,
+            )
+        return values
+
+    broadcast_u = np.broadcast_arrays(*u_seq)
+    flat_u = [arr.ravel() for arr in broadcast_u]
+    total_count = flat_u[0].size
+    values = np.empty(total_count, dtype=float)
+
+    for start in range(0, total_count, batch_size):
+        stop = min(start + batch_size, total_count)
+        batch_u = tuple(arr[start:stop] for arr in flat_u)
+        values[start:stop] = np.array(
+            [payoff_formula(*u_values, mu_value, **kwargs) for u_values in zip(*batch_u)],
+            dtype=float,
+        )
+
+    return values
+
+
 def call_payoff(payoff_formula, u, mu, **kwargs):
-    print(u)
     if np.isscalar(u):
         return payoff_formula(u, mu, **kwargs)
     return payoff_formula(*u, mu, **kwargs)
+
 
 def full_voi_analysis(
     membership_value, 
@@ -18,7 +58,8 @@ def full_voi_analysis(
     param_config,         
     payoff_formula,       
     grid_points=100, 
-    u_space=np.linspace(0, 1, 100)
+    u_space=np.linspace(0, 1, 100),
+    u_batch_size=1000,
 ):
     """Function for performing full Voi analysis.
     
@@ -52,20 +93,7 @@ def full_voi_analysis(
 
     # u_space = np.asarray(u_space)
 
-    # 1. Standardize into a sequence (1D becomes a 1-element tuple, N-D stays a tuple/list)
-    if isinstance(u_space, np.ndarray) and u_space.dtype == object:
-        # Fixes the case where ogrid got wrapped in np.array()
-        u_seq = tuple(u_space)
-    elif isinstance(u_space, np.ndarray) and u_space.ndim > 1:
-        # Fixes np.mgrid dense arrays
-        u_seq = tuple(u_space)
-    elif isinstance(u_space, (list, tuple)):
-        # Fixes pure np.ogrid lists
-        u_seq = tuple(u_space)
-    else:
-        # Standard 1D np.linspace
-        u_seq = (u_space,)
-
+    u_seq = _normalize_u_space(u_space)
     total_count = np.broadcast(*u_seq).size
 
     # 3. Iterate through all parameter combinations
@@ -83,24 +111,24 @@ def full_voi_analysis(
         # 5. Perfect VoI (Crisp calculation)
         perfect_voi_val = np.empty(len(membership_value.membership_values), dtype=float)
         for id_a, a in enumerate(membership_value.membership_values):
- 
-            payoff_values = np.fromiter(
-                                (
-                                    payoff_formula(*u_i, membership_space_x[id_a], **crisp_params) 
-                                    for u_i in np.broadcast(*u_seq)  
-                                ),
-                                dtype=float,
-                                count=total_count, # Safer than len(u_samples) for N-D grids
-                            )
+            payoff_values = evaluate_payoff_batches(
+                payoff_formula,
+                u_seq,
+                membership_space_x[id_a],
+                batch_size=u_batch_size,
+                **crisp_params,
+            )
             perfect_voi_val[id_a] = a * np.amax(payoff_values)
         
         # 6. Prior Knowledge Payoff (Fuzzy calculation)
-        prior_knowledge_payoff = np.fromiter(
-            (payoff_formula(*u_i, membership_value, **crisp_params).mean_of_maxima for u_i in np.broadcast(*u_seq)),
+        prior_knowledge_payoff = np.array(
+            [
+                payoff_formula(*u_values, membership_value, **crisp_params).mean_of_maxima
+                for u_values in zip(*[arr.ravel() for arr in np.broadcast_arrays(*u_seq)])
+            ],
             dtype=float,
-            count=total_count,
         )
-        
+ 
         # Save output to its corresponding coordinate block
         V_i = np.amax(perfect_voi_val) - np.amax(prior_knowledge_payoff)
         results_MOM[indices] = V_i 
@@ -114,7 +142,8 @@ def perfect_additional_VoI_analysis(
     param_config,         
     payoff_formula,       
     grid_points=100, 
-    u_space=np.linspace(0, 1, 100)
+    u_space=np.linspace(0, 1, 100),
+    u_batch_size=1000,
 ):
     """Function for performing full Voi analysis.
     
@@ -176,10 +205,12 @@ def perfect_additional_VoI_analysis(
         # 5. Perfect VoI (Crisp calculation)
         perfect_voi_max = 0.0
         for id_a, a in enumerate(membership_value.membership_values):
-            payoff_values = np.fromiter(
-                (payoff_formula(float(u_i), membership_value.space_x[id_a], **crisp_params) for u_i in np.nditer(u_space)),
-                dtype=float,
-                count=len(u_space),
+            payoff_values = evaluate_payoff_batches(
+                payoff_formula,
+                u_space,
+                membership_value.space_x[id_a],
+                batch_size=u_batch_size,
+                **crisp_params,
             )
             perfect_voi_max = max(perfect_voi_max, a * np.amax(payoff_values))
         
@@ -191,10 +222,12 @@ def perfect_additional_VoI_analysis(
                 membership_space=membership_value.membership_space,
                 space_x=membership_value.space_x,
             )
-            payoff_values = np.fromiter(
-                (call_payoff(payoff_formula, u_i, new_info_membership_fun, **crisp_params).mean_of_maxima for u_i in np.nditer(u_space)),
+            payoff_values = np.array(
+                [
+                    call_payoff(payoff_formula, u_value, new_info_membership_fun, **crisp_params).mean_of_maxima
+                    for u_value in np.ravel(np.broadcast_arrays(*_normalize_u_space(u_space))[0])
+                ],
                 dtype=float,
-                count=len(u_space),
             )
             additional_knowledge_max = max(additional_knowledge_max, b * np.amax(payoff_values))
 
@@ -238,8 +271,10 @@ def plot_payoff_plots(data, plot_title, x_i_vals, y_i_vals, axis_titles = ["xi",
     ax.set_title(plot_title, fontsize=21)
     ax.set_xlabel(f'{axis_titles[0]}', fontsize=16)
     ax.set_ylabel(f'{axis_titles[1]}', fontsize=16)
-    ax.set_xticks(x_i_vals[::20])
-    ax.set_yticks(y_i_vals[::20])
+     
+    ax.set_yticks(y_i_vals[::5])
+    ax.tick_params(axis='x', rotation=90)
+    ax.set_xticks(x_i_vals[::5])
     ax.grid(which='major', color='white', linestyle=':', linewidth=0.5, alpha=0.5)
 
     fig.suptitle('Price analysis for different Costs', fontsize=16)
