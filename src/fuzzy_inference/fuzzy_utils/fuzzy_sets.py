@@ -181,56 +181,76 @@ class FuzzyNumber:
     def __rmul__(self, other):
         """Handles right-side multiplication (e.g., 5 * FuzzyNumber)"""
         return self.__mul__(other)
-
-    def plot(self, label=None, path = "",
-             to_save = False, interval_colors = [
-                                '#FF0000',  # Bad bad
-                                '#FFA500',  # Poor
-                                '#FFFF00',  # Moderate
-                                '#90EE90',  # Good
-                                '#00BFFF',  # High  
-                            ],
-             grid = np.array([0, 0.25, 0.5, 0.75, 1]),
-             to_plot_intervals = True):
-       
+    
+    def plot(self, title=None, path="", to_save=False, 
+            interval_colors=[
+                '#FF0000',  # Bad bad
+                '#FFA500',  # Poor
+                '#FFFF00',  # Moderate
+                '#90EE90',  # Good
+                '#00BFFF',  # High  
+            ],
+            grid=np.array([0, 0.25, 0.5, 0.75, 1]),
+            to_plot_intervals=True,
+            ax=None, plot_legend = False, plot_cog = False,
+            x_label="Quality", y_label=r"$\alpha$ (Membership)",
+            fontsize = 16):  
+        
         """Quick utility to plot the membership function"""
-        # The interval plotting is made
-        # due to main purpose was water quality analysis.
-        # This could help visualize the fuzzy number and
-        # in which interval it falls inside.
+        
+        # 2. Determine if we are running standalone or inside the GUI canvas
+        is_standalone = False
+        if ax is None:
+            fig, ax = plt.subplots(figsize=(6, 5))
+            is_standalone = True
+        else:
+            fig = ax.figure
+            ax.clear()  # Clear old plot data when refreshing inside the GUI
+
+        # 3. Replace all plt.xxx calls with ax.xxx equivalents
         if to_plot_intervals:
             for i in range(len(grid) - 1):
-                
-                    if i == 0:
-                        plt.hlines(y=-0.007, xmin=grid[i], xmax=(grid[i]+grid[i+1])/2, colors=interval_colors[i], linewidth=5) 
-                    else:
-                        plt.hlines(y=-0.007, xmin=(grid[i-1]+grid[i])/2, xmax=(grid[i]+grid[i+1])/2, colors=interval_colors[i], linewidth=5)
-                
-            plt.hlines(y=-0.007, xmin=(grid[-1]+grid[-2])/2, xmax=grid[-1], colors=interval_colors[-1], linewidth=5)
+                if i == 0:
+                    ax.hlines(y=-0.007, xmin=grid[i], xmax=(grid[i]+grid[i+1])/2, colors=interval_colors[i], linewidth=5) 
+                else:
+                    ax.hlines(y=-0.007, xmin=(grid[i-1]+grid[i])/2, xmax=(grid[i]+grid[i+1])/2, colors=interval_colors[i], linewidth=5)
             
-        plt.plot(self.space_x, self.membership_values, label="Membership function")
-        plt.title(f"{label}" if label else "Membership function of fuzzy number", fontsize=16)
-        plt.axvline(self.center_of_gravity, color='blue', linestyle='--', label=f'CoG: {self.center_of_gravity:.3f}')
-        plt.axvline(self.mean_of_maxima, color='green', linestyle='--', label=f'MoM {self.mean_of_maxima:.3f}')
-        plt.legend(fontsize=14,
-                loc="lower center",
-                bbox_to_anchor=(0.5, 0.1))
-        plt.xlabel("Quality", fontsize=16)
-        plt.ylabel(r"$\alpha$ (Membership)", fontsize=16)
-        plt.xticks(fontsize=14)
-        plt.yticks(fontsize=14)
-        plt.grid()
-         
+            ax.hlines(y=-0.007, xmin=(grid[-1]+grid[-2])/2, xmax=grid[-1], colors=interval_colors[-1], linewidth=5)
+            
+        ax.plot(self.space_x, self.membership_values, label="Membership function")
         
+        # Titles and labels use set_title, set_xlabel, set_ylabel on ax
+        ax.set_title(f"{title}" if title else "Membership function of fuzzy number", fontsize=fontsize)
+ 
+        if plot_cog:
+            ax.axvline(self.center_of_gravity, color='blue', linestyle='--', label=f'CoG: {self.center_of_gravity:.3f}')
+        ax.axvline(self.mean_of_maxima, color='green', linestyle='--', label=f'MoM: {self.mean_of_maxima:.3f}')
+        
+        if plot_legend:
+            ax.legend(fontsize=fontsize-2, loc="lower center", bbox_to_anchor=(0.5, 0.1))
+        
+        ax.set_xlabel(x_label, fontsize=fontsize)
+        ax.set_ylabel(y_label, fontsize=fontsize)
+        
+        # Tick parameters are set via tick_params instead of standalone plt functions
+        ax.tick_params(axis='x', labelsize=fontsize-2)
+        ax.tick_params(axis='y', labelsize=fontsize-2)
+        
+        ax.grid(True)
+        
+        # 4. Save and show handling
         if to_save:
-            plt.savefig(
+            fig.savefig(
                 f"{path}.png",
                 dpi=300,
                 bbox_inches="tight"
             )
-            plt.close()
+            if is_standalone:
+                plt.close(fig)
+                
+        if is_standalone:
+            plt.show()
             
-        plt.show()
     # def __repr__(self):
     #     support = self.alpha_cuts.get(0.0, ("?", "?"))
     #     core = self.alpha_cuts.get(1.0, ("?", "?"))
