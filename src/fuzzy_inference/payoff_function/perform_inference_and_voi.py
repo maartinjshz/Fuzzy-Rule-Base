@@ -38,7 +38,7 @@ def perform_infernece_and_evaluation_with_data(data_sample, antecendant_qualityG
                                                 number_of_grid_points=Number_of_grid_points,
                                                 type_of_tnorm=type_of_tnorm, aggregate_with_same_tnorm=use_the_same_tnorm)
         membership_value  = type_1_system.inference(data_sample)
-    
+        membership_value = -1 * (membership_value - 1)
 
         print(f"The membership function of sample {sample_name}: ")
         # membership_value.plot(label = f'{sample_name}')

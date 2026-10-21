@@ -20,7 +20,8 @@ class ImplicativeInferenceSystem():
                  type_of_modifier = None, 
                  type_of_tnorm = 'luk',
                  aggregate_with_same_tnorm = False,
-                 mapping_to_consequent = lambda x: max(x)):
+                 mapping_to_consequent = lambda x: max(x),
+                 outpu_function_config = None):
         
         self.rule_grid = rule_grid
         self.output_membership_degree = output_membership_degree
@@ -33,6 +34,7 @@ class ImplicativeInferenceSystem():
         self.number_of_rules = output_membership_degree.shape[0]
         self.aggregate_with_same_tnorm = aggregate_with_same_tnorm
         self.mapping_to_consequent = mapping_to_consequent
+        self.outpu_function_config = outpu_function_config
         
         self.rule_ranges = [np.linspace(row[0], row[-1], self.number_of_grid_points) 
                         for row in self.rule_grid]
@@ -123,7 +125,7 @@ class ImplicativeInferenceSystem():
         self.output_rules = []
         for i in range(self.output_membership_degree.shape[0]):
             if self.type_of_output_funs == 'Gaussian':
-                self.output_rules.append( create_1d_gaussian_function(self.output_membership_degree, i) )
+                self.output_rules.append( create_1d_gaussian_function(self.output_membership_degree, i, self.outpu_function_config) )
             elif self.type_of_output_funs == 'Hat':
                 self.output_rules.append(create_1d_hat_function_scipy(self.output_membership_degree, i)) 
                 

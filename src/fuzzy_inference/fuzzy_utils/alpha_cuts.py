@@ -147,7 +147,7 @@ def create_1d_trapezoidal_function(grid_points, i ):
                               fill_value=0.0, bounds_error=False)
     return hat_function
 
-def create_1d_gaussian_function(grid_points, i, sigma_factor=0.5):
+def create_1d_gaussian_function(grid_points, i, config = None):
     """
     Creates a 1D Gaussian membership function mu_i(x).
 
@@ -167,19 +167,17 @@ def create_1d_gaussian_function(grid_points, i, sigma_factor=0.5):
     # The center of the Gaussian is the grid point itself.
     mu = grid_points[i]
 
-    # 2. Determine the Standard Deviation (sigma)
-    # This dictates the spread and overlap with neighbors.
-    if n > 1:
-        # The distance between adjacent grid points (assuming uniform or taking the average/local step)
-        # We use the average distance between points as a basis for spread.
-        average_interval = np.mean(np.diff(grid_points))
-        
-        # Sigma is set relative to the interval to ensure good overlap.
-        sigma = average_interval / sigma_factor
-    else:
-        # If only one point, define a reasonable sigma based on the scale of the domain
-        sigma = (grid_points[-1] - grid_points[0]) / 10 if grid_points.size > 0 else 1.0
+    # Decault Sigma value
+    sigma = 0.360674
 
+    if config is not None and 'sigma_factor' in config:
+        sigma_config = config['sigma_factor']
+        # If it is a number (the same for all functions), use it
+        if type(sigma_config) in [int, float] and sigma_config > 0:
+            sigma = sigma_config
+        # If a grid is passed, use the corresponding value for the current index
+        elif i < n - 1:
+            sigma = sigma_config[i]
 
     # 3. Define and return the Gaussian function (closure)
     def gaussian_mf(x):
@@ -194,7 +192,7 @@ def create_1d_gaussian_function(grid_points, i, sigma_factor=0.5):
             return np.where(x_array == mu, 1.0, 0.0)
 
         # Calculate the exponent
-        exponent = -0.5 * ((x_array - mu) / sigma)**2
+        exponent = -  ((x_array - mu)  )**2 / sigma
         
         return np.exp(exponent)
 
