@@ -118,7 +118,7 @@ def full_voi_analysis(
                 batch_size=u_batch_size,
                 **crisp_params,
             )
-            perfect_voi_val[id_a] = a * np.amax(payoff_values)
+            perfect_voi_val[id_a] = a * np.nanmax(payoff_values)
         
         # 6. Prior Knowledge Payoff (Fuzzy calculation)
         prior_knowledge_payoff = np.array(
@@ -130,7 +130,7 @@ def full_voi_analysis(
         )
  
         # Save output to its corresponding coordinate block
-        V_i = np.amax(perfect_voi_val) - np.amax(prior_knowledge_payoff)
+        V_i = np.amax(perfect_voi_val) - np.nanmax(prior_knowledge_payoff)
         results_MOM[indices] = V_i 
         
     return results_MOM, param_ranges
@@ -160,6 +160,7 @@ def perfect_additional_VoI_analysis(
     param_names = list(param_config.keys())
     param_ranges = {}
     
+    u_seq = _normalize_u_space(u_space)
     # 1. Parse bounds and generate 1D ranges for each parameter
     for name, config in param_config.items():
         p_min, p_max = config['bounds']
@@ -180,7 +181,10 @@ def perfect_additional_VoI_analysis(
     print(f"Grid shape: {matrix_shape}")
 
     # 3. Iterate through all parameter combinations
-    for combo in itertools.product(*enumerated_ranges):
+    total_combinations = np.prod([len(r) for r in enumerated_ranges])
+    for combo in tqdm(itertools.product(*enumerated_ranges),
+                        total=total_combinations,
+                        desc="Evaluating parameter grid"):
         indices = tuple(c[0] for c in combo)
         values = [c[1] for c in combo]
         
@@ -215,24 +219,30 @@ def perfect_additional_VoI_analysis(
             perfect_voi_max = max(perfect_voi_max, a * np.amax(payoff_values))
         
         # 6. Additional information Payoff (Fuzzy calculation)
-        additional_knowledge_max = 0.0
+        additional_knowledge_max = np.empty(len(additional_info.membership_values), dtype=float)
         for id_b, b in enumerate(additional_info.membership_values):
+            
+            # Makes the fuzzy set using conitional possiblity distribution
             new_info_membership_fun = FuzzyNumber(
                 membership_values=np.minimum(membership_value.membership_values, b) / b,
                 membership_space=membership_value.membership_space,
                 space_x=membership_value.space_x,
             )
-            payoff_values = np.array(
+
+            # Calculate the additional infromation payoff
+            additional_knowledge_payoff = np.array(
                 [
-                    call_payoff(payoff_formula, u_value, new_info_membership_fun, **crisp_params).mean_of_maxima
-                    for u_value in np.ravel(np.broadcast_arrays(*_normalize_u_space(u_space))[0])
+                    payoff_formula(*u_values, new_info_membership_fun, **crisp_params).mean_of_maxima
+                    for u_values in zip(*[arr.ravel() for arr in np.broadcast_arrays(*u_seq)])
                 ],
                 dtype=float,
-            )
-            additional_knowledge_max = max(additional_knowledge_max, b * np.amax(payoff_values))
-
+            )           
+            # By the formula, takes the maximum for single b value. 
+            additional_knowledge_max[id_b] = b * np.nanmax(additional_knowledge_payoff)
         result_perfect_info[indices] = perfect_voi_max
-        results_additional_info[indices] = additional_knowledge_max
+        
+        # maximum for over all additional information values. (Over all b values).
+        results_additional_info[indices] = np.amax(additional_knowledge_max)
 
     return result_perfect_info, results_additional_info, param_ranges
 

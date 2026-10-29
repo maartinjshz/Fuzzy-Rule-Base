@@ -81,18 +81,25 @@ def Mean_of_Maximum_defuziffication(fuzzy_number):
     Returns:
         float: The defuzzified value of the fuzzy number using the Mean of Maximum method
     """    
-    
     if not hasattr(fuzzy_number, 'lower') or not hasattr(fuzzy_number, 'upper'):
         raise TypeError("Input must have 'lower' and 'upper' attributes (should be a FuzzyNumber instance).")
     
-    # highest_alpha_level = max(fuzzy_number.alpha_cuts.keys())
-    # return  (fuzzy_number.upper[-1] + fuzzy_number.lower[-1]) / 2
+    # 1. Identify the maximum height
     height = np.max(fuzzy_number.membership_values)
-    maximum_points = np.isclose(
-        fuzzy_number.membership_values,
-        height
-    )
-    return np.mean(fuzzy_number.space_x[maximum_points])
+    
+    # 2. Extract coordinates inside the peak/plateau area
+    maximum_points = np.isclose(fuzzy_number.membership_values, height)
+    x_plateau = fuzzy_number.space_x[maximum_points]
+    
+    # Edge case: If only a single point or no points matched
+    if len(x_plateau) <= 1:
+        return np.mean(x_plateau) if len(x_plateau) == 1 else 0.0
+
+    # 3. Apply numerical integration: Integral(x dx) / Integral(dx)
+    numerator = np.trapezoid(x_plateau, x_plateau)
+    denominator = np.trapezoid(np.ones_like(x_plateau), x_plateau)
+    
+    return numerator / denominator
 
 
 def Center_of_Gravity_defuziffication(fuzzy_number):
